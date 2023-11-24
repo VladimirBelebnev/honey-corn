@@ -1,0 +1,258 @@
+// Modal Windows Styles
+
+// Поп-ап окна
+
+.calendare {
+    max-width: 20.375rem;
+    width: 20.375rem;
+    background: $white;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+    &_double {
+        max-width: 39.625rem;
+        width: 39.625rem;
+        
+
+        .calendare__section {
+
+            &:first-child {
+                padding-right: 1.5rem;
+            }
+
+            &:last-child {
+                border-left: 1px solid $gray1;
+                padding-left: 1.5rem;
+            }
+        }
+
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &__prev-btn,
+    &__next-btn {
+        color: $gray2;
+        font-size: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__current-month {
+        font-size: 1.25rem;
+        font-weight: $semibold;
+        line-height: 2.25rem;
+    }
+
+    &__cell {
+        padding: 0.31rem 0.63rem;
+
+        &_title {
+            font-weight: $semibold;
+        }
+
+        &_out-month {
+            color: $gray4;
+        }
+
+        &_active-start {
+            border-radius: 0.625rem 0rem 0rem 0.625rem;
+            background: $primaryColor;
+        }
+
+        &_active-end {
+            border-radius: 0rem 0.625rem 0.625rem 0rem;
+            background: $primaryColor;
+        }
+
+        &_active {
+            background: $primaryGradient;
+        }
+    }
+}
+
+.select-diapason {
+
+    &__header {
+        margin-bottom: 1.75rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &__content-title {
+        margin-bottom: 0.75rem;
+    }
+
+    &__button-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__input-block {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__input {
+        @extend %input;
+        min-width: 4rem;
+        width: 4rem;
+        border-radius: 0.625rem;
+    }
+
+    &__save-btn {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    &__checkbox-quadro {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.pop-up {
+    max-width: 15.125rem;
+    width: 15.125rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.20);
+    transform: translate(-100%, calc(-50% - 1.375rem));
+
+    &::before {
+        content: "";
+        width: 0.625rem;
+        height: 1.25rem;
+        background: $white;
+        border-radius: 0.625rem;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        position: absolute;
+        left: calc(100% - 1px);
+        top: 0.75rem;
+    }
+}
+
+.pop-up-2 {
+    max-width: 25.25rem;
+    width: 25.25rem;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.20);
+
+    &__checkbox-quadro {
+        margin-bottom: 0.5rem;
+    }
+
+    &__input {
+        @extend %input;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__wrapper {
+        max-width: 25.25rem;
+        width: 25.25rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.20);
+    }
+
+    &__header {
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $gray3;
+    }
+
+    &__skip-btn {
+        font-size: 1.25rem;
+        color: $gray4;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    &__success-img {
+        width: 3.75rem;
+    }
+
+    &__success-message {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__btn {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem;
+    }
+
+    &__checkbox-section {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+}

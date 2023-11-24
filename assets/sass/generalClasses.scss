@@ -1,0 +1,500 @@
+// General Classes
+
+// Базовые классы
+
+.container {
+    width: 100%;
+    max-width: calc($containerWidth + $containerPadding * 2);
+    padding: 0 $containerPadding;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+        display: inline-block;
+        width: 9.36044rem;
+        height: 3.01963rem;
+        background-image: url("../images/logo.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+.none {
+    display: none !important;
+}
+
+// Классы инпутов
+
+.theme-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    &__night-icon {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: $gray1;
+    }
+
+    &__sun-icon {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: $primaryColor;
+    }
+}
+
+.checkbox {
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: block;
+        width: 2.9375rem;
+        height: 1.75rem;
+        background: $gray1;
+        border-radius: 0.875rem;
+        padding: 0.38rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s;
+
+        &::before {
+            content: "";
+            width: calc(50% - 1px);
+            height: 100%;
+            background: $white;
+            border-radius: 50%;
+            display: inline-block;
+            transition: .3s;
+        }
+    }
+
+    &__input:checked + &__label {
+        background: $primaryColor;
+    }
+
+    &__input:checked + &__label::before {
+        margin-left: calc(50% + 1px);
+    }
+}
+
+%input {
+    max-width: 16.25rem;
+    width: 16.25rem;
+    padding: 0.5rem 1rem;
+    background: $gray3;
+    border-radius: 0.625rem;
+    border: 1px solid $gray1;
+    color: $black;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+}
+
+.input {
+    position: relative;
+    max-width: 28.75rem;
+    width: 100%;
+
+    &__input {
+        @extend %input;
+        border-radius: 0.625rem;
+        padding-right: 3rem;
+        min-width: 100%;
+    }
+
+    &__btn,
+    &__item {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translate(0, -50%);
+        font-size: 1.5rem;
+        color: $gray4;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+
+        &_drop-down {
+            font-size: 1rem;
+            transform: rotate(180deg);
+        }
+
+        &_drop-down-active {
+            transform: rotate(0);
+        }
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__select-block {
+        @extend %input;
+        border-radius: 0.625rem;
+        max-width: 4.6875rem;
+    }
+
+    &__select-value {
+        font-size: 1.125rem;
+        line-height: 2.25rem; 
+    }
+}
+
+@mixin input-text($text) {
+    content: $text;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    background: $white;
+    border-radius: 0.2rem;
+    font-size: 0.875rem;
+    font-weight: $medium;
+    line-height: 0.75rem;
+    transform: translate(0, -50%);
+    padding: 0.1rem;
+}
+
+.select-input {
+    position: relative;
+
+    &__open-section {
+        @extend %input;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        max-width: 17.9375rem;
+        width: 17.9375rem;
+        
+        &::before {
+            @include input-text("Текущий актив");
+        }
+    }
+
+    &__btn {
+        color: $gray4;
+        transform: rotate(180deg);
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__hidden-section {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+.select-input-2 {
+    position: relative;
+
+    &__hidden-section {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: 0;
+        z-index: 2;
+    }
+}
+
+.checkbox-quadro {
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.63rem;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid $gray4;
+            border-radius: 0.25rem;
+            transition: .5s;
+        }
+    }
+
+    &__input:checked + &__label {
+
+        &::before {
+            background: $primaryColor;
+            border-color: $primaryColor;
+        }
+    }
+}
+
+// Классы текста
+
+.title {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+.title-mini {
+    font-size: 1.125rem;
+    font-weight: $bold;
+    line-height: 2.25rem;
+}
+
+// Классы блоков
+
+.block {
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+}
+
+.block-2 {
+    background: $white;
+    border-radius: 0.625rem;
+    
+    & > * {
+        padding: 0 1.5rem;
+    }
+}
+
+.stub {
+    width: 100%;
+    height: 100%;
+    background: $gray1;
+    border-radius: 0.625rem;
+    position: relative;
+}
+
+// Классы кнопок
+
+.btn {
+    min-width: 4.72rem;
+    background: $primaryColor;
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: $semibold;
+    line-height: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-button {
+    padding: 0.5rem 0.95rem;
+    border-radius: 3.125rem;
+    background: $gray3;
+    border: 1px solid $gray1;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+
+    &::before {
+        font-size: 1.5rem;
+        line-height: 0;
+        color: $gray4;
+    }
+}
+
+// Классы таблиц
+
+
+.table-block {
+    width: 100%;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 2rem 1rem 1rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__header-right-section {
+        display: flex;
+        align-items: center;
+        gap: 4.12rem;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+    }
+
+    &__content {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $gray3;
+    }
+
+    &__footer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__str-per-page,
+    &__change-page,
+    &__select-page {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left-section,
+    &__right-section {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__input {
+        max-width: 4.6875rem;
+    }
+
+    &__num-input {
+        @extend %input;
+        max-width: 2.6875rem;
+    }
+
+    &__select-page {
+        gap: 1rem;
+    }
+
+    &__str-per-page,
+    &__change-page {
+        gap: 1rem;
+    }
+
+    &__change-page-buttons {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__change-page-btn {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray4;
+
+        &::before {
+            line-height: 0;
+        }
+
+        &_unactive {
+            color: $gray1;
+        }
+    }
+}
+
+.table {
+    width: 100%;
+
+    &_constructor {
+
+        .table__cell {
+            vertical-align: top;
+        }
+    }
+
+    &__header {
+        border-radius: 0.625rem;
+
+        & .table__cell {
+            background: $gray5;
+        }
+
+        & .table__cell:first-child {
+            border-radius: 0.625rem 0 0 0.625rem;
+        }
+
+        & .table__cell:last-child {
+            border-radius: 0 0.625rem 0.625rem 0;
+        }
+    }
+
+    &__row {
+        border-radius: 0.625rem;
+    }
+
+    &__cell {
+        padding: 1rem 0.5rem;
+        text-align: center;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        
+        &_title {
+            font-weight: $semibold;
+        }
+
+        &_signature {
+            max-width: 9.125rem;
+        }
+
+        &_settings {
+            font-size: 1rem;
+            color: $gray4;
+        }
+
+        &-wrapper {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            &::before {
+                font-size: 1rem;
+                color: $gray4;
+                line-height: 0;
+            }
+        }
+    }
+
+    &__content {
+        
+        & > *:nth-child(even) {
+
+            & .table__cell {
+                background: $gray3;
+            }
+    
+            & .table__cell:first-child {
+                border-radius: 0.625rem 0 0 0.625rem;
+            }
+    
+            & .table__cell:last-child {
+                border-radius: 0 0.625rem 0.625rem 0;
+            }
+        }
+    }
+}

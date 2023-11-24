@@ -1,0 +1,91 @@
+// Trap Base Logs Styles
+
+.trap-base-logs {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.search {
+    width: 100%;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 100%;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+
+    &__header {
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__open-content-btn {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray4;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__btn:not(.filter__data-btn, .filter__delete-btn, .filter__open-content-btn)::before {
+        font-size: 1rem;
+        color: $gray2;
+        transform: rotate(180deg);
+        transition: .5s;
+
+        &_active {
+            transform: rotate(0);
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__delete-btn {
+        font-size: 2rem;
+        color: $gray4;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__sensor-pop-up {
+        max-width: 23.0625rem;
+        width: 23.0625rem;
+        padding: 0.7rem 1rem 0.5rem;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+// Navbar Styles
+
+.navbar {
+    height: 100vh;
+    width: 100%;
+    background: $darkBlue1;
+    padding: 1.5rem 1.25rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 100;
+
+    &__header {
+        justify-content: flex-start;
+    }
+
+    & > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.drop-down {
+    margin-left: 2.5rem;
+    max-width: 13rem;
+    position: relative;
+
+    &__open-section {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            font-size: 2rem;
+            color: $gray2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(calc(-100% - 0.5rem), -10%);
+        }
+        
+        &_list {
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1rem;
+                height: 1rem;
+                background-image: url("../images/drop-down-arrow.svg");
+                background-size: 100%;
+                position: absolute;
+                top: 0.4rem;
+                right: 0;
+                transform: translate(100%, 0);
+                transform: rotate(-180deg);
+                transition: .5s;
+            }
+        }
+
+        &_active {
+            &.drop-down__open-section_list::after {
+                top: 0.2rem;
+                transform: translate(100%, 0);
+                transform: rotate(0deg);
+            }
+        }
+
+        &_current {
+
+            .drop-down__name {
+                color: $primaryColor;
+            }
+
+            &.drop-down__open-section::before {
+                color: $primaryColor;
+            }
+
+        }
+    }
+
+    &__name {
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        text-align: left;
+    }
+
+    &__hidden-section {
+        margin-top: 0.69rem;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $gray1;
+        padding: 0.5rem 0;
+    }
+}

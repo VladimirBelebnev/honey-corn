@@ -1,0 +1,272 @@
+// Home Styles
+
+.home {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-areas: "column1 column1 column1"
+                            "column2 column3 column4"
+                            "column5 column5 column5";
+        row-gap: 1.5rem;
+        column-gap: 1.25rem;
+    }
+
+    &__container > *:nth-child(1) {
+        grid-area: column1;
+    }
+
+    &__container > *:nth-child(2) {
+        grid-area: column2;
+    }
+
+    &__container > *:nth-child(3) {
+        grid-area: column3;
+    }
+
+    &__container > *:nth-child(4) {
+        grid-area: column4;
+    }
+
+    &__container > *:nth-child(5) {
+        grid-area: column5;
+    }
+
+    &__last-informations-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+.statistic {
+
+    &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.75rem;
+    }
+
+    &__header-section:last-child {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: $gray4;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__input {
+
+        .select-input__btn {
+            font-size: 1.5rem;
+
+            &::before {
+                line-height: 0;
+            }
+        }
+
+        .select-input__open-section {
+            gap: 1rem;
+        }
+    }
+
+    &__status {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $green1;
+        box-shadow: 0 0 10px 2px $green2;
+        border-radius: 50%;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15rem;
+        gap: 13.92rem;
+    }
+}
+
+.information {
+    width: 100%;
+
+    // Блоки видов диаграм
+
+    &_round-diagram {
+        
+        .information__row {
+            display: grid;
+            grid-template-columns: 1fr 8.5625rem;
+            align-items: center;
+            gap: 1.75rem;
+        }
+
+        .stub {
+            height: 8.625rem;
+        }
+    }
+
+    &_grid-diagram {
+        .information__row {
+            display: grid;
+            grid-template-columns: 1fr 32.685rem;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .information__column:first-child {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 1px;
+                background: $gray1;
+                position: absolute;
+                left: calc(100% + 1.25rem - 1px);
+                top: 0;
+            }
+        }
+
+        .stub {
+            height: 12.625rem;
+        }
+
+        .information__list > *:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &_column-diagram {
+        .information__row {
+            display: grid;
+            grid-template-columns: 1fr 24rem;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .information__column:first-child {
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 1px;
+                background: $gray1;
+                position: absolute;
+                left: calc(100% + 1.25rem - 1px);
+                top: 0;
+            }
+        }
+
+        .stub {
+            height: 12.625rem;
+        }
+
+        .information__list > *:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    // Основные стили
+
+    &__header {
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid $gray3;
+    }
+
+    &__settings {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: $gray4;
+    }
+
+    &__content {
+        padding: 1.5rem;
+    }
+
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem 0;
+    }
+
+    &__name {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.56rem;
+
+        &_color::before {
+            content: "";
+            min-width: 0.8rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: $gray4;
+            border-radius: 50%;
+            border: 3px solid $white;
+            display: inline-block;
+        }
+
+        &_color-red::before {
+            background: $red1;
+        }
+
+        &_color-yellow::before {
+            background: $primaryColor;
+        }
+
+        &_color-purple::before {
+            background: $purple1;
+        }
+
+        &_color-blue::before {
+            background: $blue1;
+        }
+
+        &_color-green::before {
+            background: $green3;
+        }
+    }
+
+    &__value {
+        color: $gray4;
+    }
+
+    // &__grid-item {
+
+    //     &_red {
+    //     }
+
+    //     &_yellow {
+    //     }
+
+    //     &_purple {
+    //     }
+
+    //     &_blue {
+    //     }
+
+    //     &_green {
+    //     }
+    // }
+
+    // &__grid-text {
+    // }
+}

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Honeycorn</title>
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+
+        <aside class="navbar">
+
+            <header class="navbar__header flex">
+                <div class="logo">
+                    <a href="#" class="logo__link"></a>
+                </div>
+            </header>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
+                    <h4 class="drop-down__name">
+                        Дашборд
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <h4 class="drop-down__name">
+                        Журналы событий
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи базовых ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи конструкторов ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи переборов
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи фишинговых атак
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                    <h4 class="drop-down__name">
+                        Установка ловушек и приманок
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-active">
+                    <h4 class="drop-down__name">
+                        Активы
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
+                    <h4 class="drop-down__name">
+                        Ловушки и приманки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Ловушки
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Приманки
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
+                    <h4 class="drop-down__name">
+                        Мониторинг
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
+                    <h4 class="drop-down__name">
+                        Настройки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section none">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </aside>
+
+        <!-- Navbar End -->
+
+        <!-- Main Wrapper -->
+
+        <div class="wrapper__main">
+
+            <!-- Header -->
+
+            <header class="header flex">
+                <div class="container header__container flex">
+
+                    <section class="header__section flex">
+
+                        <div class="header__theme-checkbox theme-checkbox">
+                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                <label for="theme-input" class="checkbox__label"></label>
+                            </div>
+
+                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
+                        </div>
+
+                    </section>
+
+                    <section class="header__section flex">
+
+                        <div class="header__input select-input">
+
+                            <section class="select-input__open-section">
+                                <p class="select-input__current-value">
+                                    Выберите актив
+                                </p>
+
+                                <i class="select-input__btn icon-drop-down-arrow"></i>
+                            </section>
+
+                            <section class="select-input__hidden-section none">
+
+                            </section>
+
+                        </div>
+
+                        <button class="header__btn header__btn_document icon-ic-file"></button>
+                        
+                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+
+                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+
+                    </section>
+                    
+                </div>
+            </header>
+
+            <!-- Header End -->
+
+            <!-- Main -->
+
+            <main class="main">
+
+                <!-- Home -->
+
+                <section class="home">
+                    <div class="container home__container">
+
+                        <section class="statistic home__statistic block">
+
+                            <header class="statistic__header">
+                                <section class="statistic__header-section">
+                                    <h3 class="statistic__title title">
+                                        График атак за период с <strong class="statistic__strong">01.09.2023, 00:00:00</strong> по 
+                                        <strong class="statistic__strong">07.09.2023, 00:00:00</strong>
+                                    </h3>
+                                </section>
+                                
+
+                                <section class="statistic__header-section">
+                                    <button class="statistic__btn icon-ic-fullscreen"></button>
+
+                                    <div class="statistic__input select-input">
+
+                                        <section class="select-input__open-section">
+                                            <p class="select-input__current-value">
+                                                01.09.2023 - 07.09.2023
+                                            </p>
+            
+                                            <i class="select-input__btn icon-ic-calendar"></i>
+                                        </section>
+            
+                                        <section class="select-input__hidden-section">
+                                            <div class="calendare calendare_double">
+                                                <div class="calendare__section">
+                                                    <header class="calendare__header">
+                                                        <button class="calendare__prev-btn icon-ic-left"></button>
+
+                                                        <h4 class="calendare__current-month">
+                                                            Октябрь 2023
+                                                        </h4>
+
+                                                        <button class="calendare__next-btn icon-ic-right"></button>
+                                                    </header>
+
+                                                    <table class="calendare__table" cellspacing="0">
+                                                        <thead class="calendare__table-header">
+                                                            <tr class="calendare__table-row">
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    пн
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    вт
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    ср
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    чт
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    пт
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    сб
+                                                                </th>
+                                                                <th class="calendare__cell calendare__cell_title">
+                                                                    вс
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody class="calendare__table-body">
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_out-month">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active-start">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell calendare__cell_active">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell calendare__cell_active-end">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="calendare__table-row">
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                                <td class="calendare__cell">
+                                                                    20
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="select-diapason calendare__section">
+                                                    <header class="select-diapason__header">
+                                                        <h3 class="select-diapason__title">
+                                                            Диапазон за последние
+                                                        </h3>
+
+                                                        <div class="select-diapason__button-list">
+                                                            <button class="select-diapason__btn btn">
+                                                                7 дней
+                                                            </button>
+
+                                                            <button class="select-diapason__btn btn">
+                                                                14 дней
+                                                            </button>
+
+                                                            <button class="select-diapason__btn btn">
+                                                                30 дней
+                                                            </button>
+                                                        </div>
+                                                    </header>
+
+                                                    <section class="select-diapason__content">
+                                                        <h3 class="select-diapason__title select-diapason__content-title">
+                                                            Другой диапазон
+                                                        </h3>
+
+                                                        <div class="select-diapason__input-block">
+                                                            <input type="text" class="select-diapason__input">
+                                                            <p class="select-diapason__days">
+                                                                дней
+                                                            </p>
+                                                        </div>
+                                                    </section>
+
+                                                    <div class="select-diapason__checkbox-quadro checkbox-quadro">
+                                                        <input type="checkbox" id="memory" hidden class="checkbox-quadro__input">
+                                                        <label for="memory" class="checkbox-quadro__label">Запомнить</label>
+                                                    </div>
+
+                                                    <button class="select-diapason__save-btn btn">
+                                                        Применить
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </section>
+            
+                                    </div>
+
+                                    <i class="statistic__status"></i>
+                                </section>
+                                
+                            </header>
+
+                            <section class="statistic__content">
+                                <canvas class="stub stub_first"></canvas>
+                                <div class="stub">
+                                    <div class="pop-up none">
+                                        <p class="pop-up__text">
+                                            Состояние безопасности
+                                            Описание
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </section>
+
+                        <section class="home__information information information_round-diagram block-2">
+                            <header class="information__header">
+                                <h3 class="information__title title-mini">
+                                    Топ источников атак (IP)
+                                </h3>
+
+                                <button class="information__settings icon-ic-gear"></button>
+                            </header>
+    
+                            <section class="information__content">
+                                <section class="information__row">
+                                    <section class="information__column">
+                                        <ul class="information__list">
+                                            <li class="information__list-item">
+                                                <h4 class="information__name information__name_color information__name_color-red">
+                                                    Drupal
+                                                </h4>
+
+                                                <p class="information__value">
+                                                    2441 атака
+                                                </p>
+                                            </li>
+                                            <li class="information__list-item">
+                                                <h4 class="information__name information__name_color information__name_color-yellow">
+                                                    Drupal
+                                                </h4>
+
+                                                <p class="information__value">
+                                                    2441 атака
+                                                </p>
+                                            </li>
+                                            <li class="information__list-item">
+                                                <h4 class="information__name information__name_color information__name_color-purple">
+                                                    Drupal
+                                                </h4>
+
+                                                <p class="information__value">
+                                                    2441 атака
+                                                </p>
+                                            </li>
+                                            <li class="information__list-item">
+                                                <h4 class="information__name information__name_color information__name_color-blue">
+                                                    Drupal
+                                                </h4>
+
+                                                <p class="information__value">
+                                                    2441 атака
+                                                </p>
+                                            </li>
+                                            <li class="information__list-item">
+                                                <h4 class="information__name information__name_color information__name_color-green">
+                                                    Drupal
+                                                </h4>
+
+                                                <p class="information__value">
+                                                    2441 атака
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </section>
+
+                                    <section class="information__column">
+                                        <div class="stub"></div>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="home__information information block-2">
+                            <header class="information__header">
+                                <h3 class="information__title title-mini">
+                                    Топ видов ловушек
+                                </h3>
+
+                                <button class="information__settings icon-ic-gear"></button>
+                            </header>
+
+                            <section class="information__content">
+                                <ul class="information__list">
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+
+                        <section class="home__information information block-2">
+                            <header class="information__header">
+                                <h3 class="information__title title-mini">
+                                    Топ атакуемых портов
+                                </h3>
+
+                                <button class="information__settings icon-ic-gear"></button>
+                            </header>
+
+                            <section class="information__content">
+                                <ul class="information__list">
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                    <li class="information__list-item">
+                                        <h4 class="information__name">
+                                            Drupal
+                                        </h4>
+
+                                        <p class="information__value">
+                                            2441 атака
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+
+                        <div class="home__last-informations-row">
+
+                            <section class="home__information information information_grid-diagram block-2">
+                                <header class="information__header">
+                                    <h3 class="information__title title-mini">
+                                        Топ источников атак (IP)
+                                    </h3>
+
+                                    <button class="information__settings icon-ic-gear"></button>
+                                </header>
+
+                                <section class="information__content">
+                                    <section class="information__row">
+                                        <section class="information__column">
+                                            <ul class="information__list">
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name information__name_color information__name_color-red">
+                                                        aU8#fj$l9R3
+                                                    </h4>
+
+                                                    <p class="information__value">
+                                                        157
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name information__name_color information__name_color-yellow">
+                                                        aU8#fj$l9R3
+                                                    </h4>
+
+                                                    <p class="information__value">
+                                                        157
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name information__name_color information__name_color-purple">
+                                                        aU8#fj$l9R3
+                                                    </h4>
+
+                                                    <p class="information__value">
+                                                        157
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name information__name_color information__name_color-blue">
+                                                        aU8#fj$l9R3
+                                                    </h4>
+
+                                                    <p class="information__value">
+                                                        157
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name information__name_color information__name_color-green">
+                                                        aU8#fj$l9R3
+                                                    </h4>
+
+                                                    <p class="information__value">
+                                                        157
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+
+                                        <section class="information__column information__column_grid-diagram">
+                                            <!-- <div class="information__grid-item information__grid-item_red">
+                                                <p class="information__grid-text">
+                                                    aU8#fj$l9R3
+                                                </p>
+                                            </div>
+
+                                            <div class="information__grid-item information__grid-item_yellow">
+                                                <p class="information__grid-text">
+                                                    aU8#fj$l9R3
+                                                </p>
+                                            </div>
+
+                                            <div class="information__grid-item information__grid-item_purple">
+                                                <p class="information__grid-text">
+                                                    aU8#fj$l9R3
+                                                </p>
+                                            </div>
+
+                                            <div class="information__grid-item information__grid-item_blue">
+                                                <p class="information__grid-text">
+                                                    aU8#fj$l9R3
+                                                </p>
+                                            </div>
+
+                                            <div class="information__grid-item information__grid-item_green">
+                                                <p class="information__grid-text">
+                                                    aU8#fj$l9R3
+                                                </p>
+                                            </div> -->
+                                            <div class="stub"></div>
+                                        </section>
+                                    </section>
+                                    </section>
+
+                                    
+                            </section>
+
+                            <section class="home__information information information_column-diagram block-2">
+                                <header class="information__header">
+                                    <h3 class="information__title title-mini">
+                                        Топ атакующих e-mail
+                                    </h3>
+
+                                    <button class="information__settings icon-ic-gear"></button>
+                                </header>
+
+                                <section class="information__content">
+                                    <section class="information__row">
+                                        <section class="information__column">
+                                            <ul class="information__list">
+                                                <li class="information__list-item">
+                                                    <p class="information__value">
+                                                        sysadmin@yourcompany.domen
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <p class="information__value">
+                                                        dob@dob.doc
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <p class="information__value">
+                                                        chekbox@aaa.bbb
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <p class="information__value">
+                                                        sysadmin@yourcompany.domen
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <p class="information__value">
+                                                        dob@dob.doc
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </section>
+
+                                        <section class="information__column">
+                                            <div class="stub"></div>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+
+                        </div>
+
+                        
+
+                    </div>
+                </section>
+
+                <!-- Home End -->
+
+            </main>
+
+            <!-- Main End -->
+
+        </div>
+
+        <!-- Main Wrapper End -->
+
+    </div>
+
+    <!-- Wrapper End -->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'iconsFont';
+    src:  url('../icons-fonts/iconsFont.eot?eghs0d');
+    src:  url('../icons-fonts/iconsFont.eot?eghs0d#iefix') format('embedded-opentype'),
+      url('../icons-fonts/iconsFont.ttf?eghs0d') format('truetype'),
+      url('../icons-fonts/iconsFont.woff?eghs0d') format('woff'),
+      url('../icons-fonts/iconsFont.svg?eghs0d#iconsFont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"]::before, [class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconsFont' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-ic-backspace:before {
+    content: "\e915";
+  }
+  .icon-ic-filter_up:before {
+    content: "\e914";
+  }
+  .icon-ic-three_dots:before {
+    content: "\e910";
+  }
+  .icon-ic-search:before {
+    content: "\e911";
+  }
+  .icon-ic-trash:before {
+    content: "\e912";
+  }
+  .icon-ic-x:before {
+    content: "\e913";
+  }
+  .icon-ic-left:before {
+    content: "\e90e";
+  }
+  .icon-ic-right:before {
+    content: "\e90f";
+  }
+  .icon-ic-door:before {
+    content: "\e907";
+  }
+  .icon-ic-file:before {
+    content: "\e908";
+  }
+  .icon-ic-moon:before {
+    content: "\e909";
+  }
+  .icon-ic-sun:before {
+    content: "\e90a";
+  }
+  .icon-drop-down-arrow:before {
+    content: "\e90b";
+  }
+  .icon-ic-calendar:before {
+    content: "\e90c";
+  }
+  .icon-ic-fullscreen:before {
+    content: "\e90d";
+  }
+  .icon-ic-active:before {
+    content: "\e900";
+  }
+  .icon-ic-dashboard:before {
+    content: "\e901";
+  }
+  .icon-ic-gear:before {
+    content: "\e902";
+  }
+  .icon-ic-journal:before {
+    content: "\e903";
+  }
+  .icon-ic-mine:before {
+    content: "\e904";
+  }
+  .icon-ic-monitoring:before {
+    content: "\e905";
+  }
+  .icon-ic-trap:before {
+    content: "\e906";
+  }
+  

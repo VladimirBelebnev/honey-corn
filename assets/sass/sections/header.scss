@@ -1,0 +1,25 @@
+// Header Styles
+
+.header {
+    width: 100%;
+    background: $white;
+    min-height: 5.25rem;
+    padding: 1rem;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__section:last-child {
+        gap: 1.25rem;
+    }
+
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        color: $gray4;
+    }
+}
