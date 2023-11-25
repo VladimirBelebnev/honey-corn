@@ -204,20 +204,24 @@
 
                     <section class="header__section flex">
 
-                        <div class="header__input select-input">
-
-                            <section class="select-input__open-section">
-                                <p class="select-input__current-value">
-                                    Выберите актив
-                                </p>
-
-                                <i class="select-input__btn icon-drop-down-arrow"></i>
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
                             </section>
 
-                            <section class="select-input__hidden-section none">
+                            <section class="select-input-2__hidden-section none">
 
                             </section>
-
                         </div>
 
                         <button class="header__btn header__btn_document icon-ic-file"></button>
@@ -237,7 +241,7 @@
 
             <main class="main">
 
-                <!-- Trap Base Logs -->
+                <!-- Logs Solves -->
 
                 <section class="trap-base-logs">
                     <div class="container trap-base-logs__container">
@@ -735,7 +739,8 @@
                                                     <div class="input__select-block">
                                                         <p class="input__select-value">5</p>
                                                     </div>
-                                                    <button class="input__btn input__btn_drop-down icon-drop-down-arrow"></button>
+                                                    
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -754,7 +759,9 @@
                                             Выбрать страницу
                                         </p>
 
-                                        <input type="text" class="table-block__num-input">
+                                        <div class="table-block__num-input input input_single">
+                                            <input type="text" class="input__input">
+                                        </div>
                                     </section>
 
                                     <section class="table-block__change-page">
@@ -779,7 +786,7 @@
                     </div>
                 </section>
 
-                <!-- Trap Base Logs End -->
+                <!-- Logs Solves End -->
 
             </main>
 
@@ -842,7 +849,7 @@
 
                         <section class="modal-window__content">
 
-                            <div class="modal-window__iscnput input">
+                            <div class="modal-window__input input">
                                 <input type="text" placeholder="Название исключения" class="input__input">
                                 <i class="input__item icon-ic-backspace"></i>
                             </div>
@@ -862,7 +869,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window modal-window_export none">
+            <div class="modal-window modal-window_export-ioc-1 none">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">

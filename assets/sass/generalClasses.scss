@@ -37,6 +37,15 @@
     display: none !important;
 }
 
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    * {
+        cursor: not-allowed;
+    }
+}
+
 // Классы инпутов
 
 .theme-checkbox {
@@ -98,8 +107,8 @@
 }
 
 %input {
-    max-width: 16.25rem;
-    width: 16.25rem;
+    max-width: 100%;
+    width: 100%;
     padding: 0.5rem 1rem;
     background: $gray3;
     border-radius: 0.625rem;
@@ -111,14 +120,39 @@
 
 .input {
     position: relative;
-    max-width: 28.75rem;
+    max-width: 100%;
     width: 100%;
+
+    &_single {
+
+        .input__input {
+            padding-right: 1rem;
+        }
+    }
+
+    &__mini-title {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        background: $white;
+        border-radius: 0.2rem;
+        font-size: 0.875rem;
+        font-weight: $medium;
+        line-height: 0.75rem;
+        transform: translate(0, -50%);
+        padding: 0.1rem;
+    }
 
     &__input {
         @extend %input;
         border-radius: 0.625rem;
         padding-right: 3rem;
-        min-width: 100%;
+        max-width: inherit;
+        width: inherit;
+
+        &::placeholder {
+            color: $gray4;
+        }
     }
 
     &__btn,
@@ -151,58 +185,12 @@
     &__select-block {
         @extend %input;
         border-radius: 0.625rem;
-        max-width: 4.6875rem;
+        max-width: inherit;
     }
 
     &__select-value {
         font-size: 1.125rem;
         line-height: 2.25rem; 
-    }
-}
-
-@mixin input-text($text) {
-    content: $text;
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    background: $white;
-    border-radius: 0.2rem;
-    font-size: 0.875rem;
-    font-weight: $medium;
-    line-height: 0.75rem;
-    transform: translate(0, -50%);
-    padding: 0.1rem;
-}
-
-.select-input {
-    position: relative;
-
-    &__open-section {
-        @extend %input;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        max-width: 17.9375rem;
-        width: 17.9375rem;
-        
-        &::before {
-            @include input-text("Текущий актив");
-        }
-    }
-
-    &__btn {
-        color: $gray4;
-        transform: rotate(180deg);
-        display: inline-flex;
-        align-items: center;
-    }
-
-    &__hidden-section {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        z-index: 2;
     }
 }
 
@@ -322,6 +310,30 @@
     }
 }
 
+.link {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: $blue2;
+
+    &:hover {
+        color: $blue3;
+        opacity: 1;
+    }
+}
+
+.gray-btn {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: $semibold;
+    padding: 1rem;
+    background: $gray5;
+    border-radius: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // Классы таблиц
 
 
@@ -329,12 +341,13 @@
     width: 100%;
     background: $white;
     border-radius: 0.625rem;
-    padding: 2rem 1rem 1rem;
+    // padding: 2rem 1rem 1rem;
 
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1.5rem 1rem 0 1rem;
         margin-bottom: 1.5rem;
     }
 
@@ -350,12 +363,12 @@
     }
 
     &__content {
-        padding-bottom: 1rem;
         border-bottom: 2px solid $gray3;
+        padding: 0 0.5rem 1rem 0.5rem;
     }
 
     &__footer {
-        margin-top: 1rem;
+        padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -377,11 +390,12 @@
 
     &__input {
         max-width: 4.6875rem;
+        width: 4.6875rem;
     }
 
     &__num-input {
-        @extend %input;
         max-width: 2.6875rem;
+        width: 2.6875rem;
     }
 
     &__select-page {
@@ -414,16 +428,43 @@
             color: $gray1;
         }
     }
+
+    &__install-btn {
+        padding: 0.5rem 1.75rem;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+        font-weight: $normal;
+    }
+
+    &__import-btn,
+    &__export-btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+        background: none;
+        border: 2px solid $primaryColor;
+    }
+
+    &__header_mini {
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .table {
     width: 100%;
 
-    &_constructor {
+    &_constructor,
+    &_attack {
 
         .table__cell {
             vertical-align: top;
         }
+    }
+
+    &_attack {
+        border-spacing: 0 0.5rem;
     }
 
     &__header {
@@ -465,6 +506,51 @@
             color: $gray4;
         }
 
+        &_hash {
+            max-width: 11.625rem;
+            width: 11.625rem;
+            word-break: break-all;
+        }
+
+        &_letter-message {
+            width: 100%;
+            border-radius: 0.625rem !important;
+            text-align: left;
+            padding: 1rem;
+            background: $gray5 !important;
+        }
+
+        &_drop-down-active {
+            background: $gray5;
+            border-radius: 0.625rem 0.625rem 0 0;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 0.5rem;
+                background: $gray5;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+        }
+
+        &_checkbox {
+            max-width: 2.1325rem;
+            width: 2.1325rem;
+        }
+
+        &_start {
+            max-width: 5.3125rem;
+            width: 5.1325rem;
+        }
+
+        &_num {
+            max-width: 5.0625rem;
+            width: 5.0625rem;
+        }
+
         &-wrapper {
             display: inline-flex;
             flex-direction: row-reverse;
@@ -476,6 +562,10 @@
                 font-size: 1rem;
                 color: $gray4;
                 line-height: 0;
+            }
+
+            &_action {
+                flex-direction: row;
             }
         }
     }
@@ -495,6 +585,221 @@
             & .table__cell:last-child {
                 border-radius: 0 0.625rem 0.625rem 0;
             }
+        }
+    }
+
+    &_attack &__content {
+
+        & > *:nth-child(even) {
+
+            & .table__cell {
+                background: none;
+            }
+    
+            & .table__cell:first-child {
+                border-radius: 0;
+            }
+    
+            & .table__cell:last-child {
+                border-radius: 0;
+            }
+        }
+        
+        & > *:nth-child(3n) {
+
+            & .table__cell {
+                background: $gray3;
+            }
+    
+            & .table__cell:first-child {
+                border-radius: 0.625rem 0 0 0.625rem;
+            }
+    
+            & .table__cell:last-child {
+                border-radius: 0 0.625rem 0.625rem 0;
+            }
+        }
+    }
+
+    &__action-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: $gray4;
+    }
+
+    &__status-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url("../images/ic-ready.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        &_load::before {
+            background-image: url("../images/ic-load.png");
+            animation: load 1s linear infinite;
+        }
+    }
+
+    &__checkbox-quadro {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Классы импорта файлов
+
+.files {
+    width: 100%;
+
+    &__dragn-drop {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 12rem;
+        border: 1px dashed $gray4;
+        border-radius: 0.625rem;
+    }
+
+    &__file-icon {
+        font-size: 2rem;
+        color: $gray4;
+        margin-bottom: 0.75rem;
+    }
+
+    &__subtitle {
+        max-width: 14.4375rem;
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+
+        &_link {
+            background: none;
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+    }
+
+    &__dragn-drop-files {
+        margin-top: 0.75rem;
+    }
+
+    &__file {
+        padding: 0.5rem 1rem;
+        border: 1px solid $gray1;
+        border-radius: 0.625rem;
+    }
+
+    &__file-text {
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+    }
+}
+
+// Классы фильтров и поиска
+
+
+.search {
+    width: 100%;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__input {
+        max-width: 28.75rem;
+    }
+}
+
+.filter {
+    width: 100%;
+    background: $white;
+    border-radius: 0.625rem;
+    padding: 1rem;
+
+    &__header {
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__open-content-btn {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray4;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__btn:not(.filter__data-btn, .filter__delete-btn, .filter__open-content-btn)::before {
+        font-size: 1rem;
+        color: $gray2;
+        transform: rotate(180deg);
+        transition: .5s;
+
+        &_active {
+            transform: rotate(0);
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__delete-btn {
+        font-size: 2rem;
+        color: $gray4;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            line-height: 0;
+        }
+    }
+
+    &__sensor-pop-up {
+        max-width: 23.0625rem;
+        width: 23.0625rem;
+        padding: 0.7rem 1rem 0.5rem;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
         }
     }
 }

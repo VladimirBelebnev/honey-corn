@@ -204,20 +204,24 @@
 
                     <section class="header__section flex">
 
-                        <div class="header__input select-input">
-
-                            <section class="select-input__open-section">
-                                <p class="select-input__current-value">
-                                    Выберите актив
-                                </p>
-
-                                <i class="select-input__btn icon-drop-down-arrow"></i>
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
                             </section>
 
-                            <section class="select-input__hidden-section none">
+                            <section class="select-input-2__hidden-section none">
 
                             </section>
-
                         </div>
 
                         <button class="header__btn header__btn_document icon-ic-file"></button>
@@ -256,17 +260,22 @@
                                 <section class="statistic__header-section">
                                     <button class="statistic__btn icon-ic-fullscreen"></button>
 
-                                    <div class="statistic__input select-input">
-
-                                        <section class="select-input__open-section">
-                                            <p class="select-input__current-value">
-                                                01.09.2023 - 07.09.2023
-                                            </p>
-            
-                                            <i class="select-input__btn icon-ic-calendar"></i>
+                                    <div class="select-input-2">
+                                        <section class="select-input-2__open-section">
+                                            <div class="statistic__input input">
+                                                <p class="input__mini-title">
+                                                    Выбор даты
+                                                </p>
+                                        
+                                                <div class="input__select-block">
+                                                    <p class="input__select-value">01.09.2023 - 07.09.2023</p>
+                                                </div>
+                                                
+                                                <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                            </div>
                                         </section>
             
-                                        <section class="select-input__hidden-section">
+                                        <section class="select-input-2__hidden-section none">
                                             <div class="calendare calendare_double">
                                                 <div class="calendare__section">
                                                     <header class="calendare__header">
@@ -476,7 +485,9 @@
                                                         </h3>
 
                                                         <div class="select-diapason__input-block">
-                                                            <input type="text" class="select-diapason__input">
+                                                            <div class="select-diapason__input input input_single">
+                                                                <input type="text" class="input__input">
+                                                            </div>
                                                             <p class="select-diapason__days">
                                                                 дней
                                                             </p>
@@ -494,7 +505,6 @@
                                                 </div>
                                             </div>
                                         </section>
-            
                                     </div>
 
                                     <i class="statistic__status"></i>

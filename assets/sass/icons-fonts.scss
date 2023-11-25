@@ -25,6 +25,21 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-ic-upload:before {
+    content: "\e91a";
+  }
+  .icon-ic-copy:before {
+    content: "\e918";
+  }
+  .icon-ic-eye:before {
+    content: "\e919";
+  }
+  .icon-ic-code:before {
+    content: "\e916";
+  }
+  .icon-ic-pen:before {
+    content: "\e917";
+  }
   .icon-ic-backspace:before {
     content: "\e915";
   }
@@ -91,4 +106,6 @@
   .icon-ic-trap:before {
     content: "\e906";
   }
+  
+  
   

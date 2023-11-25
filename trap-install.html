@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Honeycorn</title>
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+
+        <aside class="navbar">
+
+            <header class="navbar__header flex">
+                <div class="logo">
+                    <a href="#" class="logo__link"></a>
+                </div>
+            </header>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <h4 class="drop-down__name">
+                        Дашборд
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <h4 class="drop-down__name">
+                        Журналы событий
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи базовых ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи конструкторов ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи переборов
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link drop-down__link_current">
+                                Логи фишинговых атак
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                    <h4 class="drop-down__name">
+                        Установка ловушек и приманок
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-active">
+                    <h4 class="drop-down__name">
+                        Активы
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
+                    <h4 class="drop-down__name">
+                        Ловушки и приманки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Ловушки
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Приманки
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
+                    <h4 class="drop-down__name">
+                        Мониторинг
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
+                    <h4 class="drop-down__name">
+                        Настройки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section none">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </aside>
+
+        <!-- Navbar End -->
+
+        <!-- Main Wrapper -->
+
+        <div class="wrapper__main wrapper__main_trap-install">
+
+            <!-- Header -->
+
+            <header class="header flex">
+                <div class="container header__container flex">
+
+                    <section class="header__section flex">
+
+                        <div class="header__theme-checkbox theme-checkbox">
+                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                <label for="theme-input" class="checkbox__label"></label>
+                            </div>
+
+                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
+                        </div>
+
+                    </section>
+
+                    <section class="header__section flex">
+
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
+                            </section>
+
+                            <section class="select-input-2__hidden-section none">
+
+                            </section>
+                        </div>
+
+                        <button class="header__btn header__btn_document icon-ic-file"></button>
+                        
+                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+
+                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+
+                    </section>
+                    
+                </div>
+            </header>
+
+            <!-- Header End -->
+
+            <!-- Main -->
+
+            <main class="main main_trap-install">
+
+                <!-- Trap Install -->
+
+                <section class="trap-install">
+                    <div class="container trap-install__container flex">
+
+                        <section class="trap-install__content">
+
+                            <!-- Table Block -->
+
+                        <section class="trap-install__table-block table-block">
+                            
+                            <header class="table-block__header">
+
+                                <section class="table-block__header-left-section">
+                                    <h2 class="table-block__title title">
+                                        Очередь установки
+                                    </h2>
+                                </section>
+
+                                <section class="table-block__header-right-section">
+                                    <button class="table-block__install-btn btn">
+                                        Мастер установки ловушек
+                                    </button>
+                                </section>
+                                
+                            </header>
+
+                            <section class="table-block__content">
+
+                                <table class="table-block__table table" cellspacing="0">
+                                    <thead class="table__header">
+                                        <tr class="table__row">
+                                            <th class="table__cell table__cell_title">
+                                                Вид ловушки
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                Хост установки
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                Действия
+                                            </th>
+                                            <th class="table__cell table__cell_status-title"></th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody class="table__content">
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                Drupal
+                                            </td>
+                                            <td class="table__cell">
+                                                localhost
+                                            </td>
+                                            <td class="table__cell">
+                                                <div class="table__cell-wrapper table__cell-wrapper_action">
+                                                    <button class="table__action-btn table__action-btn_start icon-ic-right"></button>
+                                                    <button class="table__action-btn table__action-btn_change icon-ic-pen"></button>
+                                                    <button class="table__action-btn table__action-btn_document icon-ic-code"></button>
+                                                    <button class="table__action-btn table__action-btn_settings icon-ic-gear"></button>
+                                                </div>
+                                            </td>
+                                            <td class="table__cell table__cell_status">
+                                                <i class="table__status-icon table__status-icon_load"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                Конструктор (Drupal)
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.0.1:24
+                                            </td>
+                                            <td class="table__cell">
+                                                <div class="table__cell-wrapper table__cell-wrapper_action">
+                                                    <button class="table__action-btn table__action-btn_start icon-ic-right"></button>
+                                                    <button class="table__action-btn table__action-btn_change icon-ic-pen"></button>
+                                                    <button class="table__action-btn table__action-btn_document icon-ic-code"></button>
+                                                    <button class="table__action-btn table__action-btn_settings icon-ic-gear"></button>
+                                                </div>
+                                            </td>
+                                            <td class="table__cell table__cell_status">
+                                                <i class="table__status-icon"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </section>
+
+                            <footer class="table-block__footer">
+
+                                <section class="table-block__left-section">
+
+                                    <section class="table-block__str-per-page">
+                                        <p class="table-block__strings-text">
+                                            Строк на странице:
+                                        </p>
+
+                                        <div class="select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="table-block__input input">
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">5</p>
+                                                    </div>
+                                                    <button class="input__btn input__btn_drop-down icon-drop-down-arrow"></button>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+
+                                            </section>
+                                        </div>
+                                    </section>
+
+                                </section>
+
+                                <section class="table-block__right-section">
+
+                                    <section class="table-block__select-page">
+                                        <p class="table-block__strings-text">
+                                            Выбрать страницу
+                                        </p>
+
+                                        <input type="text" class="table-block__num-input">
+                                    </section>
+
+                                    <section class="table-block__change-page">
+                                        <p class="table-block__current-page">
+                                            Страница 1 из 2
+                                        </p>
+
+                                        <div class="table-block__change-page-buttons">
+                                            <button class="table-block__change-page-btn table-block__change-page-btn_unactive icon-ic-left"></button>
+                                            <button class="table-block__change-page-btn icon-ic-right"></button>
+                                        </div>
+                                    </section>
+
+                                </section>
+
+                            </footer>
+
+                        </section>
+
+                        <!-- Table Block End -->
+
+                        </section>
+
+                    </div>
+                </section>
+
+                <!-- Trap Install End -->
+
+            </main>
+
+            <!-- Main End -->
+
+        </div>
+
+        <!-- Main Wrapper End -->
+
+        <!-- Modal Windows -->
+
+        <section class="modal-windows">
+
+            <!-- Modal Window -->
+
+            <div class="modal-window install-modal modal-window_trap-install-1">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper install-modal__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Мастер установки ловушек
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content install-modal__content">
+
+                            <header class="install-modal__progress progress">
+
+                                <button class="progress__item progress__item_passed">
+                                    1
+                                </button>
+
+                                <button class="progress__item progress__item_current">
+                                    2
+                                </button>
+
+                                <button class="progress__item">
+                                    3
+                                </button>
+
+                            </header>
+
+                            <section class="install-modal__form">
+
+                                <!-- Install Modal Step 1 -->
+
+                                <section class="install-modal__step-section install-modal__step-section_1 none">
+
+                                    <h3 class="install-modal__title title-mini">
+                                        Выбор ловушки
+                                    </h3>
+
+                                    <div class="install-modal__inputs-wrapper">
+
+                                        <div class="install-modal__block select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="input">
+                                                    <p class="input__mini-title">
+                                                        Имя настройки #1
+                                                    </p>
+
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">Имя настройки</p>
+                                                    </div>
+
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+                                                <div class="install-modal__drop-down select-drop-down">
+                                                    <ul class="select-drop-down__list">
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <div class="install-modal__block select-input-2 disabled">
+                                            <section class="select-input-2__open-section">
+                                                <div class="input">
+                                                    <p class="input__mini-title">
+                                                        Имя настройки #1
+                                                    </p>
+
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">Имя настройки</p>
+                                                    </div>
+
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+                                                <div class="install-modal__drop-down select-drop-down">
+                                                    <ul class="select-drop-down__list">
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="install-modal__btn-wrapper">
+                                        <button class="install-modal__next-btn btn">
+                                            Далее
+                                        </button>
+                                    </div>
+
+                                </section>
+
+                                <!-- Install Modal Step 2 -->
+
+                                <section class="install-modal__step-section install-modal__step-section_2 none">
+
+                                    <h3 class="install-modal__title title-mini">
+                                        Параметры ловушки
+                                    </h3>
+
+                                    <div class="install-modal__inputs-wrapper">
+
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Имя настройки #1
+                                            </p>
+                                    
+                                            <input type="text" class="input__input">
+                                    
+                                            <i class="input__item icon-ic-backspace"></i>
+                                        </div>
+
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Имя настройки #1
+                                            </p>
+                                    
+                                            <input type="text" class="input__input">
+                                    
+                                            <i class="input__item icon-ic-backspace"></i>
+                                        </div>
+
+                                        <div class="install-modal__block select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="input">
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">Порт для некоторых ловушек</p>
+                                                    </div>
+                                                    
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+
+                                            </section>
+                                        </div>
+
+                                        <div class="install-modal__inputs-row">
+                                            <div class="input">
+                                                <p class="input__mini-title">
+                                                    Имя настройки #1
+                                                </p>
+                                        
+                                                <input type="text" class="input__input">
+                                            </div>
+    
+
+                                            <div class="input">
+                                                <p class="input__mini-title">
+                                                    Имя настройки #1
+                                                </p>
+                                        
+                                                <input type="text" class="input__input">
+                                        
+                                                <button class="input__btn icon-ic-eye"></button>
+                                            </div>
+    
+                                        </div>
+
+                                    </div>
+
+                                    <div class="install-modal__btn-wrapper">
+                                        <button class="install-modal__next-btn btn">
+                                            Далее
+                                        </button>
+                                    </div>
+
+                                </section>
+
+                                <!-- Install Modal Step 3 -->
+
+                                <section class="install-modal__step-section install-modal__step-section_3">
+
+                                    <h3 class="install-modal__title title-mini">
+                                        Конфигурация ловушки
+                                    </h3>
+
+                                    <div class="install-modal__inputs-wrapper">
+
+                                        <div class="install-modal__block select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="input">
+                                                    <p class="input__mini-title">
+                                                        Имя настройки #1
+                                                    </p>
+                                            
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">Имя настройки</p>
+                                                    </div>
+                                                    
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+
+                                            </section>
+                                        </div>
+
+                                        <div class="install-modal__block select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="input">
+                                                    <p class="input__mini-title">
+                                                        Имя настройки #1
+                                                    </p>
+                                            
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">Имя настройки</p>
+                                                    </div>
+                                                    
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+
+                                            </section>
+                                        </div>
+
+                                        <div class="install-modal__input-wrapper">
+                                            <div class="input">
+                                                <input type="text" class="input__input">
+                                        
+                                                <i class="input__item icon-ic-backspace"></i>
+                                            </div>
+
+                                            <div class="pop-up install-modal__pop-up">
+                                                <p class="pop-up__message">
+                                                    Скопировано в буфер обмена
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="install-modal__btn-wrapper">
+                                        <button class="install-modal__next-btn btn">
+                                            Установить
+                                        </button>
+                                    </div>
+
+                                </section>
+                                
+                            </section>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window End -->
+
+            <!-- Modal Window -->
+
+            <div class="modal-window install-modal modal-window_trap-install-1-success none">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper install-modal__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Мастер установки ловушек
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content install-modal__content install-modal__content_success">
+
+                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
+
+                            <h3 class="install-modal__success-message title-mini">
+                                Ловушка <\Имя ловушки> установлена
+                            </h3>
+
+                            <div class="install-modal__buttons-wrapper">
+                                <button class="install-modal__install-btn btn">
+                                    Установить новую
+                                </button>
+                                <button class="install-modal__skip-btn btn">
+                                    Закрыть мастер
+                                </button>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window End -->
+
+            <!-- Modal Window -->
+
+            <div class="modal-window modal-window-2 modal-window_notes none">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper modal-window-2__wrapper">
+
+                        <header class="modal-window__header modal-window-2__header">
+                            <h3 class="modal-window-2__title title-mini">
+                                Notes
+                            </h3>
+                        </header>
+
+                        <section class="modal-window__content modal-window-2_content">
+
+                            <h4 class="modal-window-2__title-mini">
+                                Уточнить
+                            </h4>
+
+                            <p class="modal-window-2__subtitle">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam repellendus iusto?
+                            </p>
+
+                            <button class="modal-window-2__btn gray-btn">
+                                Edit
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window End -->
+
+            <!-- Modal Window -->
+
+            <div class="modal-window modal-window-3 modal-window_command none">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper modal-window-3__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Команда установки
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content modal-window-3__content">
+
+                            <textarea placeholder="команда" class="modal-window__textarea"></textarea>
+
+                            <button class="modal-window__copy-btn icon-ic-copy"></button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window End -->
+
+        </section>
+
+        <!-- Modal Windows End -->
+
+    </div>
+
+    <!-- Wrapper End -->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

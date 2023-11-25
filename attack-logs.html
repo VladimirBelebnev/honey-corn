@@ -24,7 +24,7 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
+                <button class="drop-down__open-section icon-ic-dashboard">
                     <h4 class="drop-down__name">
                         Дашборд
                     </h4>
@@ -32,7 +32,7 @@
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
                     <h4 class="drop-down__name">
                         Журналы событий
                     </h4>
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -241,7 +241,7 @@
 
             <main class="main">
 
-                <!-- Trap Base Logs -->
+                <!-- Attack Logs -->
 
                 <section class="trap-base-logs">
                     <div class="container trap-base-logs__container">
@@ -288,7 +288,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section">
+                                    <section class="select-input-2__hidden-section none">
                                         <div class="calendare">
                                             <div class="calendare__section">
                                                 <header class="calendare__header">
@@ -476,60 +476,8 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__sensor-btn filter__btn round-button icon-drop-down-arrow">
-                                            Сенсор
-                                        </button>
-                                    </section>
-
-                                    <section class="select-input-2__hidden-section">
-                                        <div class="filter__sensor-pop-up pop-up-2">
-                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
-                                                <input type="checkbox" id="name1" hidden class="checkbox-quadro__input">
-                                                <label for="name1" class="checkbox-quadro__label">Name</label>
-                                            </div>
-
-                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
-                                                <input type="checkbox" id="name2" hidden class="checkbox-quadro__input">
-                                                <label for="name2" class="checkbox-quadro__label">Name</label>
-                                            </div>
-
-                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
-                                                <input type="checkbox" id="name3" hidden class="checkbox-quadro__input">
-                                                <label for="name3" class="checkbox-quadro__label">Name</label>
-                                            </div>
-
-                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
-                                                <input type="checkbox" id="name4" hidden class="checkbox-quadro__input">
-                                                <label for="name4" class="checkbox-quadro__label">Name</label>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <div class="select-input-2">
-                                    <section class="select-input-2__open-section">
-                                        <button class="filter__ip-btn filter__btn round-button icon-drop-down-arrow">
-                                            IP источника атаки
-                                        </button>
-                                    </section>
-
-                                    <section class="select-input-2__hidden-section">
-                                        <div class="pop-up-2">
-                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
-                                                <input type="checkbox" id="diapason" hidden class="checkbox-quadro__input">
-                                                <label for="diapason" class="checkbox-quadro__label">Диапазон</label>
-                                            </div>
-                                            <div class="pop-up-2__input input input_single">
-                                                <input type="text" placeholder="000.000.000.000" class="input__input">
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <div class="select-input-2">
-                                    <section class="select-input-2__open-section">
-                                        <button class="filter__attack-btn filter__btn round-button icon-drop-down-arrow">
-                                            Атакуемый порт
+                                        <button class="filter__sender-btn filter__btn round-button icon-drop-down-arrow">
+                                            Отправитель
                                         </button>
                                     </section>
 
@@ -540,8 +488,20 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__protocol-name-btn filter__btn round-button icon-drop-down-arrow">
-                                            Имя службы \ протокола
+                                        <button class="filter__theme-btn filter__btn round-button icon-drop-down-arrow">
+                                            Тема
+                                        </button>
+                                    </section>
+
+                                    <section class="select-input-2__hidden-section none">
+                                        
+                                    </section>
+                                </div>
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <button class="filter__links-btn filter__btn round-button icon-drop-down-arrow">
+                                            Ссылки
                                         </button>
                                     </section>
 
@@ -552,8 +512,8 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__type-event-btn filter__btn round-button icon-drop-down-arrow">
-                                            Тип события
+                                        <button class="filter__letter-btn filter__btn round-button icon-drop-down-arrow">
+                                            Текст письма
                                         </button>
                                     </section>
 
@@ -564,20 +524,8 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__type-trap-btn filter__btn round-button icon-drop-down-arrow">
-                                            Вид ловушки
-                                        </button>
-                                    </section>
-
-                                    <section class="select-input-2__hidden-section none">
-
-                                    </section>
-                                </div>
-
-                                <div class="select-input-2">
-                                    <section class="select-input-2__open-section">
-                                        <button class="filter__trap-btn filter__btn round-button icon-drop-down-arrow">
-                                            Ловушка
+                                        <button class="filter__hash-btn filter__btn round-button icon-drop-down-arrow">
+                                            Хэш
                                         </button>
                                     </section>
 
@@ -600,45 +548,52 @@
                             
                             <header class="table-block__header">
 
-                                <h2 class="table-block__title title">
-                                    Зафиксированные атаки
-                                </h2>
+                                <section class="table-block__header-left-section">
+                                    <h2 class="table-block__title title">
+                                        Зарегистрированные попытки входа
+                                    </h2>
+                                </section>
 
-                                <button class="table-block__btn table-block__btn_export">
-                                    Экспорт в CSV
-                                </button>
+                                <section class="table-block__header-right-section">
+                                    <button class="table-block__btn table-block__btn_export-ioc">
+                                        Конструктор выгрузки IOC
+                                    </button>
 
+                                    <button class="table-block__btn table-block__btn_export">
+                                        Экспорт в CSV
+                                    </button>
+                                </section>
+                                
                             </header>
 
                             <section class="table-block__content">
 
-                                <table class="table-block__table table" cellspacing="0">
+                                <table class="table-block__table table table_attack" cellspacing="0">
                                     <thead class="table__header">
                                         <tr class="table__row">
                                             <th class="table__cell table__cell_title">
                                                 Дата
                                             </th>
-                                            <th class="table__cell table__cell_title table__cell_sensor">
+                                            <th class="table__cell table__cell_title table__cell_sender">
                                                 <div class="table__cell-wrapper icon-ic-filter_up">
-                                                    <p>Сенсор</p>
+                                                    <p>Отправитель</p>
                                                 </div>
                                             </th>
                                             <th class="table__cell table__cell_title">
-                                                IP источника атаки
+                                                Тема
                                             </th>
                                             <th class="table__cell table__cell_title">
-                                                Атакуемый порт
+                                                Ссылки
                                             </th>
                                             <th class="table__cell table__cell_title">
-                                                Служба / Протокол
+                                                Текст письма
                                             </th>
                                             <th class="table__cell table__cell_title">
-                                                Тип атаки
+                                                Вложения
                                             </th>
-                                            <th class="table__cell table__cell_title">
-                                                Вид ловушки
+                                            <th class="table__cell table__cell_title table__cell_hash">
+                                                Хэш
                                             </th>
-                                            <th class="table__cell table__cell_settings-title"></th>
                                         </tr>
                                     </thead>
                                     
@@ -648,25 +603,37 @@
                                                 20-09-2023, 09:27:36
                                             </td>
                                             <td class="table__cell">
-                                                hnc-trap-srv1-Drupal-drupot
+                                                hnc-srv1-rdpot
                                             </td>
                                             <td class="table__cell">
-                                                000.000.000.000
+                                                Chek_rc5
                                             </td>
                                             <td class="table__cell">
-                                                56459
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
+                                                <br>
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
                                             </td>
                                             <td class="table__cell">
-                                                HTTP/1.1
+                                                <button class="table__drop-down-btn link">
+                                                    Посмотреть
+                                                </button>
                                             </td>
-                                            <td class="table__cell">
-                                                Сетевое соединение
+                                            <td class="table__cell table__cell_drop-down table__cell_drop-down-active">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Свернуть
+                                                </a>
                                             </td>
-                                            <td class="table__cell">
-                                                Обзор сетевых соединений
+                                            <td class="table__cell table__cell_hash">
+                                                8743b52063cd84097a65d1633f5c74f5
                                             </td>
-                                            <td class="table__cell table__cell_settings">
-                                                <button class="table__settings-btn icon-ic-three_dots"></button>
+                                        </tr>
+                                        <tr class="table__row table__row_letter">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -674,25 +641,37 @@
                                                 20-09-2023, 09:27:36
                                             </td>
                                             <td class="table__cell">
-                                                hnc-trap-srv1-Drupal-drupot
+                                                hnc-srv1-rdpot
                                             </td>
                                             <td class="table__cell">
-                                                000.000.000.000
+                                                Chek_rc5
                                             </td>
                                             <td class="table__cell">
-                                                56459
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
+                                                <br>
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
                                             </td>
                                             <td class="table__cell">
-                                                HTTP/1.1
+                                                <button class="table__drop-down-btn link">
+                                                    Посмотреть
+                                                </button>
                                             </td>
-                                            <td class="table__cell">
-                                                Сетевое соединение
+                                            <td class="table__cell table__cell_drop-down">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Скачать вложения
+                                                </a>
                                             </td>
-                                            <td class="table__cell">
-                                                Обзор сетевых соединений
+                                            <td class="table__cell table__cell_hash">
+                                                8743b52063cd84097a65d1633f5c74f5
                                             </td>
-                                            <td class="table__cell table__cell_settings">
-                                                <button class="table__settings-btn icon-ic-three_dots"></button>
+                                        </tr>
+                                        <tr class="table__row table__row_letter none">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -700,77 +679,37 @@
                                                 20-09-2023, 09:27:36
                                             </td>
                                             <td class="table__cell">
-                                                hnc-trap-srv1-Drupal-drupot
+                                                hnc-srv1-rdpot
                                             </td>
                                             <td class="table__cell">
-                                                000.000.000.000
+                                                Chek_rc5
                                             </td>
                                             <td class="table__cell">
-                                                56459
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
+                                                <br>
+                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                    http://template.com/&931jKadfj
+                                                </a>
                                             </td>
                                             <td class="table__cell">
-                                                HTTP/1.1
+                                                <button class="table__drop-down-btn link">
+                                                    Посмотреть
+                                                </button>
                                             </td>
-                                            <td class="table__cell">
-                                                Сетевое соединение
+                                            <td class="table__cell table__cell_drop-down">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Скачать вложения
+                                                </a>
                                             </td>
-                                            <td class="table__cell">
-                                                Обзор сетевых соединений
-                                            </td>
-                                            <td class="table__cell table__cell_settings">
-                                                <button class="table__settings-btn icon-ic-three_dots"></button>
+                                            <td class="table__cell table__cell_hash">
+                                                8743b52063cd84097a65d1633f5c74f5
                                             </td>
                                         </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                20-09-2023, 09:27:36
-                                            </td>
-                                            <td class="table__cell">
-                                                hnc-trap-srv1-Drupal-drupot
-                                            </td>
-                                            <td class="table__cell">
-                                                000.000.000.000
-                                            </td>
-                                            <td class="table__cell">
-                                                56459
-                                            </td>
-                                            <td class="table__cell">
-                                                HTTP/1.1
-                                            </td>
-                                            <td class="table__cell">
-                                                Сетевое соединение
-                                            </td>
-                                            <td class="table__cell">
-                                                Обзор сетевых соединений
-                                            </td>
-                                            <td class="table__cell table__cell_settings">
-                                                <button class="table__settings-btn icon-ic-three_dots"></button>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                20-09-2023, 09:27:36
-                                            </td>
-                                            <td class="table__cell">
-                                                hnc-trap-srv1-Drupal-drupot
-                                            </td>
-                                            <td class="table__cell">
-                                                000.000.000.000
-                                            </td>
-                                            <td class="table__cell">
-                                                56459
-                                            </td>
-                                            <td class="table__cell">
-                                                HTTP/1.1
-                                            </td>
-                                            <td class="table__cell">
-                                                Сетевое соединение
-                                            </td>
-                                            <td class="table__cell">
-                                                Обзор сетевых соединений
-                                            </td>
-                                            <td class="table__cell table__cell_settings">
-                                                <button class="table__settings-btn icon-ic-three_dots"></button>
+                                        <tr class="table__row table__row_letter none">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
                                             </td>
                                         </tr>
                                     </tbody>
@@ -840,7 +779,7 @@
                     </div>
                 </section>
 
-                <!-- Trap Base Logs End -->
+                <!-- Attack Logs End -->
 
             </main>
 
@@ -856,14 +795,14 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window modal-window_success-1 none">
+            <div class="modal-window modal-window_export-ioc-2 none">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Исключение
+                                Конструктор выгрузки IOC
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -871,45 +810,40 @@
 
                         <section class="modal-window__content">
 
-                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
+                            <section class="modal-window__checkbox-section modal-window__checkbox-section_vertical">
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="sender" hidden class="checkbox-quadro__input">
+                                    <label for="sender" class="checkbox-quadro__label">Отправитель</label>
+                                </div>
 
-                            <p class="modal-window__success-message">
-                                Исключение добавлено
-                            </p>
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="theme" hidden class="checkbox-quadro__input">
+                                    <label for="theme" class="checkbox-quadro__label">Тема</label>
+                                </div>
 
-                        </section>
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="links" hidden class="checkbox-quadro__input">
+                                    <label for="links" class="checkbox-quadro__label">Ссылки</label>
+                                </div>
 
-                    </div>
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="letter-message" hidden class="checkbox-quadro__input">
+                                    <label for="letter-message" class="checkbox-quadro__label">Текст письма</label>
+                                </div>
 
-                </div>
-            </div>
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="attachments" hidden class="checkbox-quadro__input">
+                                    <label for="attachments" class="checkbox-quadro__label">Вложения</label>
+                                </div>
 
-            <!-- Modal Window End -->
-
-            <!-- Modal Window -->
-
-            <div class="modal-window modal-window_input none">
-                <div class="container modal-window__container">
-
-                    <div class="modal-window__wrapper">
-
-                        <header class="modal-window__header">
-                            <h3 class="modal-window__title title-mini">
-                                Исключение
-                            </h3>
-
-                            <button class="modal-window__skip-btn icon-ic-x"></button>
-                        </header>
-
-                        <section class="modal-window__content">
-
-                            <div class="modal-window__input input">
-                                <input type="text" placeholder="Название исключения" class="input__input">
-                                <i class="input__item icon-ic-backspace"></i>
-                            </div>
+                                <div class="modal-window__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="hash" hidden class="checkbox-quadro__input">
+                                    <label for="hash" class="checkbox-quadro__label">Хэш</label>
+                                </div>
+                            </section>
 
                             <button class="modal-window__btn btn">
-                                Добавить в исключения
+                                Выгрузить
                             </button>
 
                         </section>

@@ -68,18 +68,8 @@
     }
 
     &__input {
-
-        .select-input__btn {
-            font-size: 1.5rem;
-
-            &::before {
-                line-height: 0;
-            }
-        }
-
-        .select-input__open-section {
-            gap: 1rem;
-        }
+        max-width: 17.9375rem;
+        width: 17.9375rem;
     }
 
     &__status {

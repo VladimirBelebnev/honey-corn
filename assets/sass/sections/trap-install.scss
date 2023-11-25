@@ -1,0 +1,14 @@
+// Trap Install Styles
+
+.trap-install {
+    width: 100%;
+
+    &__content {
+        max-width: 63.75rem;
+        width: 63.75rem;
+    }
+
+    .table-block__header {
+        margin-bottom: 1rem;
+    }
+}
