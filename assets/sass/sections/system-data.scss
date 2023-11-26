@@ -1,0 +1,212 @@
+// System Data Styles
+
+.system-data {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 39.375rem 1fr;
+        gap: 1.25rem;
+    }
+
+    &__section {
+        background: $white;
+        padding: 1rem;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    }
+}
+
+.data-status {
+
+    &__header {
+        margin-bottom: 0.75rem;
+    }
+
+    &__title {
+        font-weight: $semibold;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    &__sections {
+
+        & > *:not(:last-child) {
+            border-bottom: 2px solid $gray5;
+        }
+
+        & > *:not(:last-child, :first-child) {
+            padding: 0.75rem 0;
+        }
+    }
+
+    &__section {
+
+        &:last-child {
+            padding-top: 0.75rem;
+        }
+
+        &:first-child {
+            padding-bottom: 0.75rem;
+        }
+
+        & > *:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__progress-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__progress-values {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__system-components {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    &__component {
+        font-weight: $semibold;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        &::before {
+            font-size: 1.5rem;
+            color: $gray4;
+        }
+    }
+}
+
+.components-use {
+    display: flex;
+    flex-direction: column;
+
+    & > *:not(:last-child, :first-child) {
+        padding: 0.75rem;
+    }
+
+    & > *:not(:last-child) {
+        border-bottom: 2px solid $gray5;
+    }
+
+    &__section {
+
+        &:first-child {
+            padding-bottom: 0.75rem;
+        }
+
+        &:last-child {
+            padding-top: 0.75rem;
+        }
+
+        .stub {
+            height: 6.87rem;
+        }
+    }
+
+    &__section-header,
+    &__section-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__section-title,
+    &__section-percent,
+    &__section-seconds {
+        font-size: 0.75rem;
+        font-weight: $semibold;
+        line-height: 1rem;
+    }
+
+    &__section-content {
+        margin: 0.25rem 0;
+    }
+
+    &__section-seconds {
+        font-weight: $normal;
+    }
+}
+
+.components-status {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.component {
+    width: 100%;
+    background: $gray3;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        color: $gray4;
+    }
+
+    &__status-text {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__status-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    &__name {
+        font-weight: $semibold;
+    }
+}
+
+.events {
+
+    &__search {
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        margin-bottom: 1.5rem;
+
+        .search__input {
+            max-width: 28.75rem;
+            width: 28.75rem;
+        }
+    }
+
+    &__input {
+        height: 24rem;
+    }
+
+    &__broker-title {
+        margin-bottom: 0.75rem;
+    }
+}

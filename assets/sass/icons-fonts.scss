@@ -25,6 +25,33 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-ic-eye-closed:before {
+    content: "\e923";
+  }
+  .icon-center:before {
+    content: "\e91b";
+  }
+  .icon-ic-event-broker:before {
+    content: "\e91c";
+  }
+  .icon-ic-gui:before {
+    content: "\e91d";
+  }
+  .icon-ic-normalisation:before {
+    content: "\e91e";
+  }
+  .icon-ic-queue:before {
+    content: "\e91f";
+  }
+  .icon-ic-receiving_mail:before {
+    content: "\e920";
+  }
+  .icon-ic-cpu:before {
+    content: "\e921";
+  }
+  .icon-ic-ram:before {
+    content: "\e922";
+  }
   .icon-ic-upload:before {
     content: "\e91a";
   }
@@ -106,6 +133,7 @@
   .icon-ic-trap:before {
     content: "\e906";
   }
+  
   
   
   

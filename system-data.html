@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Honeycorn</title>
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+
+        <aside class="navbar">
+
+            <header class="navbar__header flex">
+                <div class="logo">
+                    <a href="#" class="logo__link"></a>
+                </div>
+            </header>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
+                    <h4 class="drop-down__name">
+                        Дашборд
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <h4 class="drop-down__name">
+                        Журналы событий
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи базовых ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи конструкторов ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи переборов
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи фишинговых атак
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                    <h4 class="drop-down__name">
+                        Установка ловушек и приманок
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-active">
+                    <h4 class="drop-down__name">
+                        Активы
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
+                    <h4 class="drop-down__name">
+                        Ловушки и приманки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Ловушки
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Приманки
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
+                    <h4 class="drop-down__name">
+                        Мониторинг
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
+                    <h4 class="drop-down__name">
+                        Настройки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section none">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </aside>
+
+        <!-- Navbar End -->
+
+        <!-- Main Wrapper -->
+
+        <div class="wrapper__main">
+
+            <!-- Header -->
+
+            <header class="header flex">
+                <div class="container header__container flex">
+
+                    <section class="header__section flex">
+
+                        <div class="header__theme-checkbox theme-checkbox">
+                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                <label for="theme-input" class="checkbox__label"></label>
+                            </div>
+
+                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
+                        </div>
+
+                    </section>
+
+                    <section class="header__section flex">
+
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
+                            </section>
+
+                            <section class="select-input-2__hidden-section none">
+
+                            </section>
+                        </div>
+
+                        <button class="header__btn header__btn_document icon-ic-file"></button>
+                        
+                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+
+                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+
+                    </section>
+                    
+                </div>
+            </header>
+
+            <!-- Header End -->
+
+            <!-- Main -->
+
+            <main class="main">
+
+                <!-- System Data -->
+
+                <section class="system-data">
+                    <div class="container system-data__container">
+
+                        <!-- Data Status -->
+
+                        <section class="system-data__section data-status">
+
+                            <header class="data-status__header">
+                                <h3 class="data-status__title">
+                                    Данные системы
+                                </h3>
+                            </header>
+
+                            <section class="data-status__sections">
+
+                                <section class="data-status__section">
+
+                                    <p class="data-status__text">
+                                        Дисковое пространство <strong class="data-status__text_bold">48.91 GB</strong>
+                                    </p>
+
+                                    <div class="data-status__progress-section">
+
+                                        <div class="data-status__progress-values">
+                                            <p class="data-status__text-mini">
+                                                Занято 42.34 GB
+                                            </p>
+
+                                            <p class="data-status__text-mini">
+                                                Свободно 6.58 GB
+                                            </p>
+                                        </div>
+
+                                        <div class="progress-bar">
+                                            <div class="progress-bar__value"></div>
+                                        </div>
+
+                                    </div>
+
+                                </section>
+
+                                <section class="data-status__section">
+
+                                    <p class="data-status__text">
+                                        Размер базы данных событий <strong class="data-status__text_bold">129.62 MB</strong>
+                                    </p>
+                                    
+                                    <p class="data-status__text">
+                                        Размер базы данных внутренних событий <strong class="data-status__text_bold">283.54 MB</strong>
+                                    </p>
+
+                                </section>
+
+                                <section class="data-status__section">
+
+                                    <p class="data-status__text">
+                                        Утилизация системных ресурсов
+                                    </p>
+                                    
+                                    <div class="data-status__system-components">
+
+                                        <span class="data-status__component icon-center">
+                                            ЦПУ 1.3%
+                                        </span>
+
+                                        <span class="data-status__component icon-ic-ram">
+                                            ОЗУ 41.5%
+                                        </span>
+
+                                    </div>
+
+                                </section>
+
+                            </section>
+
+                        </section>
+
+                        <!-- Data Status End -->
+
+                        <!-- Components Use -->
+
+                        <section class="system-data__section components-use">
+
+                            <section class="components-use__section">
+
+                                <header class="components-use__section-header">
+
+                                    <h5 class="components-use__section-title">
+                                        ЦПУ Используется %
+                                    </h5>
+
+                                    <span class="components-use__section-percent">
+                                        100%
+                                    </span>
+
+                                </header>
+
+                                <section class="components-use__section-content">
+                                    <div class="stub"></div>
+                                </section>
+
+                                <footer class="components-use__section-footer">
+                                    <span class="components-use__section-seconds">
+                                        60 секунд
+                                    </span>
+
+                                    <span class="components-use__section-seconds">
+                                        0
+                                    </span>
+                                </footer>
+
+                            </section>
+
+                            <section class="components-use__section">
+
+                                <header class="components-use__section-header">
+
+                                    <h5 class="components-use__section-title">
+                                        ЦПУ Используется %
+                                    </h5>
+
+                                    <span class="components-use__section-percent">
+                                        100%
+                                    </span>
+
+                                </header>
+
+                                <section class="components-use__section-content">
+                                    <div class="stub"></div>
+                                </section>
+
+                                <footer class="components-use__section-footer">
+                                    <span class="components-use__section-seconds">
+                                        60 секунд
+                                    </span>
+
+                                    <span class="components-use__section-seconds">
+                                        0
+                                    </span>
+                                </footer>
+
+                            </section>
+
+                        </section>
+
+                        <!-- Components Use End -->
+
+                        <!-- Components Status -->
+
+                        <section class="system-data__section components-status">
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-gui"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-event-broker"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-queue"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-center"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-normalisation"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-receiving_mail"></i>
+
+                                    <span class="component__status-text">
+                                        Запущено
+                                        <i class="component__status-icon status"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                            <section class="components-status__item component">
+
+                                <div class="component__row">
+                                    <i class="component__icon icon-ic-gui"></i>
+
+                                    <span class="component__status-text">
+                                        Остановлено
+                                        <i class="component__status-icon status status_red"></i>
+                                    </span>
+                                </div>
+
+                                <div class="component__row">
+                                    <h4 class="component__name">
+                                        Графическая оболочка
+                                    </h4>
+                                </div>
+
+                            </section>
+
+                        </section>
+
+                        <!-- Components Status End -->
+
+                        <!-- Events -->
+
+                        <section class="system-data__section events">
+
+                            <section class="events__search search">
+
+                                <h2 class="search__title title">
+                                    Полнотекстовый поиск
+                                </h2>
+
+                                <div class="search__input input">
+                                    <input type="text" placeholder="Лейбл" class="input__input">
+                                    <button class="input__btn icon-ic-search"></button>
+                                </div>
+
+                            </section>
+
+                            <section class="events__broker">
+
+                                <h2 class="events__broker-title title">
+                                    Брокер событий 
+                                </h2>
+
+                                <div class="events__input input input_no-background input_single">
+                                    <textarea type="text" class="input__input" placeholder="Текст"></textarea>
+                                </div>
+
+                            </section>
+
+                        </section>
+
+                        <!-- Events End -->
+
+                    </div>
+                </section>
+
+                <!-- System Data -->
+
+            </main>
+
+        </div>
+
+        <!-- Main Wrapper End -->
+
+        <!-- Modal Windows -->
+
+        <section class="modal-windows">
+
+        </section>
+
+        <!-- Modal Windows End -->
+
+    </div>
+
+    <!-- Wrapper End -->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

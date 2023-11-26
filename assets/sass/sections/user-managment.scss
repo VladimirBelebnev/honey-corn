@@ -1,0 +1,135 @@
+// User Managment Styles
+
+.user-managment {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-areas: "info info"
+                            "users none";
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    &__info {
+        grid-area: info;
+    }
+
+    &__users {
+        grid-area: users;
+    }
+}
+
+.user-info {
+    background: $white;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__section-header {
+        margin-bottom: 2rem;
+    }
+
+    &__inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__input-title {
+        margin-bottom: 0.5rem;
+    }
+
+    &__btn-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        padding: 0.5rem 1.75rem;
+        line-height: 2.25rem;
+    }
+}
+
+.users {
+    background: $white;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+    }
+
+    &__btn {
+        padding: 0.5rem 1.75rem;
+    }
+
+    &__wrapper {
+
+        & > *:not(:last-child, :first-child) {
+            padding: 0.75rem 0;
+            border-bottom: 2px solid $gray1;
+        }
+    }
+
+    &__user {
+
+        &:first-child {
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid $gray1;
+        }
+
+        &:last-child {
+            padding-top: 0.75rem;
+        }
+    }
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__role {
+        color: $gray4;
+        font-size: 0.75rem;
+        font-weight: $semibold;
+        line-height: 1rem;
+    }
+
+    &__left-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-section {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__email {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__btn {
+        color: $gray4;
+        font-size: 2rem;
+    }
+}

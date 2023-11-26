@@ -261,11 +261,7 @@
     }
 
     &__textarea {
-        @extend %input;
         resize: none;
-        background: none;
-        width: 100%;
-        max-width: 100%;
         height: 12.375rem;
     }
 
@@ -325,6 +321,25 @@
         align-items: flex-start;
         gap: 0.75rem;
     }
+
+    &__buttons-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        &_reverse {
+            justify-content: flex-end;
+        }
+    }
+
+    &__download-btn {
+        padding: 0.5rem 1.75rem;
+    }
+
+    &__textarea {
+        height: 8.875rem;
+    }
 }
 
 .modal-window-4 {
@@ -362,12 +377,100 @@
     }
 }
 
-.install-modal {
+.modal-window-5 {
+
+    &__wrapper {
+        max-width: 25.25rem;
+        width: 25.25rem;
+    }
+
+    &__buttons-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        width: 100%;
+    }
+
+}
+
+.modal-window-6 {
+
+    &__wrapper {
+        max-width: 45.25rem;
+        width: 45.25rem;
+    }
+
+    &__success-message,
+    &__warning-message {
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__skip-btn,
+    &__remove-btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+    }
+
+    &__skip-btn {
+        background: none;
+        border: 2px solid $primaryColor;
+    }
+}
+
+.modal-window-7 {
+    
+    &__wrapper {
+        max-width: 45.25rem;
+        width: 45.25rem;
+    }
+
+    &__inputs-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__btn-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+    }
+}
+
+.install-modal,
+.active-modal,
+.delete-modal {
 
     &__wrapper {
        max-width: 63.75rem;
        width: 63.75rem; 
-       min-height: 40.75rem;
+    //    min-height: 40.75rem;
     }
 
     &__content {
@@ -380,6 +483,76 @@
         &_success {
             gap: 0;
         }
+
+        &_table {
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 43.75rem;
+            min-height: auto;
+            padding-top: 2.5rem;
+            justify-content: flex-start;
+
+            .active-modal__step-section {
+                max-width: 50.5625rem;
+                width: 100%;
+            }
+
+            .active-modal__inputs-wrapper {
+                max-width: 100%;
+                width: 100%;
+
+                .input {
+                    max-width: 100% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    &__table-block {
+        background: none;
+        padding: 0;
+        box-shadow: none;
+
+        .table-block__header,
+        .table-block__content,
+        .table-block__footer {
+            padding: 0;
+        }
+
+        .table-block__header {
+            margin-bottom: 0.5rem;
+        }
+
+        .table-block__footer {
+            margin-top: 1rem;
+        }
+
+        .table-block__title {
+            font-size: 1.25rem;
+            font-weight: $semibold;
+            line-height: 2.25rem;
+        }
+
+        .table-block__add-trap-btn {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            padding: 0.5rem 1.75rem;
+        }
+    }
+
+    &__table {
+        
+        .table__cell {
+            text-align: left;
+        }
+    }
+
+    &__tables-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     &__progress {
@@ -399,7 +572,7 @@
         width: 31.25rem;
     }
 
-    .input {
+    .input:not(.table-block__num-input, .table-block__input) {
         max-width: 31.25rem;
         width: 31.25rem;
     }
@@ -480,6 +653,70 @@
     &__inputs-group {
         display: flex;
         flex-direction: column;
+        gap: 1rem;
+
+        &_double {
+            gap: 0.5rem;
+        }
+    }
+
+    &__inputs-group-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__input-title {
+
+        &_big {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+    }
+
+    &__trap-pop-up {
+        max-width: 100%;
+        width: 100%;
+        padding: 0.7rem 1rem 0.5rem;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__pop-up-input {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    &__trap-pop-up-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.delete-modal {
+    
+    &__wrapper {
+        max-width: 31.5625rem;
+        width: 31.5625rem;
+    }
+
+    &__content {
+        min-height: 17.625rem;
+        justify-content: flex-start;
+    }
+
+    &__inputs-wrapper, .input {
+        max-width: 28.5625rem !important;
+        width: 28.5625rem !important;
+    }
+
+    &__inputs-wrapper {
         gap: 1rem;
     }
 }

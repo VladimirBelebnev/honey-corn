@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Honeycorn</title>
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+
+        <aside class="navbar">
+
+            <header class="navbar__header flex">
+                <div class="logo">
+                    <a href="#" class="logo__link"></a>
+                </div>
+            </header>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <h4 class="drop-down__name">
+                        Дашборд
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <h4 class="drop-down__name">
+                        Журналы событий
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи базовых ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи конструкторов ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи переборов
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link drop-down__link_current">
+                                Логи фишинговых атак
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                    <h4 class="drop-down__name">
+                        Установка ловушек и приманок
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-active">
+                    <h4 class="drop-down__name">
+                        Активы
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
+                    <h4 class="drop-down__name">
+                        Ловушки и приманки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Ловушки
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Приманки
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
+                    <h4 class="drop-down__name">
+                        Мониторинг
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
+                    <h4 class="drop-down__name">
+                        Настройки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section none">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </aside>
+
+        <!-- Navbar End -->
+
+        <!-- Main Wrapper -->
+
+        <div class="wrapper__main">
+
+            <!-- Header -->
+
+            <header class="header flex">
+                <div class="container header__container flex">
+
+                    <section class="header__section flex">
+
+                        <div class="header__theme-checkbox theme-checkbox">
+                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                <label for="theme-input" class="checkbox__label"></label>
+                            </div>
+
+                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
+                        </div>
+
+                    </section>
+
+                    <section class="header__section flex">
+
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
+                            </section>
+
+                            <section class="select-input-2__hidden-section none">
+
+                            </section>
+                        </div>
+
+                        <button class="header__btn header__btn_document icon-ic-file"></button>
+                        
+                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+
+                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+
+                    </section>
+                    
+                </div>
+            </header>
+
+            <!-- Header End -->
+
+            <!-- Main -->
+
+            <main class="main">
+
+                <!-- Bait Distrubutions Logs -->
+
+                <section class="bait-distrubutions-logs">
+                    <div class="container bait-distrubutions-logs__container">
+
+                        <!-- Search -->
+
+                        <section class="bait-distrubutions-logs__search search">
+
+                            <h2 class="search__title title">
+                                Полнотекстовый поиск
+                            </h2>
+
+                            <div class="search__input input">
+                                <input type="text" placeholder="Введите фразу для поиска..." class="input__input">
+                                <button class="input__btn icon-ic-search"></button>
+                            </div>
+
+                        </section>
+
+                        <!-- Search End -->
+
+                        <!-- Filter -->
+
+                        <section class="bait-distrubutions-logs__filter filter">
+
+                            <header class="filter__header">
+
+                                <h2 class="filter__title title">
+                                    Фильтры и исключения
+                                </h2>
+
+                                <button class="filter__open-content-btn filter__btn filter__btn_active icon-drop-down-arrow"></button>
+
+                            </header>
+
+                            <section class="filter__content">
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <button class="filter__data-btn round-button icon-ic-calendar">
+                                            Дата
+                                        </button>
+                                    </section>
+
+                                    <section class="select-input-2__hidden-section none">
+                                        <div class="calendare">
+                                            <div class="calendare__section">
+                                                <header class="calendare__header">
+                                                    <button class="calendare__prev-btn icon-ic-left"></button>
+
+                                                    <h4 class="calendare__current-month">
+                                                        Октябрь 2023
+                                                    </h4>
+
+                                                    <button class="calendare__next-btn icon-ic-right"></button>
+                                                </header>
+
+                                                <table class="calendare__table" cellspacing="0">
+                                                    <thead class="calendare__table-header">
+                                                        <tr class="calendare__table-row">
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                пн
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                вт
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                ср
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                чт
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                пт
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                сб
+                                                            </th>
+                                                            <th class="calendare__cell calendare__cell_title">
+                                                                вс
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody class="calendare__table-body">
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_out-month">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active-start">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell calendare__cell_active">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell calendare__cell_active-end">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="calendare__table-row">
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                            <td class="calendare__cell">
+                                                                20
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <button class="filter__ip-btn filter__btn round-button icon-drop-down-arrow">
+                                            IP хоста
+                                        </button>
+                                    </section>
+
+                                    <section class="select-input-2__hidden-section none">
+                                        <div class="pop-up-2">
+                                            <div class="pop-up-2__checkbox-quadro checkbox-quadro">
+                                                <input type="checkbox" id="diapason" hidden class="checkbox-quadro__input">
+                                                <label for="diapason" class="checkbox-quadro__label">Диапазон</label>
+                                            </div>
+                                            <div class="pop-up-2__input input input_single">
+                                                <input type="text" placeholder="000.000.000.000" class="input__input">
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <button class="filter__name-btn filter__btn round-button icon-drop-down-arrow">
+                                            Название ловушки
+                                        </button>
+                                    </section>
+
+                                    <section class="select-input-2__hidden-section none">
+                                        
+                                    </section>
+                                </div>
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <button class="filter__time-btn filter__btn round-button icon-drop-down-arrow">
+                                            Время
+                                        </button>
+                                    </section>
+
+                                    <section class="select-input-2__hidden-section none">
+
+                                    </section>
+                                </div>
+
+                                <button class="filter__delete-btn filter__btn icon-ic-trash"></button>
+                                
+                            </section>
+
+                        </section>
+
+                        <!-- Filter End -->
+
+                        <!-- Table Block -->
+
+                        <section class="bait-distrubutions-logs__table-block table-block">
+                            
+                            <header class="table-block__header">
+
+                                <section class="table-block__header-left-section">
+                                    <h2 class="table-block__title title">
+                                        Зарегистрированные попытки входа
+                                    </h2>
+                                </section>
+
+                                <section class="table-block__header-right-section">
+                                    <button class="table-block__btn table-block__btn_export-ioc">
+                                        Конструктор выгрузки IOC
+                                    </button>
+
+                                    <button class="table-block__btn table-block__btn_export">
+                                        Экспорт в CSV
+                                    </button>
+                                </section>
+                                
+                            </header>
+
+                            <section class="table-block__content">
+
+                                <table class="table-block__table table table_bait-distrubutions-logs" cellspacing="0">
+                                    <thead class="table__header">
+                                        <tr class="table__row">
+                                            <th class="table__cell table__cell_title">
+                                                Название ловушки
+                                            </th>
+                                            <th class="table__cell table__cell_title table__cell_trap-type">
+                                                <div class="table__cell-wrapper icon-ic-filter_up">
+                                                    <p>Вид ловушки</p>
+                                                </div>
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                IP хоста
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                Дата
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                Время
+                                            </th>
+                                            <th class="table__cell table__cell_title">
+                                                Журнал установки
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody class="table__content">
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                DESKTOP-0SDT0P8-NetAg
+                                            </td>
+                                            <td class="table__cell">
+                                                Обзор сетевых соединений
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.10.45
+                                            </td>
+                                            <td class="table__cell">
+                                                12.12.2023
+                                            </td>
+                                            <td class="table__cell">
+                                                17:45
+                                            </td>
+                                            <td class="table__cell table__cell_drop-down table__cell_drop-down-active">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Свернуть
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row table__row_letter">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                DESKTOP-0SDT0P8-NetAg
+                                            </td>
+                                            <td class="table__cell">
+                                                Обзор сетевых соединений
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.10.45
+                                            </td>
+                                            <td class="table__cell">
+                                                12.12.2023
+                                            </td>
+                                            <td class="table__cell">
+                                                17:45
+                                            </td>
+                                            <td class="table__cell table__cell_drop-down">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Развернуть
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row table__row_letter none">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                DESKTOP-0SDT0P8-NetAg
+                                            </td>
+                                            <td class="table__cell">
+                                                Обзор сетевых соединений
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.10.45
+                                            </td>
+                                            <td class="table__cell">
+                                                12.12.2023
+                                            </td>
+                                            <td class="table__cell">
+                                                17:45
+                                            </td>
+                                            <td class="table__cell table__cell_drop-down">
+                                                <a href="assets/js/index.js" download class="table__link link">
+                                                    Развернуть
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row table__row_letter none">
+                                            <td class="table__cell table__cell_letter-message" colspan="7">
+                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </section>
+
+                            <footer class="table-block__footer">
+
+                                <section class="table-block__left-section">
+
+                                    <section class="table-block__str-per-page">
+                                        <p class="table-block__strings-text">
+                                            Строк на странице:
+                                        </p>
+
+                                        <div class="select-input-2">
+                                            <section class="select-input-2__open-section">
+                                                <div class="table-block__input input">
+                                                    <div class="input__select-block">
+                                                        <p class="input__select-value">5</p>
+                                                    </div>
+                                                    
+                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                </div>
+                                            </section>
+
+                                            <section class="select-input-2__hidden-section none">
+
+                                            </section>
+                                        </div>
+                                    </section>
+
+                                </section>
+
+                                <section class="table-block__right-section">
+
+                                    <section class="table-block__select-page">
+                                        <p class="table-block__strings-text">
+                                            Выбрать страницу
+                                        </p>
+
+                                        <div class="table-block__num-input input input_single">
+                                            <input type="text" class="input__input">
+                                        </div>
+                                    </section>
+
+                                    <section class="table-block__change-page">
+                                        <p class="table-block__current-page">
+                                            Страница 1 из 2
+                                        </p>
+
+                                        <div class="table-block__change-page-buttons">
+                                            <button class="table-block__change-page-btn table-block__change-page-btn_unactive icon-ic-left"></button>
+                                            <button class="table-block__change-page-btn icon-ic-right"></button>
+                                        </div>
+                                    </section>
+
+                                </section>
+
+                            </footer>
+
+                        </section>
+
+                        <!-- Table Block End -->
+
+                    </div>
+                </section>
+
+                <!-- Bait Distrubutions Logs End -->
+
+            </main>
+
+            <!-- Main End -->
+
+        </div>
+
+        <!-- Main Wrapper End -->
+
+    </div>
+
+    <!-- Wrapper End -->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

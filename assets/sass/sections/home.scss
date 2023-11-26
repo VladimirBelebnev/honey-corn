@@ -72,15 +72,6 @@
         width: 17.9375rem;
     }
 
-    &__status {
-        display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
-        background: $green1;
-        box-shadow: 0 0 10px 2px $green2;
-        border-radius: 50%;
-    }
-
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

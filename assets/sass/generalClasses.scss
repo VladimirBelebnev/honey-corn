@@ -130,6 +130,13 @@
         }
     }
 
+    &_no-background {
+        
+        .input__input {
+            background: none;
+        }
+    }
+
     &__mini-title {
         position: absolute;
         top: 0;
@@ -147,8 +154,10 @@
         @extend %input;
         border-radius: 0.625rem;
         padding-right: 3rem;
+        height: inherit;
         max-width: inherit;
         width: inherit;
+        resize: inherit;
 
         &::placeholder {
             color: $gray4;
@@ -198,6 +207,7 @@
     position: relative;
 
     &__hidden-section {
+        width: 100%;
         position: absolute;
         top: calc(100% + 0.5rem);
         left: 0;
@@ -341,7 +351,7 @@
     width: 100%;
     background: $white;
     border-radius: 0.625rem;
-    // padding: 2rem 1rem 1rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
     &__header {
         display: flex;
@@ -456,14 +466,17 @@
     width: 100%;
 
     &_constructor,
-    &_attack {
+    &_attack,
+    &_bait-distrubutions-logs {
 
         .table__cell {
             vertical-align: top;
         }
     }
 
-    &_attack {
+    &_attack,
+    &_trap-installations-logs,
+    &_bait-distrubutions-logs {
         border-spacing: 0 0.5rem;
     }
 
@@ -492,6 +505,7 @@
         text-align: center;
         font-size: 0.875rem;
         line-height: 1.25rem;
+        word-break: break-all;
         
         &_title {
             font-weight: $semibold;
@@ -509,7 +523,6 @@
         &_hash {
             max-width: 11.625rem;
             width: 11.625rem;
-            word-break: break-all;
         }
 
         &_letter-message {
@@ -541,6 +554,7 @@
             width: 2.1325rem;
         }
 
+        &_option,
         &_start {
             max-width: 5.3125rem;
             width: 5.1325rem;
@@ -549,6 +563,26 @@
         &_num {
             max-width: 5.0625rem;
             width: 5.0625rem;
+        }
+
+        &_option-2 {
+            max-width: 2.25rem;
+            width: 2.25rem;
+        }
+
+        &_attack {
+            max-width: 14.375rem;
+            width: 14.375rem;
+        }
+
+        &_name {
+            max-width: 11.25rem;
+            width: 11.25rem;
+        }
+
+        &_ident {
+            max-width: 11.9375rem;
+            width: 11.9375rem;
         }
 
         &-wrapper {
@@ -572,7 +606,7 @@
 
     &__content {
         
-        & > *:nth-child(even) {
+        & > *:nth-child(2n) {
 
             & .table__cell {
                 background: $gray3;
@@ -588,9 +622,11 @@
         }
     }
 
-    &_attack &__content {
+    &_attack &__content,
+    &_trap-installations-logs &__content,
+    &_bait-distrubutions-logs &__content {
 
-        & > *:nth-child(even) {
+        & > *:nth-child(2n) {
 
             & .table__cell {
                 background: none;
@@ -621,11 +657,27 @@
         }
     }
 
+    &_trap-installations-logs &__content,
+    &_bait-distrubutions-logs &__content {
+
+        .table__cell_letter-message {
+            border-radius: 0.625rem 0 0.625rem 0.625rem !important;
+        }
+    }
+
     &__action-btn {
         display: inline-flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+        color: $gray4;
+    }
+
+    &__option-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
         color: $gray4;
     }
 
@@ -728,6 +780,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
     &__input {
         max-width: 28.75rem;
@@ -739,6 +792,7 @@
     background: $white;
     border-radius: 0.625rem;
     padding: 1rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
     &__header {
         margin-bottom: 1.25rem;
@@ -801,5 +855,42 @@
         & > *:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+// Классы статусов
+
+.status {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $green1;
+    box-shadow: 0 0 10px 2px $green2;
+    border-radius: 50%;
+
+    &_red {
+        background: #E07272;
+        box-shadow: 0 0 8px #E07272;
+    }
+
+    &_orange {
+        background: #F0C52C;
+        box-shadow: 0 0 8px #F0C52C;
+    }
+}
+
+// Классы прогрессбара
+
+.progress-bar {
+    width: 100%;
+    height: 1rem;
+    border-radius: 0.625rem;
+    background: $gray3;
+
+    &__value {
+        height: 100%;
+        border-radius: inherit;
+        width: 70%;
+        background: $primaryColor;
     }
 }
