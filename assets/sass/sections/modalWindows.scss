@@ -247,6 +247,7 @@
     &__success-message {
         font-size: 1.25rem;
         line-height: 2.25rem;
+        text-align: center;
     }
 
     &__btn {
@@ -364,14 +365,6 @@
         gap: 0.75rem;
         padding: 1rem 1rem 1.5rem;
     }
-
-    &__btn {
-        max-width: 100%;
-        width: 100%;
-        font-size: 1.125rem;
-        font-weight: $normal;
-        line-height: 2.25rem;
-    }
 }
 
 .select-drop-down {
@@ -446,7 +439,8 @@
     }
 }
 
-.modal-window-7 {
+.modal-window-7,
+.modal-window-8 {
     
     &__wrapper {
         max-width: 45.25rem;
@@ -471,6 +465,13 @@
         font-weight: $normal;
         line-height: 2.25rem;
         padding: 0.5rem 1.75rem;
+    }
+}
+
+.modal-window-8 {
+    &__wrapper {
+        max-width: 39.375rem;
+        width: 39.375rem;
     }
 }
 

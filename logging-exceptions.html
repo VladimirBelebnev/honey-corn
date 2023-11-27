@@ -24,7 +24,7 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
+                <button class="drop-down__open-section icon-ic-dashboard">
                     <h4 class="drop-down__name">
                         Дашборд
                     </h4>
@@ -32,7 +32,7 @@
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
                     <h4 class="drop-down__name">
                         Журналы событий
                     </h4>
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -241,214 +241,153 @@
 
             <main class="main">
 
-                <!-- User Managment -->
+                <!-- Logging Exceptions -->
 
-                <section class="user-managment">
-                    <div class="container user-managment__container">
+                <section class="logging-exceptions">
+                    <div class="container logging-exceptions__container">
 
-                        <div class="user-managment__info user-info">
+                        <section class="logging-exceptions__content">
 
-                            <div class="user-info__wrapper">
+                            <!-- Table Block -->
 
-                                <section class="user-info__section">
-
-                                    <header class="user-info__section-header">
-                                        <h3 class="user-info__title title-mini">
-                                            Информация о текущем пользователе
-                                        </h3>
-                                    </header>
-
-                                    <div class="user-info__inputs-wrapper">
-                                        <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
-                                                E-mail
-                                            </h4>
-
-                                            <div class="input">
-                                                <input type="text" class="input__input">
-                                        
-                                                <button class="input__btn icon-ic-copy"></button>
-                                            </div>
-                                        </section>
-
-                                        <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
-                                                Ключ API
-                                            </h4>
-
-                                            <div class="input">
-                                                <input type="text" class="input__input">
-                                        
-                                                <button class="input__btn icon-ic-copy"></button>
-                                            </div>
-                                        </section>
-                                    </div>
-
-                                </section>
-
-                                <section class="user-info__section">
-
-                                    <header class="user-info__section-header">
-                                        <h3 class="user-info__title title-mini">
-                                            Информация о текущем пользователе
-                                        </h3>
-                                    </header>
-
-                                    <div class="user-info__inputs-wrapper">
-                                        <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
-                                                Новый пароль *
-                                            </h4>
-
-                                            <div class="input">
-                                                <input type="password" class="input__input">
-                                        
-                                                <button class="input__btn icon-ic-eye"></button>
-                                            </div>
-                                        </section>
-
-                                        <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
-                                                Новый пароль еще раз *
-                                            </h4>
-
-                                            <div class="input">
-                                                <input type="password" class="input__input">
-                                        
-                                                <button class="input__btn icon-ic-eye"></button>
-                                            </div>
-                                        </section>
-                                    </div>
-
-                                </section>
-
-                            </div>
-
-                            <div class="user-info__btn-wrapper">
-                                <button class="user-info__btn btn">
-                                    Изменить
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="user-managment__users users">
-
-                            <header class="users__header">
-                                <h3 class="users__title title-mini">
-                                    Пользователи
-                                </h3>
-
-                                <button class="users__btn btn">
-                                    Добавить пользователя
-                                </button>
-                            </header>
-
-                            <div class="users__wrapper">
-
-                                <div class="users__user user">
-
-                                    <div class="user__left-section">
-                                        <span class="user__role">
-                                            admin
-                                        </span>
-
-                                        <a href="mailto:" class="user__email">
-                                            krm@honeycorn.local
-                                        </a>
-                                    </div>
-
-                                    <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
-                                    </div>
-
-                                </div>
-
-                                <div class="users__user user">
-
-                                    <div class="user__left-section">
-                                        <span class="user__role">
-                                            admin
-                                        </span>
-
-                                        <a href="mailto:" class="user__email">
-                                            krm@honeycorn.local
-                                        </a>
-                                    </div>
-
-                                    <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
-                                    </div>
-
-                                </div>
+                            <section class="logging-exceptions__table-block table-block">
                                 
-                                <div class="users__user user">
+                                <header class="table-block__header">
 
-                                    <div class="user__left-section">
-                                        <span class="user__role">
-                                            admin
-                                        </span>
-
-                                        <a href="mailto:" class="user__email">
-                                            krm@honeycorn.local
-                                        </a>
+                                    <div class="table-block__header-left-section">
+                                        <h2 class="table-block__title title-mini">
+                                            Исключения срабатывания системы
+                                        </h2>
                                     </div>
 
-                                    <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                    <div class="table-block__header-left-section">
+                                        <button class="table-block__btn-2 btn">
+                                            Добавить исключение
+                                        </button>
                                     </div>
+                                    
+                                </header>
 
-                                </div>
+                                <section class="table-block__content">
 
-                                <div class="users__user user">
+                                    <table class="table-block__table table table_logging-exceptions" cellspacing="0">
+                                        <thead class="table__header">
+                                            <tr class="table__row">
+                                                <th class="table__cell table__cell_title">
+                                                    Имя исключения
+                                                </th>
+                                                <th class="table__cell table__cell_title">
+                                                    Адрес хоста
+                                                </th>
+                                                <th class="table__cell table__cell_title table__cell_actions"></th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="table__content">
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Исключение
+                                                </td>
+                                                <td class="table__cell">
+                                                    000.000.000.000
+                                                </td>
+                                                <td class="table__cell table__cell_actions">
+                                                    <button class="table__action-btn icon-ic-pen"></button>
+                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Исключение
+                                                </td>
+                                                <td class="table__cell">
+                                                    000.000.000.000
+                                                </td>
+                                                <td class="table__cell table__cell_actions">
+                                                    <button class="table__action-btn icon-ic-pen"></button>
+                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__cell">
+                                                    Исключение
+                                                </td>
+                                                <td class="table__cell">
+                                                    000.000.000.000
+                                                </td>
+                                                <td class="table__cell table__cell_actions">
+                                                    <button class="table__action-btn icon-ic-pen"></button>
+                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-                                    <div class="user__left-section">
-                                        <span class="user__role">
-                                            admin
-                                        </span>
+                                </section>
 
-                                        <a href="mailto:" class="user__email">
-                                            krm@honeycorn.local
-                                        </a>
-                                    </div>
+                                <footer class="table-block__footer">
 
-                                    <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
-                                    </div>
+                                    <section class="table-block__left-section"></section>
 
-                                </div>
+                                    <section class="table-block__right-section">
 
-                                <div class="users__user user">
+                                        <section class="table-block__str-per-page">
+                                            <p class="table-block__strings-text">
+                                                Строк на странице:
+                                            </p>
 
-                                    <div class="user__left-section">
-                                        <span class="user__role">
-                                            admin
-                                        </span>
+                                            <div class="select-input-2">
+                                                <section class="select-input-2__open-section">
+                                                    <div class="table-block__input input">
+                                                        <div class="input__select-block">
+                                                            <p class="input__select-value">5</p>
+                                                        </div>
+                                                        
+                                                        <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    </div>
+                                                </section>
 
-                                        <a href="mailto:" class="user__email">
-                                            krm@honeycorn.local
-                                        </a>
-                                    </div>
+                                                <section class="select-input-2__hidden-section none">
 
-                                    <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
-                                    </div>
+                                                </section>
+                                            </div>
+                                        </section>
 
-                                </div>
+                                        <section class="table-block__select-page">
+                                            <p class="table-block__strings-text">
+                                                Выбрать страницу
+                                            </p>
 
-                            </div>
+                                            <div class="table-block__num-input input input_single">
+                                                <input type="text" class="input__input">
+                                            </div>
+                                        </section>
 
-                        </div>
+                                        <section class="table-block__change-page">
+                                            <p class="table-block__current-page">
+                                                Страница 1 из 2
+                                            </p>
+
+                                            <div class="table-block__change-page-buttons">
+                                                <button class="table-block__change-page-btn table-block__change-page-btn_unactive icon-ic-left"></button>
+                                                <button class="table-block__change-page-btn icon-ic-right"></button>
+                                            </div>
+                                        </section>
+
+                                    </section>
+
+                                </footer>
+
+                            </section>
+
+                            <!-- Table Block End -->
+
+                        </section>
 
                     </div>
                 </section>
 
-                <!-- User Managment End -->
+                <!-- Logging Exceptions End -->
 
             </main>
 
@@ -462,9 +401,9 @@
 
         <section class="modal-windows">
 
-            <!-- Modal Window ( Success 6 ) -->
+            <!-- Modal Window ( Success 10 ) -->
 
-            <div class="modal-window modal-window_success-6 none">
+            <div class="modal-window modal-window_success-10 none">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -482,7 +421,7 @@
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
                             <p class="modal-window__success-message">
-                                Пароль изменен
+                                Исключение добавлено
                             </p>
 
                         </section>
@@ -492,11 +431,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Success 6 ) End -->
-            
-            <!-- Modal Window ( Success 7 ) -->
+            <!-- Modal Window ( Success 10 ) End -->
 
-            <div class="modal-window modal-window_success-7 none">
+            <!-- Modal Window ( Success 11 ) -->
+
+            <div class="modal-window modal-window_success-11 none">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -514,7 +453,7 @@
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
                             <p class="modal-window__success-message">
-                                Пользователь добавлен
+                                Параметры исключения сохранены
                             </p>
 
                         </section>
@@ -524,46 +463,14 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Success 7 ) End -->
+            <!-- Modal Window ( Success 11 ) End -->
 
-            <!-- Modal Window ( Success 8 ) -->
+            <!-- Modal Window ( Success 12 ) -->
 
-            <div class="modal-window modal-window_success-8 none">
+            <div class="modal-window modal-window_success-12">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
-
-                        <header class="modal-window__header">
-                            <h3 class="modal-window__title title-mini">
-                                Успешно
-                            </h3>
-
-                            <button class="modal-window__skip-btn icon-ic-x"></button>
-                        </header>
-
-                        <section class="modal-window__content">
-
-                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
-
-                            <p class="modal-window__success-message">
-                                Данные пользователя сохранены
-                            </p>
-
-                        </section>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Modal Window ( Success 8 ) End -->
-
-            <!-- Modal Window ( Success 9 ) -->
-
-            <div class="modal-window modal-window-6 modal-window_success-9 none">
-                <div class="container modal-window__container">
-
-                    <div class="modal-window__wrapper modal-window-6__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
@@ -577,8 +484,8 @@
 
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
-                            <p class="modal-window__success-message modal-window-6__success-message">
-                                Пользователь krm@honeycorn.local удалён
+                            <p class="modal-window__success-message">
+                                Исключение удалено
                             </p>
 
                         </section>
@@ -588,11 +495,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Success 9 ) End -->
+            <!-- Modal Window ( Success 12 ) End -->
 
-            <!-- Modal Window ( Confirm 1 ) -->
+            <!-- Modal Window ( Confirm 2 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_confirm-delete-1 none">
+            <div class="modal-window modal-window-6 modal-window_confirm-delete-2 none">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -610,7 +517,7 @@
                             <img src="assets/images/warning-img.svg" alt="" class="modal-window__success-img">
 
                             <p class="modal-window-6__warning-message">
-                                Вы уверены, что хотите удалить пользователя krm@honeycorn.local?
+                                Вы уверены, что хотите удалить исключение <\Имя исключения>?
                             </p>
 
                             <div class="modal-window-6__buttons-wrapper">
@@ -630,72 +537,56 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Confirm 1 ) End -->
+            <!-- Modal Window ( Confirm 2 ) End -->
 
-            <!-- Modal Window ( Add New User ) -->
+            <!-- Modal Window ( Add New Exception ) -->
 
-            <div class="modal-window modal-window-7 modal-window_add-new-user none">
+            <div class="modal-window modal-window-8 modal-window_add-new-exception none">
                 <div class="container modal-window__container">
 
-                    <div class="modal-window__wrapper modal-window-7__wrapper">
+                    <div class="modal-window__wrapper modal-window-8__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Добавить нового пользователя
+                                Добавить исключение
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
                         </header>
 
-                        <section class="modal-window__content modal-window-7__content">
+                        <section class="modal-window__content modal-window-8__content">
 
-                            <div class="modal-window-7__inputs-wrapper">
-
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
-                                </div>
-
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
-                                </div>
-
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
-                                </div>
+                            <div class="modal-window-8__inputs-wrapper">
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        Пароль
-                                    </p>
-                            
-                                    <input type="password" class="input__input">
-                            
-                                    <i class="input__item icon-ic-eye"></i>
-                                </div>
-
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Пароль еще раз *
+                                        Имя настройки #1
                                     </p>
                             
                                     <input type="text" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye-closed"></i>
+                                    <i class="input__item icon-ic-backspace"></i>
+                                </div>
+
+                                <div class="input input_example">
+                                    <p class="input__mini-title">
+                                        Имя настройки #1
+                                    </p>
+                            
+                                    <input type="text" class="input__input">
+                            
+                                    <i class="input__item icon-ic-backspace"></i>
+
+                                    <p class="input__example-text">
+                                        Пример: 127.0.0.1
+                                    </p>
                                 </div>
 
                             </div>
 
-                            <div class="modal-window-7__btn-wrapper">
+                            <div class="modal-window-8__btn-wrapper">
 
-                                <button class="modal-window-7__btn btn">
+                                <button class="modal-window-8__btn btn">
                                     Добавить
                                 </button>
 
@@ -708,72 +599,56 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Add New User ) End -->
+            <!-- Modal Window ( Add New Exception ) End -->
 
-            <!-- Modal Window ( Edit User ) -->
+            <!-- Modal Window ( Edit Exception ) -->
 
-            <div class="modal-window modal-window-7 modal-window_edit-user none">
+            <div class="modal-window modal-window-8 modal-window_edit-exception none">
                 <div class="container modal-window__container">
 
-                    <div class="modal-window__wrapper modal-window-7__wrapper">
+                    <div class="modal-window__wrapper modal-window-8__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Редактирование пользовательских данных
+                                Редактировать исключение
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
                         </header>
 
-                        <section class="modal-window__content modal-window-7__content">
+                        <section class="modal-window__content modal-window-8__content">
 
-                            <div class="modal-window-7__inputs-wrapper">
-
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
-                                </div>
-
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
-                                </div>
-
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
-                                </div>
+                            <div class="modal-window-8__inputs-wrapper">
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        Пароль
-                                    </p>
-                            
-                                    <input type="password" class="input__input">
-                            
-                                    <i class="input__item icon-ic-eye"></i>
-                                </div>
-
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Пароль еще раз *
+                                        Имя настройки #1
                                     </p>
                             
                                     <input type="text" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye"></i>
+                                    <i class="input__item icon-ic-backspace"></i>
+                                </div>
+
+                                <div class="input input_example">
+                                    <p class="input__mini-title">
+                                        Имя настройки #1
+                                    </p>
+                            
+                                    <input type="text" class="input__input">
+                            
+                                    <i class="input__item icon-ic-backspace"></i>
+
+                                    <p class="input__example-text">
+                                        Пример: 127.0.0.1
+                                    </p>
                                 </div>
 
                             </div>
 
-                            <div class="modal-window-7__btn-wrapper">
+                            <div class="modal-window-8__btn-wrapper">
 
-                                <button class="modal-window-7__btn btn">
+                                <button class="modal-window-8__btn btn">
                                     Сохранить
                                 </button>
 
@@ -786,7 +661,7 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Edit User ) End -->
+            <!-- Modal Window ( Edit Exception ) End -->
 
         </section>
 

@@ -137,6 +137,10 @@
         }
     }
 
+    &_example {
+        margin-bottom: 1.5rem;
+    }
+
     &__mini-title {
         position: absolute;
         top: 0;
@@ -200,6 +204,15 @@
     &__select-value {
         font-size: 1.125rem;
         line-height: 2.25rem; 
+    }
+
+    &__example-text {
+        position: absolute;
+        top: calc(100% + 0.25rem);
+        left: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: $gray4;
     }
 }
 
@@ -459,6 +472,10 @@
     &__header_mini {
         padding-top: 1rem;
         margin-bottom: 1rem;
+    }
+
+    &__btn-2 {
+        padding: 0.5rem 1.75rem;
     }
 }
 
@@ -765,6 +782,7 @@
 
     &__dragn-drop-files {
         margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     &__file {
@@ -775,6 +793,14 @@
 
     &__file-text {
         font-size: 1.125rem;
+        line-height: 2.25rem;
+    }
+
+    &__btn {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.125rem;
+        font-weight: $normal;
         line-height: 2.25rem;
     }
 }
