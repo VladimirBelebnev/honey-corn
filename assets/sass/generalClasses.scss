@@ -585,6 +585,16 @@
             width: 11.9375rem;
         }
 
+        &_actions {
+            max-width: 6rem;
+            width: 6rem;
+        }
+
+        &_action-empty {
+            max-width: 32.1875rem;
+            width: 32.1875rem;
+        }
+
         &-wrapper {
             display: inline-flex;
             flex-direction: row-reverse;
