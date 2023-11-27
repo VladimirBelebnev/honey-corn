@@ -1,0 +1,91 @@
+// Response Settings Styles
+
+.response-settings {
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.action-type {
+    padding: 1rem;
+    background: $white;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__inputs-wrapper {
+        max-width: 30.25rem;
+    }
+}
+
+.action {
+    padding: 1rem;
+    background: $white;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__input-row-segment {
+        display: flex;
+        gap: 1.25rem;
+
+        .select-input-2 {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+        white-space: nowrap;
+        background: none;
+        border: 2px solid $primaryColor;
+    }
+
+    &__script {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        border: 2px solid $primaryColor;
+        border-radius: 0.625rem;
+        padding: 1rem;
+    }
+
+    &__script-type-input {
+        max-width: 21.75rem;
+    }
+
+    &__textarea {
+        height: 7.9375rem;
+    }
+
+    &__pop-up {
+        padding: 0.5rem 1rem 1rem 1rem;
+
+        .checkbox-quadro {
+            padding: 0.5rem 0;
+        }
+
+        .pop-up-2__checkbox-quadro:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
