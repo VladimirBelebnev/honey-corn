@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Honeycorn</title>
+</head>
+<body>
+
+    <!-- Wrapper -->
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+
+        <aside class="navbar">
+
+            <header class="navbar__header flex">
+                <div class="logo">
+                    <a href="#" class="logo__link"></a>
+                </div>
+            </header>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <h4 class="drop-down__name">
+                        Дашборд
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <h4 class="drop-down__name">
+                        Журналы событий
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи базовых ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи конструкторов ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Логи переборов
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link drop-down__link_current">
+                                Логи фишинговых атак
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                    <h4 class="drop-down__name">
+                        Установка ловушек и приманок
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Установка приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section icon-ic-active">
+                    <h4 class="drop-down__name">
+                        Активы
+                    </h4>
+                </button>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
+                    <h4 class="drop-down__name">
+                        Ловушки и приманки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Ловушки
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Приманки
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
+                    <h4 class="drop-down__name">
+                        Мониторинг
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="drop-down navbar__link">
+                <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
+                    <h4 class="drop-down__name">
+                        Настройки
+                    </h4>
+                </button>
+
+                <section class="drop-down__hidden-section none">
+                    <ul class="drop-down__link-list">
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Системные данные и журналы
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы установки ловушек
+                            </a>
+                        </li>
+                        <li class="drop-down__link-item">
+                            <a href="#" class="drop-down__link">
+                                Журналы распространения приманок
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </aside>
+
+        <!-- Navbar End -->
+
+        <!-- Main Wrapper -->
+
+        <div class="wrapper__main">
+
+            <!-- Header -->
+
+            <header class="header flex">
+                <div class="container header__container flex">
+
+                    <section class="header__section flex">
+
+                        <div class="header__theme-checkbox theme-checkbox">
+                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                <label for="theme-input" class="checkbox__label"></label>
+                            </div>
+
+                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
+                        </div>
+
+                    </section>
+
+                    <section class="header__section flex">
+
+                        <div class="select-input-2">
+                            <section class="select-input-2__open-section">
+                                <div class="header__input input">
+                                    <p class="input__mini-title">
+                                        Выбор актива
+                                    </p>
+                            
+                                    <div class="input__select-block">
+                                        <p class="input__select-value">Выберите актив</p>
+                                    </div>
+                                    
+                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                </div>
+                            </section>
+
+                            <section class="select-input-2__hidden-section none">
+
+                            </section>
+                        </div>
+
+                        <button class="header__btn header__btn_document icon-ic-file"></button>
+                        
+                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+
+                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+
+                    </section>
+                    
+                </div>
+            </header>
+
+            <!-- Header End -->
+
+            <!-- Main -->
+
+            <main class="main">
+
+                <!-- Documentations -->
+
+                <section class="documentation">
+                    <div class="container documentation__container">
+
+                        <!-- Documentation Header -->
+
+                        <header class="documentation__header flex">
+
+                            <div class="documentation__left-section">
+
+                                <h2 class="documentation__title title">
+                                    Руководство администратора
+                                </h2>
+
+                            </div>
+
+                            <div class="documentation__right-section">
+
+                                <button class="documentation__btn btn">
+                                    Скачать в PDF
+                                </button>
+
+                            </div>
+
+                        </header>
+
+                        <!-- Documentation Header End -->
+
+                        <!-- Documentation Navigation -->
+
+                        <section class="documentation__navigation-section">
+
+                            <div class="documentation__navigation-wrapper">
+
+                                <header class="documentation__navigation-header">
+
+                                    <h3 class="documentation__navigation-title title-mini">
+                                        Содержание
+                                    </h3>
+
+                                </header>
+
+                                <nav class="documentation__navigation">
+
+                                    <ul class="documentation__navigation-list">
+                                        <li class="documentation__navigation-list-item">
+                                            <a href="#" class="documentation__navigation-link documentation__navigation-link_drop-down documentation__navigation-link_active icon-drop-down-arrow">
+                                                1. Об этом документе
+                                            </a>
+
+                                            <ul class="documentation__navigation-list documentation__navigation-list_nesting">
+                                                <li class="documentation__navigation-list-item">
+                                                    <a href="#" class="documentation__navigation-link">
+                                                        1.1 Условные обозначения
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="documentation__navigation-list-item">
+                                            <a href="#" class="documentation__navigation-link documentation__navigation-link_drop-down documentation__navigation-link_active icon-drop-down-arrow">
+                                                2. Первоначальная настройка системы
+                                            </a>
+
+                                            <ul class="documentation__navigation-list documentation__navigation-list_nesting">
+                                                <li class="documentation__navigation-list-item">
+                                                    <a href="#" class="documentation__navigation-link">
+                                                        2.1 Минимальные требования для использования сервера
+                                                    </a>
+                                                </li>
+                                                <li class="documentation__navigation-list-item">
+                                                    <a href="#" class="documentation__navigation-link documentation__navigation-link_drop-down documentation__navigation-link_active icon-drop-down-arrow">
+                                                        2.2 Развёртывание (установка) системы в виртуальных средах
+                                                    </a>
+
+                                                    <ul class="documentation__navigation-list documentation__navigation-list_nesting">
+                                                        <li class="documentation__navigation-list-item">
+                                                            <a href="#" class="documentation__navigation-link">
+                                                                2.2.1 Развёртывание в среде Hyper-V
+                                                            </a>
+                                                        </li>
+                                                        <li class="documentation__navigation-list-item">
+                                                            <a href="#" class="documentation__navigation-link">
+                                                                2.2.2 Развёртывание в среде VMware ESXi \ vSphere
+                                                            </a>
+                                                        </li>
+                                                        <li class="documentation__navigation-list-item">
+                                                            <a href="#" class="documentation__navigation-link">
+                                                                2.2.3 Развёртывание в среде Linux KVM
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="documentation__navigation-list-item">
+                                                    <a href="#" class="documentation__navigation-link">
+                                                        2.3 Первоначальный запуск и вход в систему
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="documentation__navigation-list-item">
+                                            <a href="#" class="documentation__navigation-link documentation__navigation-link_drop-down icon-drop-down-arrow">
+                                                3. Описание основных возможностей сервера HoneyСorn
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </section>
+
+                        <!-- Documentation Navigation End -->
+
+                        <!-- Documentation Content -->
+
+                        <div class="documentation__content">
+
+                            <div class="documentation__content-wrapper">
+
+                                <section class="documentation__content-section">
+
+                                    <header class="documentation__content-header">
+
+                                        <h1 class="documentation__content-title documentation__content-hero-title">
+                                            1. Об этом документе
+                                        </h1>
+
+                                    </header>
+
+                                    <div class="documentation__content-text-wrapper">
+
+                                        <p class="documentation__text">
+                                            Руководство администратора содержит информацию о первоначальной настройке, а также использовании Системы и работе с графическим интерфейсом системы.
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            Документ адресован администраторам системы, а также лицам, осуществляющим внедрение системы в собственной корпоративной сети и осуществляющим поддержку конечного пользователя.
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            Комплект документации HoneyCorn включает в себя следующие документы:
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            – Текущий документ
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            – Руководство пользователя – содержит информацию о рядовых операциях и работе с графическим интерфейсом системы.
+                                        </p>
+                                        
+                                    </div>
+
+                                </section>
+
+                                <section class="documentation__content-section">
+
+                                    <header class="documentation__content-header">
+
+                                        <h1 class="documentation__content-title documentation__content-default-title">
+                                            1.1 Условные обозначения
+                                        </h1>
+
+                                    </header>
+
+                                    <div class="documentation__content-text-wrapper">
+
+                                        <p class="documentation__text">
+                                            В документе приняты условные обозначения:
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            Гипервизор — программа или аппаратная схема, обеспечивающая или позволяющая одновременное, параллельное выполнение нескольких операционных систем на одном и том же хост-компьютере.
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            Ловушка (honeypot) – программное обеспечение, реализующее регистрацию действий злоумышленника и сигнализацию о них с целью своевременного выявления угроз безопасности реальным системам.
+                                        </p>
+                                        <br>
+                                        <p class="documentation__text">
+                                            Сервисная ловушка – ловушка, реализующая один протокол взаимодействия с ней, нпр. ловушка – web-сервер.
+                                        </p>
+                                        
+                                    </div>
+
+                                </section>
+
+                                <section class="documentation__content-section">
+
+                                    <header class="documentation__content-header">
+
+                                        <h1 class="documentation__content-title documentation__content-title-mini">
+                                            2.2.1 Развёртывание в среде Hyper-V
+                                        </h1>
+
+                                    </header>
+
+                                    <div class="documentation__content-text-wrapper">
+
+                                        <p class="documentation__text">
+                                            помощью диспетчера Hyper-V подключитесь к серверу, на котором предполагается развернуть систему и выберите действие «Импорт виртуальной машины» (рис. 2.2.1.1)
+                                        </p>
+
+                                        <figure class="documentation__img-wrapper">
+
+                                            <img src="assets/images/documentation-img-1.png" alt="Рисунок 2.2.1.1 – Диспетчер Hyper-V" class="documentation__img">
+
+                                            <figcaption class="documentation__img-text">
+                                                Рисунок 2.2.1.1 – Диспетчер Hyper-V
+                                            </figcaption>
+
+                                        </figure>
+                                        
+                                    </div>
+
+                                </section>
+
+                            </div>
+
+                            <div class="documentation__buttons-wrapper">
+
+                                <a href="#" class="documentation__prev-btn btn">
+                                    Предыдущий раздел
+                                </a>
+
+                                <a href="#" class="documentation__next-btn btn">
+                                    Следующий раздел
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Documentation Content End -->
+
+                    </div>
+                </section>
+
+                <!-- Documentations End -->
+
+            </main>
+
+            <!-- Main End -->
+
+        </div>
+
+        <!-- Main Wrapper End -->
+
+    </div>
+
+    <!-- Wrapper End -->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
