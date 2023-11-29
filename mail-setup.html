@@ -25,17 +25,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -250,7 +250,7 @@
 
                             <header class="mail-setup__header">
                                 <h3 class="mail-setup__title title-mini">
-                                    Параметры экспорта логов в Syslog
+                                    Параметры подключения к Email серверу (relay-серверу)
                                 </h3>
                             </header>
 
@@ -258,10 +258,10 @@
 
                                 <div class="input input_example">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Адрес Email сервера *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="Сервер Syslog" class="input__input">
                             
                                     <p class="input__example-text">
                                         IP адрес или DNS имя Email сервера (relay сервера)
@@ -270,47 +270,47 @@
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Порт Email сервера *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="25" class="input__input">
                                 </div>
 
                                 <div class="input input_example">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Имя пользователя *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="admin" class="input__input">
                             
                                     <p class="input__example-text">
-                                        IP адрес или DNS имя Email сервера (relay сервера)
+                                        Имя пользователя c правами подключения к Email серверу
                                     </p>
                                 </div>
 
                                 <div class="input input_example">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Пароль
                                     </p>
                             
-                                    <input type="password" class="input__input">
+                                    <input type="password" value="erergrge" class="input__input">
                             
                                     <i class="input__item icon-ic-eye"></i>
                             
                                     <p class="input__example-text">
-                                        IP адрес или DNS имя Email сервера (relay сервера)
+                                        Пароль пользователя для подключения к Email серверу
                                     </p>
                                 </div>
 
                                 <div class="input input_example">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Адрес отправителя *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="noreply@honeycorn.local" class="input__input">
                             
                                     <p class="input__example-text">
-                                        IP адрес или DNS имя Email сервера (relay сервера)
+                                        Email-адрес с которого будут отправляться письма
                                     </p>
                                 </div>
 

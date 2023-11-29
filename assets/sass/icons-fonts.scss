@@ -25,6 +25,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-ic-key:before {
+    content: "\e924";
+  }
+  .icon-ic-mail:before {
+    content: "\e925";
+  }
   .icon-ic-eye-closed:before {
     content: "\e923";
   }

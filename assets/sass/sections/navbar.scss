@@ -39,27 +39,51 @@
         }
         
         &_list {
-            &::after {
-                content: "";
-                display: inline-block;
-                width: 1rem;
-                height: 1rem;
-                background-image: url("../images/drop-down-arrow.svg");
-                background-size: 100%;
-                position: absolute;
-                top: 0.4rem;
-                right: 0;
-                transform: translate(100%, 0);
-                transform: rotate(-180deg);
-                transition: .5s;
+            // &::after {
+            //     content: "";
+            //     display: inline-block;
+            //     width: 1rem;
+            //     height: 1rem;
+            //     background-image: url("../images/drop-down-arrow.svg");
+            //     background-size: 100%;
+            //     position: absolute;
+            //     top: 0.4rem;
+            //     right: 0;
+            //     transform: translate(100%, 0);
+            //     transform: rotate(-180deg);
+            //     transition: .5s;
+            // }
+
+            .drop-down__name {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                
+                &::before {
+                    font-size: 1rem;
+                    color: $gray2;
+                    transform: rotate(-180deg);
+                    position: absolute;
+                    top: 0.3rem;
+                    right: 0;
+                    transition: .5s;
+                }
             }
         }
 
         &_active {
-            &.drop-down__open-section_list::after {
-                top: 0.2rem;
-                transform: translate(100%, 0);
-                transform: rotate(0deg);
+            // &.drop-down__open-section_list::after {
+            //     top: 0.2rem;
+            //     transform: translate(100%, 0);
+            //     transform: rotate(0deg);
+            // }
+
+            .drop-down__name {
+
+                &::before {
+                    color: $gray2;
+                    transform: rotate(0deg);
+                }
             }
         }
 
@@ -81,6 +105,7 @@
         font-size: 1rem;
         line-height: 1.625rem;
         text-align: left;
+        display: block;
     }
 
     &__hidden-section {

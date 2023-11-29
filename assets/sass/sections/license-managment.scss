@@ -38,8 +38,8 @@
     }
 
     &__copy-btn {
+        @extend %icon-btn;
         font-size: 2rem;
-        color: $gray4;
     }
 }
 

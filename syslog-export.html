@@ -25,17 +25,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -256,44 +256,60 @@
 
                             <div class="syslog-export__inputs-wrapper">
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Имя настройки #1
-                                    </p>
-                            
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Имя настройки</p>
-                                    </div>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Тип Syslog сервера *
+                                            </p>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Сервер Syslog</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        IP адрес Syslog сервера *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="127.0.0.1" class="input__input">
                                 </div>
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Имя настройки #1
-                                    </p>
-                            
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Имя настройки</p>
-                                    </div>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Протокол подключения *
+                                            </p>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">UDP</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        Имя настройки #1
+                                        Порт Syslog сервера *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="514" class="input__input">
                                 </div>
 
                             </div>

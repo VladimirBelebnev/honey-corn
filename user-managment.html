@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -260,24 +260,24 @@
 
                                     <div class="user-info__inputs-wrapper">
                                         <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
+                                            <h4 class="user-info__input-title icon-ic-mail">
                                                 E-mail
                                             </h4>
 
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" value="adm@honeycorn.local" class="input__input">
                                         
                                                 <button class="input__btn icon-ic-copy"></button>
                                             </div>
                                         </section>
 
                                         <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
+                                            <h4 class="user-info__input-title icon-ic-key">
                                                 Ключ API
                                             </h4>
 
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" value="a798742795e7da2c2a2f916f5c2a21ea05cc3a99" class="input__input">
                                         
                                                 <button class="input__btn icon-ic-copy"></button>
                                             </div>
@@ -301,7 +301,7 @@
                                             </h4>
 
                                             <div class="input">
-                                                <input type="password" class="input__input">
+                                                <input type="password" value="erergerg" class="input__input">
                                         
                                                 <button class="input__btn icon-ic-eye"></button>
                                             </div>
@@ -313,7 +313,7 @@
                                             </h4>
 
                                             <div class="input">
-                                                <input type="password" class="input__input">
+                                                <input type="password" value="ergqerthrj" class="input__input">
                                         
                                                 <button class="input__btn icon-ic-eye"></button>
                                             </div>
@@ -464,7 +464,7 @@
 
             <!-- Modal Window ( Success 6 ) -->
 
-            <div class="modal-window modal-window_success-6 none">
+            <div class="modal-window modal-window_success-6 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -496,7 +496,7 @@
             
             <!-- Modal Window ( Success 7 ) -->
 
-            <div class="modal-window modal-window_success-7 none">
+            <div class="modal-window modal-window_success-7 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -528,7 +528,7 @@
 
             <!-- Modal Window ( Success 8 ) -->
 
-            <div class="modal-window modal-window_success-8 none">
+            <div class="modal-window modal-window_success-8 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -560,7 +560,7 @@
 
             <!-- Modal Window ( Success 9 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_success-9 none">
+            <div class="modal-window modal-window-6 modal-window_success-9 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -592,7 +592,7 @@
 
             <!-- Modal Window ( Confirm 1 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_confirm-delete-1 none">
+            <div class="modal-window modal-window-6 modal-window_confirm-delete-1 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -634,7 +634,7 @@
 
             <!-- Modal Window ( Add New User ) -->
 
-            <div class="modal-window modal-window-7 modal-window_add-new-user none">
+            <div class="modal-window modal-window-7 modal-window_add-new-user hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-7__wrapper">
@@ -651,24 +651,41 @@
 
                             <div class="modal-window-7__inputs-wrapper">
 
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
+                                <div class="input input_single input_black-placeholder">
+                                    <input type="text" placeholder="E-mail пользователя *" class="input__input">
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Роль *</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Актив</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
@@ -676,7 +693,7 @@
                                         Пароль
                                     </p>
                             
-                                    <input type="password" class="input__input">
+                                    <input type="password" value="reggererg" class="input__input">
                             
                                     <i class="input__item icon-ic-eye"></i>
                                 </div>
@@ -686,7 +703,7 @@
                                         Пароль еще раз *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="reggererg" class="input__input">
                             
                                     <i class="input__item icon-ic-eye-closed"></i>
                                 </div>
@@ -712,7 +729,7 @@
 
             <!-- Modal Window ( Edit User ) -->
 
-            <div class="modal-window modal-window-7 modal-window_edit-user none">
+            <div class="modal-window modal-window-7 modal-window_edit-user hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-7__wrapper">
@@ -729,24 +746,40 @@
 
                             <div class="modal-window-7__inputs-wrapper">
 
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
+                                <div class="input input_single input_black-placeholder">
+                                    <input type="text" placeholder="E-mail пользователя *" class="input__input">
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Роль *</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Актив</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
@@ -754,7 +787,7 @@
                                         Пароль
                                     </p>
                             
-                                    <input type="password" class="input__input">
+                                    <input type="password" value="reggererg" class="input__input">
                             
                                     <i class="input__item icon-ic-eye"></i>
                                 </div>
@@ -764,9 +797,9 @@
                                         Пароль еще раз *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="reggererg" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye"></i>
+                                    <i class="input__item icon-ic-eye-closed"></i>
                                 </div>
 
                             </div>

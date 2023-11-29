@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -361,7 +361,7 @@
                                 <header class="components-use__section-header">
 
                                     <h5 class="components-use__section-title">
-                                        ЦПУ Используется %
+                                        ОЗУ Используется %
                                     </h5>
 
                                     <span class="components-use__section-percent">
@@ -413,7 +413,7 @@
 
                             </section>
 
-                            <section class="components-status__item component">
+                            <section class="components-status__item component component_active">
 
                                 <div class="component__row">
                                     <i class="component__icon icon-ic-event-broker"></i>
@@ -426,7 +426,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        Брокер событий
                                     </h4>
                                 </div>
 
@@ -445,7 +445,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        Очередь задач
                                     </h4>
                                 </div>
 
@@ -464,7 +464,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        Ядро системы
                                     </h4>
                                 </div>
 
@@ -483,7 +483,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        Нормализация событий
                                     </h4>
                                 </div>
 
@@ -502,7 +502,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        Приём почты
                                     </h4>
                                 </div>
 
@@ -521,7 +521,7 @@
 
                                 <div class="component__row">
                                     <h4 class="component__name">
-                                        Графическая оболочка
+                                        ?
                                     </h4>
                                 </div>
 
@@ -555,7 +555,7 @@
                                 </h2>
 
                                 <div class="events__input input input_no-background input_single">
-                                    <textarea type="text" class="input__input" placeholder="Текст"></textarea>
+                                    <textarea type="text" class="input__input" placeholder="Текст лога"></textarea>
                                 </div>
 
                             </section>
@@ -574,14 +574,6 @@
         </div>
 
         <!-- Main Wrapper End -->
-
-        <!-- Modal Windows -->
-
-        <section class="modal-windows">
-
-        </section>
-
-        <!-- Modal Windows End -->
 
     </div>
 

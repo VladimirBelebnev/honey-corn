@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -263,7 +263,7 @@
                                         Адрес каталога Active Directory \ Контроллера домена *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="192.168.10.200" class="input__input">
                                 </div>
 
                                 <div></div>
@@ -273,7 +273,7 @@
                                         BIND DN *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="Администратор@honeycorn.local" class="input__input">
                                 </div>
 
                                 <div class="input">
@@ -281,7 +281,7 @@
                                         BIND PASSWORD *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="password" value="dc=honeycorn,dc=local" class="input__input">
                                 </div>
 
                                 <div class="input">
@@ -289,7 +289,7 @@
                                         База поиска пользователей *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
                                 </div>
 
                                 <div class="input">
@@ -297,7 +297,7 @@
                                         База поиска рабочих станций *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
                                 </div>
 
                             </div>
@@ -332,16 +332,6 @@
         </div>
 
         <!-- Main Wrapper End -->
-
-        <!-- Modal Windows -->
-
-        <section class="modal-windows">
-
-            
-
-        </section>
-
-        <!-- Modal Windows End -->
 
     </div>
 

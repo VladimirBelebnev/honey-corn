@@ -25,17 +25,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -349,7 +349,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -364,7 +364,7 @@
                                             Выбрать страницу
                                         </p>
 
-                                        <input type="text" class="table-block__num-input">
+                                        <input type="text" value="5" class="table-block__num-input">
                                     </section>
 
                                     <section class="table-block__change-page">
@@ -407,7 +407,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-1 none">
+            <div class="modal-window install-modal modal-window_trap-install-1">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -442,7 +442,7 @@
 
                                 <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1 none">
+                                <section class="install-modal__step-section install-modal__step-section_1">
 
                                     <h3 class="install-modal__title title-mini">
                                         Выбор ловушки
@@ -454,18 +454,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Конструктор ловушек
                                                     </p>
 
                                                     <div class="input__select-block">
-                                                        <p class="input__select-value">Имя настройки</p>
+                                                        <p class="input__select-value">Constructor name</p>
                                                     </div>
 
                                                     <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -497,18 +497,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Базовая ловушка
                                                     </p>
 
                                                     <div class="input__select-block">
-                                                        <p class="input__select-value">Имя настройки</p>
+                                                        <p class="input__select-value">Drupal</p>
                                                     </div>
 
                                                     <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -548,7 +548,7 @@
 
                                 <!-- Install Modal Step 2 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_2 none">
+                                <section class="install-modal__step-section install-modal__step-section_2 hidden">
 
                                     <h3 class="install-modal__title title-mini">
                                         Параметры ловушки
@@ -558,27 +558,27 @@
 
                                         <div class="input">
                                             <p class="input__mini-title">
-                                                Имя настройки #1
+                                                IP, подсеть или имя
                                             </p>
                                     
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="000.000.000.000" class="input__input">
                                     
                                             <i class="input__item icon-ic-backspace"></i>
                                         </div>
 
                                         <div class="input">
                                             <p class="input__mini-title">
-                                                Имя настройки #1
+                                                Уникальное название ловушки
                                             </p>
                                     
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="Drupal" class="input__input">
                                     
                                             <i class="input__item icon-ic-backspace"></i>
                                         </div>
 
                                         <div class="install-modal__block select-input-2">
                                             <section class="select-input-2__open-section">
-                                                <div class="input">
+                                                <div class="input input_mini-title-gray">
                                                     <div class="input__select-block">
                                                         <p class="input__select-value">Порт для некоторых ловушек</p>
                                                     </div>
@@ -587,7 +587,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -595,19 +595,19 @@
                                         <div class="install-modal__inputs-row">
                                             <div class="input">
                                                 <p class="input__mini-title">
-                                                    Имя настройки #1
+                                                    Логин
                                                 </p>
                                         
-                                                <input type="text" class="input__input">
+                                                <input type="text" value="admin" class="input__input">
                                             </div>
     
 
                                             <div class="input">
                                                 <p class="input__mini-title">
-                                                    Имя настройки #1
+                                                    Пароль
                                                 </p>
                                         
-                                                <input type="text" class="input__input">
+                                                <input type="password" value="password" class="input__input">
                                         
                                                 <button class="input__btn icon-ic-eye"></button>
                                             </div>
@@ -626,7 +626,7 @@
 
                                 <!-- Install Modal Step 3 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_3">
+                                <section class="install-modal__step-section install-modal__step-section_3 hidden">
 
                                     <h3 class="install-modal__title title-mini">
                                         Конфигурация ловушки
@@ -638,7 +638,7 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 1
                                                     </p>
                                             
                                                     <div class="input__select-block">
@@ -649,7 +649,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -658,7 +658,7 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 2
                                                     </p>
                                             
                                                     <div class="input__select-block">
@@ -669,14 +669,14 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
 
                                         <div class="install-modal__input-wrapper">
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" placeholder="Настройка 3" class="input__input">
                                         
                                                 <i class="input__item icon-ic-backspace"></i>
                                             </div>
@@ -709,9 +709,9 @@
 
             <!-- Modal Window End -->
 
-            <!-- Modal Window -->
+            <!-- Modal Window ( Install 1 Success ) -->
 
-            <div class="modal-window install-modal modal-window_trap-install-1-success none">
+            <div class="modal-window install-modal modal-window_trap-install-1-success hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -748,11 +748,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Install 1 Success ) End -->
 
-            <!-- Modal Window -->
+            <!-- Modal Window ( Notes ) -->
 
-            <div class="modal-window modal-window-2 modal-window_notes none">
+            <div class="modal-window modal-window-2 modal-window_notes hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-2__wrapper">
@@ -784,11 +784,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Notes ) End -->
 
-            <!-- Modal Window -->
+            <!-- Modal Window ( Command ) -->
 
-            <div class="modal-window modal-window-3 modal-window_command">
+            <div class="modal-window modal-window-3 modal-window_command hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-3__wrapper">
@@ -816,7 +816,7 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Command ) End -->
 
         </section>
 

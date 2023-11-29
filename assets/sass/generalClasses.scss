@@ -37,6 +37,14 @@
     display: none !important;
 }
 
+.hidden {
+    position: absolute;
+    visibility: hidden !important;
+    opacity: 0;
+    left: -99999px;
+    top: -99999px;
+}
+
 .disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -47,6 +55,22 @@
 }
 
 // Классы инпутов
+
+// Шаблоны
+
+%input {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: $gray3;
+    border-radius: 0.625rem;
+    border: 1px solid $gray1;
+    color: $black;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+}
+
+// Классы
 
 .theme-checkbox {
     display: flex;
@@ -106,22 +130,35 @@
     }
 }
 
-%input {
-    max-width: 100%;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background: $gray3;
-    border-radius: 0.625rem;
-    border: 1px solid $gray1;
-    color: $black;
-    font-size: 1.125rem;
-    line-height: 2.25rem;
-}
-
 .input {
     position: relative;
     max-width: 100%;
     width: 100%;
+
+    &_black-placeholder {
+
+        .input__input {
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+
+    &_mini-title-black {
+
+        .input__mini-title,
+        .input__select-value {
+            color: $black;
+        }
+    }
+
+    &_mini-title-gray {
+
+        .input__select-value,
+        .input__mini-title {
+            color: $gray4;
+        }
+    }
 
     &_single {
 
@@ -152,6 +189,7 @@
         line-height: 0.75rem;
         transform: translate(0, -50%);
         padding: 0.1rem;
+        color: $gray4;
     }
 
     &__input {
@@ -219,6 +257,10 @@
 .select-input-2 {
     position: relative;
 
+    &__open-section {
+        width: 100%;
+    }
+
     &__hidden-section {
         width: 100%;
         position: absolute;
@@ -254,8 +296,11 @@
     &__input:checked + &__label {
 
         &::before {
-            background: $primaryColor;
-            border-color: $primaryColor;
+            background-image: url("../images/ic-checked.svg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat; 
+            border: none;
         }
     }
 }
@@ -299,6 +344,20 @@
 }
 
 // Классы кнопок
+
+// Шаблоны
+
+%icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: $gray4;
+}
+
+// Классы
 
 .btn {
     min-width: 4.72rem;
@@ -482,8 +541,8 @@
 .table {
     width: 100%;
 
-    &_constructor,
-    &_attack,
+    &_constructor-logs,
+    &_attack-logs,
     &_bait-distrubutions-logs {
 
         .table__cell {
@@ -491,7 +550,7 @@
         }
     }
 
-    &_attack,
+    &_attack-logs,
     &_trap-installations-logs,
     &_bait-distrubutions-logs {
         border-spacing: 0 0.5rem;
@@ -649,7 +708,7 @@
         }
     }
 
-    &_attack &__content,
+    &_attack-logs &__content,
     &_trap-installations-logs &__content,
     &_bait-distrubutions-logs &__content {
 

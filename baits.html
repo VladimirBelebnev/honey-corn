@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -177,7 +177,7 @@
         </aside>
 
         <!-- Navbar End -->
-
+        
         <!-- Main Wrapper -->
 
         <div class="wrapper__main">
@@ -219,7 +219,7 @@
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -241,14 +241,14 @@
 
             <main class="main">
 
-                <!-- Logs Solves -->
+                <!-- Baits -->
 
-                <section class="traps">
-                    <div class="container traps__container">
+                <section class="baits">
+                    <div class="container baits__container">
 
                         <!-- Search -->
 
-                        <section class="traps__search search">
+                        <section class="baits__search search">
 
                             <h2 class="search__title title">
                                 Полнотекстовый поиск
@@ -265,7 +265,7 @@
 
                         <!-- Filter -->
 
-                        <section class="traps__filter filter">
+                        <section class="baits__filter filter">
 
                             <header class="filter__header">
 
@@ -288,7 +288,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
                                         <div class="calendare">
                                             <div class="calendare__section">
                                                 <header class="calendare__header">
@@ -476,12 +476,12 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__sensor-btn filter__btn round-button icon-drop-down-arrow">
+                                        <button class="filter__type-btn filter__btn round-button icon-drop-down-arrow">
                                             Тип
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
                                         <div class="filter__sensor-pop-up pop-up-2">
                                             <div class="pop-up-2__checkbox-quadro checkbox-quadro">
                                                 <input type="checkbox" id="name1" hidden class="checkbox-quadro__input">
@@ -508,24 +508,24 @@
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__login-btn filter__btn round-button icon-drop-down-arrow">
+                                        <button class="filter__host-btn filter__btn round-button icon-drop-down-arrow">
                                             Хост
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
                                         
                                     </section>
                                 </div>
 
                                 <div class="select-input-2">
                                     <section class="select-input-2__open-section">
-                                        <button class="filter__password-btn filter__btn round-button icon-drop-down-arrow">
+                                        <button class="filter__status-btn filter__btn round-button icon-drop-down-arrow">
                                             Статус
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
 
                                     </section>
                                 </div>
@@ -540,7 +540,7 @@
 
                         <!-- Table Block -->
 
-                        <section class="traps__table-block table-block">
+                        <section class="baits__table-block table-block">
                             
                             <header class="table-block__header">
 
@@ -694,7 +694,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -710,7 +710,7 @@
                                         </p>
 
                                         <div class="table-block__num-input input input_single">
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="5" class="input__input">
                                         </div>
                                     </section>
 
@@ -736,7 +736,7 @@
                     </div>
                 </section>
 
-                <!-- Logs Solves End -->
+                <!-- Baits End -->
 
             </main>
 
@@ -752,14 +752,14 @@
 
             <!-- Modal Window ( Bait Status ) -->
 
-            <div class="modal-window modal-window-3 modal-window_bait-status none">
+            <div class="modal-window modal-window-3 modal-window_bait-status hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-3__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Статус ловушки
+                                Статус приманки
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -767,16 +767,24 @@
 
                         <section class="modal-window__content modal-window-3__content">
 
-                            <div class="input">
-                                <div class="input__select-block">
-                                    <p class="input__select-value">Имя настройки</p>
-                                </div>
-                                
-                                <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                            <div class="select-input-2">
+                                <section class="select-input-2__open-section">
+                                    <div class="input">
+                                        <div class="input__select-block">
+                                            <p class="input__select-value input_mini-title-gray">Выбрать приманку из пула</p>
+                                        </div>
+                                        
+                                        <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    </div>
+                                </section>
+                        
+                                <section class="select-input-2__hidden-section hidden">
+                        
+                                </section>
                             </div>
 
                             <div class="modal-window__textarea modal-window-3__textarea input input_single">
-                                <textarea placeholder="Лог ловушки" class="input__input"></textarea>
+                                <textarea placeholder="Лог приманки" class="input__input"></textarea>
                             </div>
 
                             <div class="modal-window-3__buttons-wrapper modal-window-3__buttons-wrapper_reverse">
@@ -796,14 +804,14 @@
 
             <!-- Modal Window ( Bait Settings ) -->
 
-            <div class="modal-window install-modal modal-window_bait-settings none">
+            <div class="modal-window install-modal modal-window_bait-settings hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Мастер установки ловушек
+                                Мастер установки приманок
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -815,10 +823,10 @@
 
                                 <!-- Install Modal Step 3 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_3">
+                                <section class="install-modal__step-section install-modal__step-section_1">
 
                                     <h3 class="install-modal__title title-mini">
-                                        Конфигурация ловушки
+                                        Конфигурация приманки
                                     </h3>
 
                                     <div class="install-modal__inputs-wrapper">
@@ -827,7 +835,7 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 1
                                                     </p>
                                             
                                                     <div class="input__select-block">
@@ -838,7 +846,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -870,7 +878,7 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 2
                                                     </p>
                                             
                                                     <div class="input__select-block">
@@ -881,7 +889,7 @@
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -911,12 +919,12 @@
 
                                         <div class="install-modal__input-wrapper">
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" placeholder="Настройка 3" class="input__input">
                                         
                                                 <i class="input__item icon-ic-backspace"></i>
                                             </div>
 
-                                            <div class="pop-up install-modal__pop-up none">
+                                            <div class="pop-up install-modal__pop-up hidden">
                                                 <p class="pop-up__message">
                                                     Скопировано в буфер обмена
                                                 </p>
@@ -946,7 +954,7 @@
 
             <!-- Modal Window ( Delete ) -->
 
-            <div class="modal-window delete-modal modal-window_delete none">
+            <div class="modal-window delete-modal modal-window_delete hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper delete-modal__wrapper">
@@ -965,17 +973,30 @@
 
                                 <!-- Install Modal Step 3 -->
 
-                                <section class="delete-modal__step-section delete-modal__step-section_3">
+                                <section class="delete-modal__step-section delete-modal__step-section_1">
 
                                     <div class="delete-modal__inputs-wrapper">
 
                                         <section class="delete-modal__inputs-group">
 
-                                            <header class="delete-modal__inputs-group-header">
-                                                <h4 class="delete-modal__input-title">
-                                                    Введите аутентификационные данные
-                                                </h4>
-                                            </header>
+                                            <div class="delete-modal__inputs-row">
+                                                
+                                                <div class="select-input-2">
+                                                    <section class="select-input-2__open-section">
+                                                        <div class="input">
+                                                            <div class="input__select-block">
+                                                                <p class="input__select-value input_mini-title-gray">Выбрать приманку из пула</p>
+                                                            </div>
+                                                            
+                                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                        </div>
+                                                    </section>
+                                            
+                                                    <section class="select-input-2__hidden-section hidden">
+                                            
+                                                    </section>
+                                                </div>
+                                            </div>
 
                                             <div class="delete-modal__inputs-row">
                                                 <div class="input">
@@ -983,27 +1004,19 @@
                                                         Имя настройки #1
                                                     </p>
                                             
-                                                    <input type="text" class="input__input">
+                                                    <input type="text" placeholder="Аутентификационные данные" class="input__input">
+                                            
+                                                    <i class="input__item icon-ic-backspace"></i>
                                                 </div>
                                             </div>
 
                                         </section>
-
-                                        <div class="input">
-                                            <p class="input__mini-title">
-                                                Имя настройки #1
-                                            </p>
-                                    
-                                            <input type="password" class="input__input">
-                                    
-                                            <button class="input__btn icon-ic-eye"></button>
-                                        </div>
                                         
                                     </div>
 
                                     <div class="delete-modal__btn-wrapper">
                                         <button class="delete-modal__next-btn btn">
-                                            Сохранить
+                                            Удалить
                                         </button>
                                     </div>
 
@@ -1022,7 +1035,7 @@
 
             <!-- Modal Window ( Edit ) -->
 
-            <div class="modal-window modal-window-5 modal-window_edit none">
+            <div class="modal-window modal-window-5 modal-window_edit hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-5__wrapper">
