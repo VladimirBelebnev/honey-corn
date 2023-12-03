@@ -1,0 +1,57 @@
+// License Managment Styles
+
+.license-managment {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.25rem;
+    }
+}
+
+.license-info {
+    padding: 1rem;
+    background: $white;
+    border-radius: 0.625rem;
+    box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__input-section-title {
+        margin-bottom: 0.75rem;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    &__copy-btn {
+        @extend %icon-btn;
+        font-size: 2rem;
+    }
+}
+
+.license-install {
+    &__wrapper {
+        padding: 1rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    }
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+}

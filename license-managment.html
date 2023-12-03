@@ -241,89 +241,147 @@
 
             <main class="main">
 
-                <!-- Integration -->
+                <!-- License Managment -->
 
-                <section class="integration">
-                    <div class="container integration__container">
+                <section class="license-managment">
+                    <div class="container license-managment__container">
 
-                        <section class="integration__content">
+                        <section class="license-managment__info-section license-info">
 
-                            <header class="integration__header">
+                            <header class="license-info__header">
 
-                                <h3 class="integration__title title-mini">
-                                    Параметры подключения к Active Directory
+                                <h3 class="license-info__title title-mini">
+                                    Информация о текущей лицензии
                                 </h3>
 
                             </header>
 
-                            <div class="integration__inputs-wrapper">
+                            <div class="license-info__inputs-wrapper">
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Адрес каталога Active Directory \ Контроллера домена *
-                                    </p>
-                            
-                                    <input type="text" value="192.168.10.200" class="input__input">
-                                </div>
+                                <section class="license-info__input-section">
 
-                                <div></div>
+                                    <h3 class="license-info__input-section-title title">
+                                        Номер лицензии
+                                    </h3>
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        BIND DN *
-                                    </p>
-                            
-                                    <input type="text" value="Администратор@honeycorn.local" class="input__input">
-                                </div>
+                                    <div class="input input_single input_no-background">
+                                        <input type="text" value="d3b04357-b5ee-4a46-a264-24759e3asd5e76e" class="input__input">
+                                    </div>
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        BIND PASSWORD *
-                                    </p>
-                            
-                                    <input type="password" value="dc=honeycorn,dc=local" class="input__input">
-                                </div>
+                                </section>
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        База поиска пользователей *
-                                    </p>
-                            
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
-                                </div>
+                                <section class="license-info__input-section">
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        База поиска рабочих станций *
-                                    </p>
-                            
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
-                                </div>
+                                    <h3 class="license-info__input-section-title title">
+                                        Дата истечения лицензии
+                                    </h3>
 
-                            </div>
-                            
-                            <div class="integration__buttons-wrapper">
+                                    <div class="input input_single input_no-background">
+                                        <input type="text" value="30.09.2024" class="input__input">
+                                    </div>
 
-                                <button class="integration__btn integration__btn_test btn">
-                                    Тест подключения
-                                </button>
+                                </section>
 
-                                <button class="integration__btn integration__btn_analyse btn">
-                                    Анализ AD
-                                </button>
+                                <section class="license-info__input-section">
 
-                                <button class="integration__btn integration__btn_reload btn">
-                                    Обновить
-                                </button>
+                                    <h3 class="license-info__input-section-title title">
+                                        Максимальное количество сервисных ловушек
+                                    </h3>
+
+                                    <div class="input input_single input_no-background">
+                                        <input type="text" value="15" class="input__input">
+                                    </div>
+
+                                </section>
+
+                                <section class="license-info__input-section">
+
+                                    <h3 class="license-info__input-section-title title">
+                                        Максимальное количество агентов
+                                    </h3>
+
+                                    <div class="input input_single input_no-background">
+                                        <input type="text" value="15" class="input__input">
+                                    </div>
+
+                                </section>
+
+                                <section class="license-info__input-section">
+
+                                    <h3 class="license-info__input-section-title title">
+                                        Максимальное количество приманок
+                                    </h3>
+
+                                    <div class="input input_single input_no-background">
+                                        <input type="text" value="200" class="input__input">
+                                    </div>
+
+                                </section>
+
+                                <section class="license-info__input-section">
+
+                                    <h3 class="license-info__input-section-title title">
+                                        Идентификатор инсталляции
+                                    </h3>
+
+                                    <div class="license-info__input-wrapper">
+                                        <div class="input input_single input_no-background">
+                                            <input type="text" value="9b3e3142-a283-ee54-22b6-2d120eddb1c5" class="input__input">
+                                        </div>
+
+                                        <button class="license-info__copy-btn copy-btn icon-ic-copy"></button>
+                                    </div>
+
+                                </section>
 
                             </div>
 
                         </section>
 
+                        <section class="license-managment__install-section license-install">
+
+                            <div class="license-install__wrapper">
+
+                                <header class="license-install__header">
+
+                                    <h3 class="license-info__title title-mini">
+                                        Загрузка лицензии
+                                    </h3>
+
+                                </header>
+
+                                <div class="license-install__files files">
+
+                                    <a type="file" class="files__dragn-drop">
+                                        <i class="files__file-icon icon-ic-upload"></i>
+
+                                        <p class="files__subtitle">
+                                            Перетащите файл сюда<br>
+                                            или<br>
+                                            <mark class="files__subtitle_link link">Выберите в проводнике</mark>
+                                        </p>
+                                    </a>
+
+                                    <section class="files__dragn-drop-files">
+                                        <div class="files__file">
+                                            <p class="files__file-text">baits.csv</p>
+                                        </div>
+                                    </section>
+
+                                    <a type="file" class="files__btn btn">
+                                        Загрузить
+                                    </a>
+                                    
+                                </div>
+
+                            </div>
+                            
+                        </section>
+
                     </div>
                 </section>
 
-                <!-- Integration End -->
+                <!-- License Managment End -->
 
             </main>
 

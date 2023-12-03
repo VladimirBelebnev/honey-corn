@@ -1,0 +1,161 @@
+// Documentation Styles
+
+.documentation {
+
+    &__container {
+        display: grid;
+        grid-template-areas: "header header"
+                            "navigation content";
+        grid-template-columns: 1fr 2fr;
+        gap: 1.25rem;
+    }
+
+    &__header {
+        grid-area: header;
+        justify-content: space-between;
+        padding: 1rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+    }
+
+    &__navigation-wrapper {
+        padding: 1rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    }
+
+    &__navigation-header {
+        margin-bottom: 0.5rem;
+    }
+
+    &__navigation-section {
+        grid-area: navigation;
+    }
+
+    &__navigation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &_nesting {
+            margin-left: 1.25rem;
+        }
+    }
+
+    &__navigation-list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__navigation-link {
+
+        &_drop-down {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+
+            &::before {
+                font-size: 1rem;
+                color: $gray2;
+                transform: rotate(-180deg);
+                position: relative;
+                top: -1.9rem;
+                transition: transform ease .5s;
+            }
+        }
+
+        &_active {
+
+            &::before {
+                transform: rotate(0);
+                top: 0.3rem;
+            }
+        }
+    }
+
+    &__content {
+        grid-area: content;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+        margin-bottom: 0.88rem;
+    }
+
+    &__content-hero-title {
+        font-size: 1.5rem;
+        font-weight: $semibold;
+        line-height: 2.25rem;
+    }
+
+    &__content-default-title {
+        font-size: 1.25rem;
+        font-weight: $semibold;
+        line-height: 2.25rem;
+    }
+
+    &__content-title {
+        margin-bottom: 1.25rem;
+    }
+
+    &__content-title-mini {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    &__img {
+        width: 51.125rem;
+    }
+
+    &__img-text {
+        font-size: 0.875rem;
+        font-weight: $medium;
+        line-height: 1.625rem;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__prev-btn,
+    &__next-btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+    }
+
+    &__prev-btn {
+        background: none;
+        border: 2px solid $primaryColor;
+    }
+}

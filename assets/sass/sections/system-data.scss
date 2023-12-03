@@ -186,6 +186,10 @@
     &__name {
         font-weight: $semibold;
     }
+
+    &_active {
+        border: 2px solid $primaryColor;
+    }
 }
 
 .events {

@@ -1,0 +1,48 @@
+// Syslog Export Styles
+
+.syslog-export,
+.mail-setup {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    &__content {
+        max-width: 47.5rem;
+        width: 47.5rem;
+        padding: 1rem 1rem 1.5rem 1rem;
+        background: $white;
+        border-radius: 0.625rem;
+        box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
+    }
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__inputs-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__buttons-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    &__btn {
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
+        padding: 0.5rem 1.75rem;
+    }
+}

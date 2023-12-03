@@ -41,15 +41,9 @@
 
     &__prev-btn,
     &__next-btn {
-        color: $gray2;
+        @extend %icon-btn;
         font-size: 1rem;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-
-        &::before {
-            line-height: 0;
-        }
+        color: $gray2;
     }
 
     &__current-month {
@@ -60,6 +54,8 @@
 
     &__cell {
         padding: 0.31rem 0.63rem;
+        text-align: center;
+        vertical-align: middle;
 
         &_title {
             font-weight: $semibold;
@@ -127,6 +123,13 @@
 
     &__checkbox-quadro {
         margin-bottom: 1.25rem;
+    }
+
+    &__btn {
+
+        &_active {
+            opacity: 0.5;
+        }
     }
 }
 
@@ -196,6 +199,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 
     &__container {
         height: 100%;
@@ -221,15 +225,8 @@
     }
 
     &__skip-btn {
+        @extend %icon-btn;
         font-size: 1.25rem;
-        color: $gray4;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-
-        &::before {
-            line-height: 0;
-        }
     }
 
     &__content {
@@ -247,6 +244,7 @@
     &__success-message {
         font-size: 1.25rem;
         line-height: 2.25rem;
+        text-align: center;
     }
 
     &__btn {
@@ -277,11 +275,12 @@
     }
 
     &__copy-btn {
+        @extend %icon-btn;
         font-size: 2rem;
-        color: $gray4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+    
+    .select-input-2 {
+        width: 100%;
     }
 }
 
@@ -364,14 +363,6 @@
         gap: 0.75rem;
         padding: 1rem 1rem 1.5rem;
     }
-
-    &__btn {
-        max-width: 100%;
-        width: 100%;
-        font-size: 1.125rem;
-        font-weight: $normal;
-        line-height: 2.25rem;
-    }
 }
 
 .select-drop-down {
@@ -388,7 +379,8 @@
     }
 }
 
-.modal-window-5 {
+.modal-window-5,
+.modal-window-9 {
 
     &__wrapper {
         max-width: 25.25rem;
@@ -409,6 +401,14 @@
         width: 100%;
     }
 
+}
+
+.modal-window-9 {
+
+    &__text {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
 }
 
 .modal-window-6 {
@@ -446,7 +446,8 @@
     }
 }
 
-.modal-window-7 {
+.modal-window-7,
+.modal-window-8 {
     
     &__wrapper {
         max-width: 45.25rem;
@@ -471,6 +472,13 @@
         font-weight: $normal;
         line-height: 2.25rem;
         padding: 0.5rem 1.75rem;
+    }
+}
+
+.modal-window-8 {
+    &__wrapper {
+        max-width: 39.375rem;
+        width: 39.375rem;
     }
 }
 
@@ -583,9 +591,13 @@
         width: 31.25rem;
     }
 
+    &__input-block {
+        width: 100%;
+    }
+
     .input:not(.table-block__num-input, .table-block__input) {
         max-width: 31.25rem;
-        width: 31.25rem;
+        width: 100%;
     }
 
     &__btn-wrapper {
@@ -594,7 +606,8 @@
         justify-content: flex-end;
     }
 
-    &__next-btn {
+    &__next-btn,
+    &__install-btn {
         font-size: 1.125rem;
         font-weight: $normal;
         line-height: 2.25rem;
@@ -605,7 +618,7 @@
 
         .input__select-block {
             max-width: 31.25rem;
-            width: 31.25rem;
+            width: 100%;
         }
     }
 
@@ -708,6 +721,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__step-section{
+        transition: .5s;
+    }
 }
 
 .delete-modal {
@@ -762,14 +779,14 @@
         border-radius: 50%;
         color: $gray4;
 
-        &_passed {
-            background: none;
-            border: 2px solid $primaryColor;
-        }
-
         &_current {
             color: $black;
             background: $primaryColor;
+        }
+
+        &_passed {
+            background: none;
+            border: 2px solid $primaryColor;
         }
     }
 }

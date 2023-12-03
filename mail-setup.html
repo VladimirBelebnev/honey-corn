@@ -241,78 +241,102 @@
 
             <main class="main">
 
-                <!-- Integration -->
+                <!-- Mail Setup -->
 
-                <section class="integration">
-                    <div class="container integration__container">
+                <section class="mail-setup">
+                    <div class="container mail-setup__container">
 
-                        <section class="integration__content">
+                        <section class="mail-setup__content">
 
-                            <header class="integration__header">
-
-                                <h3 class="integration__title title-mini">
-                                    Параметры подключения к Active Directory
+                            <header class="mail-setup__header">
+                                <h3 class="mail-setup__title title-mini">
+                                    Параметры подключения к Email серверу (relay-серверу)
                                 </h3>
-
                             </header>
 
-                            <div class="integration__inputs-wrapper">
+                            <div class="mail-setup__inputs-wrapper">
 
-                                <div class="input">
+                                <div class="input input_example">
                                     <p class="input__mini-title">
-                                        Адрес каталога Active Directory \ Контроллера домена *
+                                        Адрес Email сервера *
                                     </p>
                             
-                                    <input type="text" value="192.168.10.200" class="input__input">
-                                </div>
-
-                                <div></div>
-
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        BIND DN *
-                                    </p>
+                                    <input type="text" value="Сервер Syslog" class="input__input">
                             
-                                    <input type="text" value="Администратор@honeycorn.local" class="input__input">
+                                    <p class="input__example-text">
+                                        IP адрес или DNS имя Email сервера (relay сервера)
+                                    </p>
                                 </div>
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        BIND PASSWORD *
+                                        Порт Email сервера *
                                     </p>
                             
-                                    <input type="password" value="dc=honeycorn,dc=local" class="input__input">
+                                    <input type="text" value="25" class="input__input">
                                 </div>
 
-                                <div class="input">
+                                <div class="input input_example">
                                     <p class="input__mini-title">
-                                        База поиска пользователей *
+                                        Имя пользователя *
                                     </p>
                             
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
+                                    <input type="text" value="admin" class="input__input">
+                            
+                                    <p class="input__example-text">
+                                        Имя пользователя c правами подключения к Email серверу
+                                    </p>
                                 </div>
 
-                                <div class="input">
+                                <div class="input input_example">
                                     <p class="input__mini-title">
-                                        База поиска рабочих станций *
+                                        Пароль
                                     </p>
                             
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
+                                    <input type="password" value="erergrge" class="input__input">
+                            
+                                    <button class="input__btn icon-ic-eye password-toggle-btn"></button>
+                            
+                                    <p class="input__example-text">
+                                        Пароль пользователя для подключения к Email серверу
+                                    </p>
+                                </div>
+
+                                <div class="input input_example">
+                                    <p class="input__mini-title">
+                                        Адрес отправителя *
+                                    </p>
+                            
+                                    <input type="text" value="noreply@honeycorn.local" class="input__input">
+                            
+                                    <p class="input__example-text">
+                                        Email-адрес с которого будут отправляться письма
+                                    </p>
                                 </div>
 
                             </div>
-                            
-                            <div class="integration__buttons-wrapper">
 
-                                <button class="integration__btn integration__btn_test btn">
+                            <div class="mail-setup__checkbox-wrapper">
+
+                                <div class="mail-setup__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="tls" hidden class="checkbox-quadro__input">
+                                    <label for="tls" class="checkbox-quadro__label">Использовать TLS</label>
+                                </div>
+
+                                <div class="mail-setup__checkbox-quadro checkbox-quadro">
+                                    <input type="checkbox" id="ssl" hidden class="checkbox-quadro__input">
+                                    <label for="ssl" class="checkbox-quadro__label">Использовать SSL</label>
+                                </div>
+
+                            </div>
+
+                            <div class="mail-setup__buttons-wrapper">
+
+                                <button class="mail-setup__btn btn">
                                     Тест подключения
                                 </button>
 
-                                <button class="integration__btn integration__btn_analyse btn">
-                                    Анализ AD
-                                </button>
-
-                                <button class="integration__btn integration__btn_reload btn">
+                                <button class="mail-setup__btn mail-setup__btn_reload btn">
                                     Обновить
                                 </button>
 
@@ -323,7 +347,7 @@
                     </div>
                 </section>
 
-                <!-- Integration End -->
+                <!-- Mail Setup End -->
 
             </main>
 

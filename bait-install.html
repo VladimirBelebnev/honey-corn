@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -215,11 +215,11 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -250,7 +250,7 @@
 
                         <header class="bait-install__header">
 
-                            <button class="bait-install__btn btn">
+                            <button class="bait-install__btn btn" data-modal="bait-install">
                                 Мастер генерации приманок
                             </button>
                             
@@ -313,7 +313,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -338,7 +338,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -363,7 +363,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -388,7 +388,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -413,7 +413,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -427,11 +427,11 @@
 
                                 <section class="table-block__left-section">
 
-                                    <button class="table-block__import-btn btn">
+                                    <button class="table-block__import-btn btn" data-modal="bait-import">
                                         Импорт
                                     </button>
 
-                                    <button class="table-block__export-btn btn">
+                                    <button class="table-block__export-btn btn" data-modal="bait-export">
                                         Экспорт
                                     </button>
 
@@ -451,11 +451,11 @@
                                                         <p class="input__select-value">5</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -467,7 +467,7 @@
                                         </p>
 
                                         <div class="table-block__num-input input input_single">
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="5" class="input__input">
                                         </div>
                                     </section>
 
@@ -509,14 +509,14 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-2 none">
+            <div class="modal-window install-modal modal-window_trap-install-2 hidden" data-modal="bait-distribute">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Мастер установки ловушек
+                                Распространение приманки
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -524,7 +524,7 @@
 
                         <section class="modal-window__content install-modal__content install-modal__content_bait">
 
-                            <header class="install-modal__progress progress">
+                            <header class="install-modal__progress progress" data-pagination="bait-distribute-pagination">
 
                                 <button class="progress__item progress__item_passed">
                                     1
@@ -536,14 +536,14 @@
 
                             </header>
 
-                            <section class="install-modal__form">
+                            <section class="install-modal__form" data-group="bait-distribute-submodal">
 
                                 <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1">
+                                <section class="install-modal__step-section install-modal__step-section_1" data-submodal="bait-distribute-submodal-1">
 
                                     <h3 class="install-modal__title title-mini">
-                                        Выбор ловушки
+                                        Выбор приманки
                                     </h3>
 
                                     <div class="install-modal__inputs-wrapper">
@@ -552,18 +552,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Выбор приманки
                                                     </p>
 
                                                     <div class="input__select-block">
-                                                        <p class="input__select-value">Имя настройки</p>
+                                                        <p class="input__select-value">Bait name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -594,7 +594,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-submodal="bait-distribute-submodal-2">
                                             Далее
                                         </button>
                                     </div>
@@ -603,20 +603,20 @@
 
                                 <!-- Install Modal Step 2 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_2 none">
+                                <section class="install-modal__step-section install-modal__step-section_2 hidden" data-submodal="bait-distribute-submodal-2">
 
                                     <h3 class="install-modal__title title-mini">
-                                        Параметры ловушки
+                                        Параметры
                                     </h3>
 
                                     <div class="install-modal__inputs-wrapper">
 
                                         <div class="input">
                                             <p class="input__mini-title">
-                                                Имя настройки #1
+                                                IP, подсеть или имя
                                             </p>
                                     
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="000.000.000.000" class="input__input">
                                     
                                             <i class="input__item icon-ic-backspace"></i>
                                         </div>
@@ -629,14 +629,14 @@
                                                     </p>
 
                                                     <div class="input__select-block">
-                                                        <p class="input__select-value">Порт для некоторых ловушек</p>
+                                                        <p class="input__select-value">SSH</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -652,23 +652,22 @@
                                             <div class="install-modal__inputs-row">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Логин
                                                     </p>
                                             
-                                                    <input type="text" class="input__input">
+                                                    <input type="text" value="admin" class="input__input">
                                                 </div>
         
 
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Пароль
                                                     </p>
                                             
-                                                    <input type="text" class="input__input">
+                                                    <input type="text" value="admin" class="input__input">
                                             
-                                                    <button class="input__btn icon-ic-eye"></button>
+                                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                                 </div>
-        
                                             </div>
 
                                         </section>
@@ -684,23 +683,22 @@
                                             <div class="install-modal__inputs-row">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Логин
                                                     </p>
                                             
-                                                    <input type="text" class="input__input">
+                                                    <input type="text" value="admin" class="input__input">
                                                 </div>
         
 
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Пароль
                                                     </p>
                                             
-                                                    <input type="text" class="input__input">
+                                                    <input type="text" value="admin" class="input__input">
                                             
-                                                    <button class="input__btn icon-ic-eye"></button>
+                                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                                 </div>
-        
                                             </div>
 
                                         </section>
@@ -708,8 +706,8 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
-                                            Далее
+                                        <button class="install-modal__next-btn btn" data-modal="bait-success-1" data-reset="bait-distribute-submodal" data-reset-pagination="bait-distribute-pagination">
+                                            Распространение
                                         </button>
                                     </div>
 
@@ -728,14 +726,14 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-3 none">
+            <div class="modal-window install-modal modal-window_trap-install-3 hidden" data-modal="bait-install">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Мастер установки ловушек
+                                Мастер генерации приманок
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -743,9 +741,9 @@
 
                         <section class="modal-window__content install-modal__content install-modal__content_bait">
 
-                            <header class="install-modal__progress progress">
+                            <header class="install-modal__progress progress" data-pagination="bait-install-pagination">
 
-                                <button class="progress__item progress__item_passed">
+                                <button class="progress__item progress__item_current">
                                     1
                                 </button>
 
@@ -755,14 +753,14 @@
 
                             </header>
 
-                            <section class="install-modal__form">
+                            <section class="install-modal__form" data-group="bait-distrubution-submodal">
 
                                 <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1 none">
+                                <section class="install-modal__step-section install-modal__step-section_1" data-submodal="bait-distrubution-submodal-1">
 
                                     <h3 class="install-modal__title title-mini">
-                                        Выбор ловушки
+                                        Выбор приманки
                                     </h3>
 
                                     <div class="install-modal__inputs-wrapper">
@@ -771,18 +769,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Приманка
                                                     </p>
 
                                                     <div class="input__select-block">
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -813,7 +811,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-submodal="bait-distrubution-submodal-2">
                                             Далее
                                         </button>
                                     </div>
@@ -822,10 +820,10 @@
 
                                 <!-- Install Modal Step 2 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_2">
+                                <section class="install-modal__step-section install-modal__step-section_2 hidden" data-submodal="bait-distrubution-submodal-2">
 
                                     <h3 class="install-modal__title title-mini">
-                                        Параметры ловушки
+                                        Конфигурация приманки
                                     </h3>
 
                                     <div class="install-modal__inputs-wrapper">
@@ -835,18 +833,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 1
                                                     </p>
 
                                                     <div class="input__select-block">
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -880,18 +878,18 @@
                                             <section class="select-input-2__open-section">
                                                 <div class="input">
                                                     <p class="input__mini-title">
-                                                        Имя настройки #1
+                                                        Настройка 2
                                                     </p>
 
                                                     <div class="input__select-block">
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="install-modal__drop-down select-drop-down">
                                                     <ul class="select-drop-down__list">
                                                         <li class="select-drop-down__list-item">
@@ -929,7 +927,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-modal="bait-success-2" data-reset="bait-distrubution-submodal" data-reset-pagination="bait-install-pagination">
                                             Генерировать
                                         </button>
                                     </div>
@@ -949,14 +947,14 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-2-success none">
+            <div class="modal-window install-modal modal-window_trap-install-2-success hidden" data-modal="bait-success-1">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
 
                         <header class="modal-window__header">
                             <h3 class="modal-window__title title-mini">
-                                Мастер установки ловушек
+                                Распространение приманки
                             </h3>
 
                             <button class="modal-window__skip-btn icon-ic-x"></button>
@@ -967,56 +965,15 @@
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
                             <h3 class="install-modal__success-message title-mini">
-                                Ловушка <\Имя ловушки> установлена
+                                Приманка <\Имя приманки> распространена
                             </h3>
 
                             <div class="install-modal__buttons-wrapper">
-                                <button class="install-modal__install-btn btn">
-                                    Установить новую
-                                </button>
-                                <button class="install-modal__skip-btn btn">
-                                    Закрыть мастер
-                                </button>
-                            </div>
-
-                        </section>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Modal Window End -->
-
-            <!-- Modal Window -->
-
-            <div class="modal-window install-modal modal-window_trap-install-3-success none">
-                <div class="container modal-window__container">
-
-                    <div class="modal-window__wrapper install-modal__wrapper">
-
-                        <header class="modal-window__header">
-                            <h3 class="modal-window__title title-mini">
-                                Мастер установки ловушек
-                            </h3>
-
-                            <button class="modal-window__skip-btn icon-ic-x"></button>
-                        </header>
-
-                        <section class="modal-window__content install-modal__content install-modal__content_success">
-
-                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
-
-                            <h3 class="install-modal__success-message title-mini">
-                                Ловушка <\Имя ловушки> установлена
-                            </h3>
-
-                            <div class="install-modal__buttons-wrapper">
-                                <button class="install-modal__install-btn btn">
+                                <button class="install-modal__install-btn btn" data-modal="bait-distribute">
                                     Распространить новую
                                 </button>
-                                <button class="install-modal__skip-btn btn">
-                                    Закрыть мастер
+                                <button class="install-modal__skip-btn btn" data-modal="main">
+                                    Закрыть окно
                                 </button>
                             </div>
 
@@ -1031,7 +988,48 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window modal-window-4 modal-window_command none">
+            <div class="modal-window install-modal modal-window_trap-install-3-success hidden" data-modal="bait-success-2">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper install-modal__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Мастер генерации приманок
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content install-modal__content install-modal__content_success">
+
+                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
+
+                            <h3 class="install-modal__success-message title-mini">
+                                Приманка <\Имя приманки> сгенерирована
+                            </h3>
+
+                            <div class="install-modal__buttons-wrapper">
+                                <button class="install-modal__install-btn btn" data-modal="bait-install">
+                                    Распространить новую
+                                </button>
+                                <button class="install-modal__skip-btn btn" data-modal="main">
+                                    Закрыть мастер
+                                </button>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window End -->
+
+            <!-- Modal Window ( Bait Import ) -->
+
+            <div class="modal-window modal-window-4 modal-window_bait-import hidden" data-modal="bait-import">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-4__wrapper">
@@ -1063,12 +1061,12 @@
                                         <p class="files__file-text">baits.csv</p>
                                     </div>
                                 </section>
+
+                                <button class="files__btn btn" data-modal="bait-success-3">
+                                    Импортировать
+                                </button>
                                 
                             </div>
-
-                            <button class="modal-window-4__btn btn">
-                                Импортировать
-                            </button>
 
                         </section>
 
@@ -1077,11 +1075,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Bait Import ) End -->
 
-            <!-- Modal Window -->
+            <!-- Modal Window ( Success 2 ) -->
 
-            <div class="modal-window modal-window_success-2 none">
+            <div class="modal-window modal-window_success-2 hidden" data-modal="bait-success-3">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -1109,7 +1107,41 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Success 2 ) End -->
+
+            <!-- Modal Window ( Export Baits ) -->
+
+            <div class="modal-window modal-window-9 modal-window_export-baits hidden" data-modal="bait-export">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper modal-window-9__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Экспорт приманок
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content modal-window-9__content">
+
+                            <p class="modal-window-9__text">
+                                Приманки экспортированы
+                            </p>
+
+                            <a href="#" download class="modal-window-9__btn btn">
+                                Скачать файл экспорта
+                            </a>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window ( Export Baits End) -->
 
         </section>
 

@@ -241,78 +241,82 @@
 
             <main class="main">
 
-                <!-- Integration -->
+                <!-- Syslog Export -->
 
-                <section class="integration">
-                    <div class="container integration__container">
+                <section class="syslog-export">
+                    <div class="container syslog-export__container">
 
-                        <section class="integration__content">
+                        <section class="syslog-export__content">
 
-                            <header class="integration__header">
-
-                                <h3 class="integration__title title-mini">
-                                    Параметры подключения к Active Directory
+                            <header class="syslog-export__header">
+                                <h3 class="syslog-export__title title-mini">
+                                    Параметры экспорта логов в Syslog
                                 </h3>
-
                             </header>
 
-                            <div class="integration__inputs-wrapper">
+                            <div class="syslog-export__inputs-wrapper">
 
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        Адрес каталога Active Directory \ Контроллера домена *
-                                    </p>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Тип Syslog сервера *
+                                            </p>
+                                    
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Сервер Syslog</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
                             
-                                    <input type="text" value="192.168.10.200" class="input__input">
-                                </div>
-
-                                <div></div>
-
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        BIND DN *
-                                    </p>
+                                    <section class="select-input-2__hidden-section hidden">
                             
-                                    <input type="text" value="Администратор@honeycorn.local" class="input__input">
-                                </div>
-
-                                <div class="input">
-                                    <p class="input__mini-title">
-                                        BIND PASSWORD *
-                                    </p>
-                            
-                                    <input type="password" value="dc=honeycorn,dc=local" class="input__input">
+                                    </section>
                                 </div>
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        База поиска пользователей *
+                                        IP адрес Syslog сервера *
                                     </p>
                             
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
+                                    <input type="text" value="127.0.0.1" class="input__input">
+                                </div>
+
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <p class="input__mini-title">
+                                                Протокол подключения *
+                                            </p>
+                                    
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">UDP</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
                                     <p class="input__mini-title">
-                                        База поиска рабочих станций *
+                                        Порт Syslog сервера *
                                     </p>
                             
-                                    <input type="text" value="dc=honeycorn,dc=local" class="input__input">
+                                    <input type="text" value="514" class="input__input">
                                 </div>
 
                             </div>
-                            
-                            <div class="integration__buttons-wrapper">
 
-                                <button class="integration__btn integration__btn_test btn">
-                                    Тест подключения
-                                </button>
+                            <div class="syslog-export__buttons-wrapper">
 
-                                <button class="integration__btn integration__btn_analyse btn">
-                                    Анализ AD
-                                </button>
-
-                                <button class="integration__btn integration__btn_reload btn">
+                                <button class="syslog-export__btn btn">
                                     Обновить
                                 </button>
 
@@ -323,7 +327,7 @@
                     </div>
                 </section>
 
-                <!-- Integration End -->
+                <!-- Syslog Export End -->
 
             </main>
 

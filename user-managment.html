@@ -24,18 +24,18 @@
             </header>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section icon-ic-dashboard">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="#" class="drop-down__link">
+                            <a href="#" class="drop-down__link drop-down__link_current">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -215,11 +215,11 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -260,26 +260,26 @@
 
                                     <div class="user-info__inputs-wrapper">
                                         <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
+                                            <h4 class="user-info__input-title icon-ic-mail">
                                                 E-mail
                                             </h4>
 
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" value="adm@honeycorn.local" class="input__input">
                                         
-                                                <button class="input__btn icon-ic-copy"></button>
+                                                <button class="input__btn copy-btn icon-ic-copy"></button>
                                             </div>
                                         </section>
 
                                         <section class="user-info__input-section">
-                                            <h4 class="user-info__input-title">
+                                            <h4 class="user-info__input-title icon-ic-key">
                                                 Ключ API
                                             </h4>
 
                                             <div class="input">
-                                                <input type="text" class="input__input">
+                                                <input type="text" value="a798742795e7da2c2a2f916f5c2a21ea05cc3a99" class="input__input">
                                         
-                                                <button class="input__btn icon-ic-copy"></button>
+                                                <button class="input__btn copy-btn icon-ic-copy"></button>
                                             </div>
                                         </section>
                                     </div>
@@ -301,9 +301,9 @@
                                             </h4>
 
                                             <div class="input">
-                                                <input type="password" class="input__input">
+                                                <input type="password" value="erergerg" class="input__input">
                                         
-                                                <button class="input__btn icon-ic-eye"></button>
+                                                <button class="input__btn icon-ic-eye password-toggle-btn"></button>
                                             </div>
                                         </section>
 
@@ -313,9 +313,9 @@
                                             </h4>
 
                                             <div class="input">
-                                                <input type="password" class="input__input">
+                                                <input type="password" value="ergqerthrj" class="input__input">
                                         
-                                                <button class="input__btn icon-ic-eye"></button>
+                                                <button class="input__btn icon-ic-eye password-toggle-btn"></button>
                                             </div>
                                         </section>
                                     </div>
@@ -325,7 +325,7 @@
                             </div>
 
                             <div class="user-info__btn-wrapper">
-                                <button class="user-info__btn btn">
+                                <button class="user-info__btn btn" data-modal="pass-success">
                                     Изменить
                                 </button>
                             </div>
@@ -339,7 +339,7 @@
                                     Пользователи
                                 </h3>
 
-                                <button class="users__btn btn">
+                                <button class="users__btn btn" data-modal="add-user">
                                     Добавить пользователя
                                 </button>
                             </header>
@@ -359,8 +359,8 @@
                                     </div>
 
                                     <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                        <button class="user__btn icon-ic-pen" data-modal="edit-user"></button>
+                                        <button class="user__btn icon-ic-trash" data-modal="confirm-delete"></button>
                                     </div>
 
                                 </div>
@@ -378,8 +378,8 @@
                                     </div>
 
                                     <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                        <button class="user__btn icon-ic-pen" data-modal="edit-user"></button>
+                                        <button class="user__btn icon-ic-trash" data-modal="confirm-delete"></button>
                                     </div>
 
                                 </div>
@@ -397,8 +397,8 @@
                                     </div>
 
                                     <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                        <button class="user__btn icon-ic-pen" data-modal="edit-user"></button>
+                                        <button class="user__btn icon-ic-trash" data-modal="confirm-delete"></button>
                                     </div>
 
                                 </div>
@@ -416,8 +416,8 @@
                                     </div>
 
                                     <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                        <button class="user__btn icon-ic-pen" data-modal="edit-user"></button>
+                                        <button class="user__btn icon-ic-trash" data-modal="confirm-delete"></button>
                                     </div>
 
                                 </div>
@@ -435,8 +435,8 @@
                                     </div>
 
                                     <div class="user__right-section">
-                                        <button class="user__btn icon-ic-pen"></button>
-                                        <button class="user__btn icon-ic-trash"></button>
+                                        <button class="user__btn icon-ic-pen" data-modal="edit-user"></button>
+                                        <button class="user__btn icon-ic-trash" data-modal="confirm-delete"></button>
                                     </div>
 
                                 </div>
@@ -464,7 +464,7 @@
 
             <!-- Modal Window ( Success 6 ) -->
 
-            <div class="modal-window modal-window_success-6 none">
+            <div class="modal-window modal-window_success-6 hidden" data-modal="pass-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -496,7 +496,7 @@
             
             <!-- Modal Window ( Success 7 ) -->
 
-            <div class="modal-window modal-window_success-7 none">
+            <div class="modal-window modal-window_success-7 hidden" data-modal="add-user-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -528,7 +528,7 @@
 
             <!-- Modal Window ( Success 8 ) -->
 
-            <div class="modal-window modal-window_success-8 none">
+            <div class="modal-window modal-window_success-8 hidden" data-modal="edit-user-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -560,7 +560,7 @@
 
             <!-- Modal Window ( Success 9 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_success-9 none">
+            <div class="modal-window modal-window-6 modal-window_success-9 hidden" data-modal="delete-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -590,9 +590,9 @@
 
             <!-- Modal Window ( Success 9 ) End -->
 
-            <!-- Modal Window ( Confirm ) -->
+            <!-- Modal Window ( Confirm 1 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_confirm-delete none">
+            <div class="modal-window modal-window-6 modal-window_confirm-delete-1 hidden" data-modal="confirm-delete">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -614,11 +614,11 @@
                             </p>
 
                             <div class="modal-window-6__buttons-wrapper">
-                                <button class="modal-window-6__skip-btn btn">
+                                <button class="modal-window-6__skip-btn btn" data-modal="main">
                                     Отменить
                                 </button>
 
-                                <button class="modal-window-6__remove-btn btn">
+                                <button class="modal-window-6__remove-btn btn" data-modal="delete-success">
                                     Удалить
                                 </button>
                             </div>
@@ -630,11 +630,11 @@
                 </div>
             </div>
 
-            <!-- Modal Window ( Confirm ) End -->
+            <!-- Modal Window ( Confirm 1 ) End -->
 
             <!-- Modal Window ( Add New User ) -->
 
-            <div class="modal-window modal-window-7 modal-window_add-new-user none">
+            <div class="modal-window modal-window-7 modal-window_add-new-user hidden" data-modal="add-user">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-7__wrapper">
@@ -651,24 +651,41 @@
 
                             <div class="modal-window-7__inputs-wrapper">
 
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
+                                <div class="input input_single input_black-placeholder">
+                                    <input type="text" placeholder="E-mail пользователя *" class="input__input">
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Роль *</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Актив</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
@@ -676,9 +693,9 @@
                                         Пароль
                                     </p>
                             
-                                    <input type="password" class="input__input">
+                                    <input type="password" value="reggererg" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye"></i>
+                                    <button class="input__btn icon-ic-eye password-toggle-btn"></button>
                                 </div>
 
                                 <div class="input">
@@ -686,16 +703,16 @@
                                         Пароль еще раз *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="reggererg" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye-closed"></i>
+                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                 </div>
 
                             </div>
 
                             <div class="modal-window-7__btn-wrapper">
 
-                                <button class="modal-window-7__btn btn">
+                                <button class="modal-window-7__btn btn" data-modal="add-user-success">
                                     Добавить
                                 </button>
 
@@ -712,7 +729,7 @@
 
             <!-- Modal Window ( Edit User ) -->
 
-            <div class="modal-window modal-window-7 modal-window_edit-user none">
+            <div class="modal-window modal-window-7 modal-window_edit-user hidden" data-modal="edit-user">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-7__wrapper">
@@ -729,24 +746,40 @@
 
                             <div class="modal-window-7__inputs-wrapper">
 
-                                <div class="input input_single">
-                                    <input type="text" class="input__input">
+                                <div class="input input_single input_black-placeholder">
+                                    <input type="text" placeholder="E-mail пользователя *" class="input__input">
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Роль *</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Роль *</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
-                                <div class="input">
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Актив</p>
-                                    </div>
-                                    
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                <div class="select-input-2">
+                                    <section class="select-input-2__open-section">
+                                        <div class="input">
+                                            <div class="input__select-block">
+                                                <p class="input__select-value">Актив</p>
+                                            </div>
+                                            
+                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
+                                        </div>
+                                    </section>
+                            
+                                    <section class="select-input-2__hidden-section hidden">
+                            
+                                    </section>
                                 </div>
 
                                 <div class="input">
@@ -754,9 +787,9 @@
                                         Пароль
                                     </p>
                             
-                                    <input type="password" class="input__input">
+                                    <input type="password" value="reggererg" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye"></i>
+                                    <button class="input__btn icon-ic-eye password-toggle-btn"></button>
                                 </div>
 
                                 <div class="input">
@@ -764,16 +797,16 @@
                                         Пароль еще раз *
                                     </p>
                             
-                                    <input type="text" class="input__input">
+                                    <input type="text" value="reggererg" class="input__input">
                             
-                                    <i class="input__item icon-ic-eye"></i>
+                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                 </div>
 
                             </div>
 
                             <div class="modal-window-7__btn-wrapper">
 
-                                <button class="modal-window-7__btn btn">
+                                <button class="modal-window-7__btn btn" data-modal="edit-user-success">
                                     Сохранить
                                 </button>
 

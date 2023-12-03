@@ -16,12 +16,8 @@
     }
 
     &__btn {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        @extend %icon-btn;
         font-size: 2rem;
-        color: $gray4;
     }
 
     &__input {

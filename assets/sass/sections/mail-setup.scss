@@ -1,0 +1,27 @@
+// Mail Setup Styles
+
+// Базовые стили mail-setup находятся в syslog-export.scss
+
+.mail-setup {
+    
+    &__buttons-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__btn {
+
+        &_reload {
+            background: none;
+            border: 2px solid $primaryColor;
+        }
+    }
+
+    &__checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.63rem;
+        margin-bottom: 1.5rem;
+    }
+}

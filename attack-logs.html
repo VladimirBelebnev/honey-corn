@@ -25,17 +25,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-dashboard">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Дашборд
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -66,9 +66,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -89,17 +89,17 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section icon-ic-active">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name">
                         Активы
-                    </h4>
+                    </span>
                 </button>
             </section>
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-trap">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Ловушки и приманки
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -120,9 +120,9 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-monitoring">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Мониторинг
-                    </h4>
+                    </span>
                 </button>
 
                 <section class="drop-down__hidden-section">
@@ -148,12 +148,12 @@
 
             <section class="drop-down navbar__link">
                 <button class="drop-down__open-section drop-down__open-section_list icon-ic-gear">
-                    <h4 class="drop-down__name">
+                    <span class="drop-down__name icon-drop-down-arrow">
                         Настройки
-                    </h4>
+                    </span>
                 </button>
 
-                <section class="drop-down__hidden-section none">
+                <section class="drop-down__hidden-section hidden">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
                             <a href="#" class="drop-down__link">
@@ -215,11 +215,11 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
-                            <section class="select-input-2__hidden-section none">
+                            <section class="select-input-2__hidden-section hidden">
 
                             </section>
                         </div>
@@ -243,12 +243,12 @@
 
                 <!-- Attack Logs -->
 
-                <section class="trap-base-logs">
-                    <div class="container trap-base-logs__container">
+                <section class="attack-logs">
+                    <div class="container attack-logs__container">
 
                         <!-- Search -->
 
-                        <section class="trap-base-logs__search search">
+                        <section class="attack-logs__search search">
 
                             <h2 class="search__title title">
                                 Полнотекстовый поиск
@@ -265,7 +265,7 @@
 
                         <!-- Filter -->
 
-                        <section class="trap-base-logs__filter filter">
+                        <section class="attack-logs__filter filter">
 
                             <header class="filter__header">
 
@@ -273,7 +273,7 @@
                                     Фильтры и исключения
                                 </h2>
 
-                                <button class="filter__open-content-btn filter__btn filter__btn_active icon-drop-down-arrow"></button>
+                                <button class="filter__open-content-btn filter__btn filter__open-content-btn_active icon-drop-down-arrow"></button>
 
                             </header>
 
@@ -288,7 +288,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
                                         <div class="calendare">
                                             <div class="calendare__section">
                                                 <header class="calendare__header">
@@ -481,7 +481,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
 
                                     </section>
                                 </div>
@@ -493,7 +493,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
                                         
                                     </section>
                                 </div>
@@ -505,7 +505,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
 
                                     </section>
                                 </div>
@@ -517,7 +517,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
 
                                     </section>
                                 </div>
@@ -529,7 +529,7 @@
                                         </button>
                                     </section>
 
-                                    <section class="select-input-2__hidden-section none">
+                                    <section class="select-input-2__hidden-section hidden">
 
                                     </section>
                                 </div>
@@ -544,7 +544,7 @@
 
                         <!-- Table Block -->
 
-                        <section class="trap-base-logs__table-block table-block">
+                        <section class="attack-logs__table-block table-block">
                             
                             <header class="table-block__header">
 
@@ -568,7 +568,7 @@
 
                             <section class="table-block__content">
 
-                                <table class="table-block__table table table_attack" cellspacing="0">
+                                <table class="table-block__table table table_attack-logs" cellspacing="0">
                                     <thead class="table__header">
                                         <tr class="table__row">
                                             <th class="table__cell table__cell_title">
@@ -669,7 +669,7 @@
                                                 8743b52063cd84097a65d1633f5c74f5
                                             </td>
                                         </tr>
-                                        <tr class="table__row table__row_letter none">
+                                        <tr class="table__row table__row_letter hidden">
                                             <td class="table__cell table__cell_letter-message" colspan="7">
                                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
                                             </td>
@@ -707,7 +707,7 @@
                                                 8743b52063cd84097a65d1633f5c74f5
                                             </td>
                                         </tr>
-                                        <tr class="table__row table__row_letter none">
+                                        <tr class="table__row table__row_letter hidden">
                                             <td class="table__cell table__cell_letter-message" colspan="7">
                                                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur maNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma
                                             </td>
@@ -733,11 +733,11 @@
                                                         <p class="input__select-value">5</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section none">
+                                            <section class="select-input-2__hidden-section hidden">
 
                                             </section>
                                         </div>
@@ -753,7 +753,7 @@
                                         </p>
 
                                         <div class="table-block__num-input input input_single">
-                                            <input type="text" class="input__input">
+                                            <input type="text" value="5" class="input__input">
                                         </div>
                                     </section>
 
@@ -793,9 +793,9 @@
 
         <section class="modal-windows">
 
-            <!-- Modal Window -->
+            <!-- Modal Window ( Export IOC 2 ) -->
 
-            <div class="modal-window modal-window_export-ioc-2 none">
+            <div class="modal-window modal-window_export-ioc-2 hidden">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -853,7 +853,7 @@
                 </div>
             </div>
 
-            <!-- Modal Window End -->
+            <!-- Modal Window ( Export IOC 2 ) End -->
 
         </section>
 

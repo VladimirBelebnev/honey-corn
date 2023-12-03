@@ -1,1 +1,11 @@
 // Trap Constructor Logs Styles
+
+.trap-constructor-logs {
+    width: 100%;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
