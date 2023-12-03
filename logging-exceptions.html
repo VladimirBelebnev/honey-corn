@@ -214,7 +214,7 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
@@ -260,7 +260,7 @@
                                     </div>
 
                                     <div class="table-block__header-left-section">
-                                        <button class="table-block__btn-2 btn">
+                                        <button class="table-block__btn-2 btn" data-modal="add-exception">
                                             Добавить исключение
                                         </button>
                                     </div>
@@ -291,8 +291,8 @@
                                                     000.000.000.000
                                                 </td>
                                                 <td class="table__cell table__cell_actions">
-                                                    <button class="table__action-btn icon-ic-pen"></button>
-                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                    <button class="table__action-btn icon-ic-pen" data-modal="edit-exception"></button>
+                                                    <button class="table__action-btn icon-ic-trash" data-modal="delete-exception"></button>
                                                 </td>
                                             </tr>
                                             <tr class="table__row">
@@ -303,8 +303,8 @@
                                                     000.000.000.000
                                                 </td>
                                                 <td class="table__cell table__cell_actions">
-                                                    <button class="table__action-btn icon-ic-pen"></button>
-                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                    <button class="table__action-btn icon-ic-pen" data-modal="edit-exception"></button>
+                                                    <button class="table__action-btn icon-ic-trash" data-modal="delete-exception"></button>
                                                 </td>
                                             </tr>
                                             <tr class="table__row">
@@ -315,8 +315,8 @@
                                                     000.000.000.000
                                                 </td>
                                                 <td class="table__cell table__cell_actions">
-                                                    <button class="table__action-btn icon-ic-pen"></button>
-                                                    <button class="table__action-btn icon-ic-trash"></button>
+                                                    <button class="table__action-btn icon-ic-pen" data-modal="edit-exception"></button>
+                                                    <button class="table__action-btn icon-ic-trash" data-modal="delete-exception"></button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -342,7 +342,7 @@
                                                             <p class="input__select-value">5</p>
                                                         </div>
                                                         
-                                                        <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                        <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                     </div>
                                                 </section>
 
@@ -402,7 +402,7 @@
 
             <!-- Modal Window ( Success 10 ) -->
 
-            <div class="modal-window modal-window_success-10 hidden">
+            <div class="modal-window modal-window_success-10 hidden" data-modal="exception-add-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -434,7 +434,7 @@
 
             <!-- Modal Window ( Success 11 ) -->
 
-            <div class="modal-window modal-window_success-11 hidden">
+            <div class="modal-window modal-window_success-11 hidden" data-modal="exception-edit-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -466,7 +466,7 @@
 
             <!-- Modal Window ( Success 12 ) -->
 
-            <div class="modal-window modal-window_success-12">
+            <div class="modal-window modal-window_success-12 hidden" data-modal="exception-delete-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -498,7 +498,7 @@
 
             <!-- Modal Window ( Confirm 2 ) -->
 
-            <div class="modal-window modal-window-6 modal-window_confirm-delete-2 hidden">
+            <div class="modal-window modal-window-6 modal-window_confirm-delete-2 hidden" data-modal="delete-exception">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-6__wrapper">
@@ -520,11 +520,11 @@
                             </p>
 
                             <div class="modal-window-6__buttons-wrapper">
-                                <button class="modal-window-6__skip-btn btn">
+                                <button class="modal-window-6__skip-btn btn" data-modal="main">
                                     Отменить
                                 </button>
 
-                                <button class="modal-window-6__remove-btn btn">
+                                <button class="modal-window-6__remove-btn btn" data-modal="exception-delete-success">
                                     Удалить
                                 </button>
                             </div>
@@ -540,7 +540,7 @@
 
             <!-- Modal Window ( Add New Exception ) -->
 
-            <div class="modal-window modal-window-8 modal-window_add-new-exception hidden">
+            <div class="modal-window modal-window-8 modal-window_add-new-exception hidden" data-modal="add-exception">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-8__wrapper">
@@ -585,7 +585,7 @@
 
                             <div class="modal-window-8__btn-wrapper">
 
-                                <button class="modal-window-8__btn btn">
+                                <button class="modal-window-8__btn btn" data-modal="exception-add-success">
                                     Добавить
                                 </button>
 
@@ -602,7 +602,7 @@
 
             <!-- Modal Window ( Edit Exception ) -->
 
-            <div class="modal-window modal-window-8 modal-window_edit-exception hidden">
+            <div class="modal-window modal-window-8 modal-window_edit-exception hidden" data-modal="edit-exception">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-8__wrapper">
@@ -647,7 +647,7 @@
 
                             <div class="modal-window-8__btn-wrapper">
 
-                                <button class="modal-window-8__btn btn">
+                                <button class="modal-window-8__btn btn" data-modal="exception-edit-success">
                                     Сохранить
                                 </button>
 

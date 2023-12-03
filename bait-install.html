@@ -215,7 +215,7 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
@@ -250,7 +250,7 @@
 
                         <header class="bait-install__header">
 
-                            <button class="bait-install__btn btn">
+                            <button class="bait-install__btn btn" data-modal="bait-install">
                                 Мастер генерации приманок
                             </button>
                             
@@ -313,7 +313,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -338,7 +338,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -363,7 +363,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -388,7 +388,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -413,7 +413,7 @@
                                                 Описание приманки
                                             </td>
                                             <td class="table__cell table__cell_start">
-                                                <a href="http://template.com/&931jKadfj" class="table__link link">
+                                                <a href="http://template.com/&931jKadfj" class="table__link link" data-modal="bait-distribute">
                                                     Запуск
                                                 </a>
                                             </td>
@@ -427,11 +427,11 @@
 
                                 <section class="table-block__left-section">
 
-                                    <button class="table-block__import-btn btn">
+                                    <button class="table-block__import-btn btn" data-modal="bait-import">
                                         Импорт
                                     </button>
 
-                                    <button class="table-block__export-btn btn">
+                                    <button class="table-block__export-btn btn" data-modal="bait-export">
                                         Экспорт
                                     </button>
 
@@ -451,7 +451,7 @@
                                                         <p class="input__select-value">5</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -509,7 +509,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-2 hidden">
+            <div class="modal-window install-modal modal-window_trap-install-2 hidden" data-modal="bait-distribute">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -524,7 +524,7 @@
 
                         <section class="modal-window__content install-modal__content install-modal__content_bait">
 
-                            <header class="install-modal__progress progress">
+                            <header class="install-modal__progress progress" data-pagination="bait-distribute-pagination">
 
                                 <button class="progress__item progress__item_passed">
                                     1
@@ -536,11 +536,11 @@
 
                             </header>
 
-                            <section class="install-modal__form">
+                            <section class="install-modal__form" data-group="bait-distribute-submodal">
 
                                 <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1">
+                                <section class="install-modal__step-section install-modal__step-section_1" data-submodal="bait-distribute-submodal-1">
 
                                     <h3 class="install-modal__title title-mini">
                                         Выбор приманки
@@ -559,7 +559,7 @@
                                                         <p class="input__select-value">Bait name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -594,7 +594,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-submodal="bait-distribute-submodal-2">
                                             Далее
                                         </button>
                                     </div>
@@ -603,7 +603,7 @@
 
                                 <!-- Install Modal Step 2 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_2 hidden">
+                                <section class="install-modal__step-section install-modal__step-section_2 hidden" data-submodal="bait-distribute-submodal-2">
 
                                     <h3 class="install-modal__title title-mini">
                                         Параметры
@@ -632,7 +632,7 @@
                                                         <p class="input__select-value">SSH</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -666,7 +666,7 @@
                                             
                                                     <input type="text" value="admin" class="input__input">
                                             
-                                                    <button class="input__btn icon-ic-eye"></button>
+                                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                                 </div>
                                             </div>
 
@@ -697,7 +697,7 @@
                                             
                                                     <input type="text" value="admin" class="input__input">
                                             
-                                                    <button class="input__btn icon-ic-eye"></button>
+                                                    <button class="input__btn icon-ic-eye-closed password-toggle-btn"></button>
                                                 </div>
                                             </div>
 
@@ -706,7 +706,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-modal="bait-success-1" data-reset="bait-distribute-submodal" data-reset-pagination="bait-distribute-pagination">
                                             Распространение
                                         </button>
                                     </div>
@@ -726,7 +726,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-3 hidden">
+            <div class="modal-window install-modal modal-window_trap-install-3 hidden" data-modal="bait-install">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -741,9 +741,9 @@
 
                         <section class="modal-window__content install-modal__content install-modal__content_bait">
 
-                            <header class="install-modal__progress progress">
+                            <header class="install-modal__progress progress" data-pagination="bait-install-pagination">
 
-                                <button class="progress__item progress__item_passed">
+                                <button class="progress__item progress__item_current">
                                     1
                                 </button>
 
@@ -753,11 +753,11 @@
 
                             </header>
 
-                            <section class="install-modal__form">
+                            <section class="install-modal__form" data-group="bait-distrubution-submodal">
 
                                 <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1 hidden">
+                                <section class="install-modal__step-section install-modal__step-section_1" data-submodal="bait-distrubution-submodal-1">
 
                                     <h3 class="install-modal__title title-mini">
                                         Выбор приманки
@@ -776,7 +776,7 @@
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -811,7 +811,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-submodal="bait-distrubution-submodal-2">
                                             Далее
                                         </button>
                                     </div>
@@ -820,7 +820,7 @@
 
                                 <!-- Install Modal Step 2 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_2">
+                                <section class="install-modal__step-section install-modal__step-section_2 hidden" data-submodal="bait-distrubution-submodal-2">
 
                                     <h3 class="install-modal__title title-mini">
                                         Конфигурация приманки
@@ -840,7 +840,7 @@
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -885,7 +885,7 @@
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -927,7 +927,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-modal="bait-success-2" data-reset="bait-distrubution-submodal" data-reset-pagination="bait-install-pagination">
                                             Генерировать
                                         </button>
                                     </div>
@@ -947,7 +947,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-2-success hidden">
+            <div class="modal-window install-modal modal-window_trap-install-2-success hidden" data-modal="bait-success-1">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -969,10 +969,10 @@
                             </h3>
 
                             <div class="install-modal__buttons-wrapper">
-                                <button class="install-modal__install-btn btn">
+                                <button class="install-modal__install-btn btn" data-modal="bait-distribute">
                                     Распространить новую
                                 </button>
-                                <button class="install-modal__skip-btn btn">
+                                <button class="install-modal__skip-btn btn" data-modal="main">
                                     Закрыть окно
                                 </button>
                             </div>
@@ -988,7 +988,7 @@
 
             <!-- Modal Window -->
 
-            <div class="modal-window install-modal modal-window_trap-install-3-success hidden">
+            <div class="modal-window install-modal modal-window_trap-install-3-success hidden" data-modal="bait-success-2">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -1010,10 +1010,10 @@
                             </h3>
 
                             <div class="install-modal__buttons-wrapper">
-                                <button class="install-modal__install-btn btn">
+                                <button class="install-modal__install-btn btn" data-modal="bait-install">
                                     Распространить новую
                                 </button>
-                                <button class="install-modal__skip-btn btn">
+                                <button class="install-modal__skip-btn btn" data-modal="main">
                                     Закрыть мастер
                                 </button>
                             </div>
@@ -1029,7 +1029,7 @@
 
             <!-- Modal Window ( Bait Import ) -->
 
-            <div class="modal-window modal-window-4 modal-window_bait-import">
+            <div class="modal-window modal-window-4 modal-window_bait-import hidden" data-modal="bait-import">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-4__wrapper">
@@ -1062,7 +1062,7 @@
                                     </div>
                                 </section>
 
-                                <button class="files__btn btn">
+                                <button class="files__btn btn" data-modal="bait-success-3">
                                     Импортировать
                                 </button>
                                 
@@ -1079,7 +1079,7 @@
 
             <!-- Modal Window ( Success 2 ) -->
 
-            <div class="modal-window modal-window_success-2 hidden">
+            <div class="modal-window modal-window_success-2 hidden" data-modal="bait-success-3">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -1111,7 +1111,7 @@
 
             <!-- Modal Window ( Export Baits ) -->
 
-            <div class="modal-window modal-window-9 modal-window_export-baits hidden">
+            <div class="modal-window modal-window-9 modal-window_export-baits hidden" data-modal="bait-export">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-9__wrapper">
@@ -1130,9 +1130,9 @@
                                 Приманки экспортированы
                             </p>
 
-                            <button class="modal-window-9__btn btn">
+                            <a href="#" download class="modal-window-9__btn btn">
                                 Скачать файл экспорта
-                            </button>
+                            </a>
 
                         </section>
 

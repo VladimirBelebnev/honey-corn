@@ -54,6 +54,14 @@
     }
 }
 
+.active {
+
+    i,
+    .filter__btn:not(.filter__data-btn,.filter__delete-btn,.filter__open-content-btn)::before {
+        transform: rotate(0);
+    }
+}
+
 // Классы инпутов
 
 // Шаблоны
@@ -259,6 +267,7 @@
 
     &__open-section {
         width: 100%;
+        cursor: pointer;
     }
 
     &__hidden-section {
@@ -267,6 +276,7 @@
         top: calc(100% + 0.5rem);
         left: 0;
         z-index: 2;
+        transition: .5s;
     }
 }
 
@@ -890,7 +900,6 @@
     box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
     &__header {
-        margin-bottom: 1.25rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -902,9 +911,15 @@
         align-items: center;
         justify-content: center;
         color: $gray4;
+        transform: rotate(180deg);
 
         &::before {
             line-height: 0;
+            transition: .5s;
+        }
+
+        &_active {
+            transform: rotate(0deg) !important;
         }
     }
 
@@ -920,10 +935,12 @@
     }
 
     &__content {
+        margin-top: 1.25rem;
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
         align-items: center;
+        transition: .5s;
     }
 
     &__delete-btn {

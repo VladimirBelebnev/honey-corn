@@ -215,7 +215,7 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
@@ -260,11 +260,11 @@
 
                             <section class="activies__create-right-section">
 
-                                <button class="activies__create-btn btn">
+                                <button class="activies__create-btn btn" data-modal="active-modal">
                                     Создать актив
                                 </button>
 
-                                <button class="activies__create-btn btn">
+                                <button class="activies__create-btn btn" data-modal="pull-ip-modal">
                                     Создать пул IP
                                 </button>
 
@@ -284,7 +284,7 @@
                                     Фильтры и исключения
                                 </h2>
 
-                                <button class="filter__open-content-btn filter__btn filter__btn_active icon-drop-down-arrow"></button>
+                                <button class="filter__open-content-btn filter__btn filter__open-content-btn_active icon-drop-down-arrow"></button>
 
                             </header>
 
@@ -518,7 +518,7 @@
                                                         <p class="input__select-value">5</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -580,7 +580,7 @@
 
             <!-- Make Active Modal ( First ) -->
 
-            <div class="modal-window active-modal modal-window_active-1 hidden">
+            <div class="modal-window active-modal modal-window_active-1 hidden" data-modal="active-modal">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper active-modal__wrapper">
@@ -595,9 +595,9 @@
 
                         <section class="modal-window__content active-modal__content active-modal__content_activies">
 
-                            <div class="active-modal__form">
+                            <div class="active-modal__form" data-group="active-submodal">
 
-                                <section class="active-modal__step-section">
+                                <section class="active-modal__step-section" data-group="active-submodal-1">
 
                                     <div class="active-modal__inputs-wrapper">
 
@@ -623,11 +623,11 @@
                                                         <p class="input__select-value">Trap name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
-                                            <section class="select-input-2__hidden-section">
+                                            <section class="select-input-2__hidden-section hidden">
                                                 <div class="active-modal__trap-pop-up pop-up-2">
                                                     <div class="active-modal__trap-pop-up-wrapper">
                                                         <div class="pop-up-2__checkbox-quadro checkbox-quadro">
@@ -671,7 +671,7 @@
                                                         <p class="input__select-value">Bait name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -693,7 +693,7 @@
                                                         <p class="input__select-value">Pool name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -715,7 +715,7 @@
                                                         <p class="input__select-value">User name</p>
                                                     </div>
 
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -728,7 +728,7 @@
                                     </div>
 
                                     <div class="active-modal__btn-wrapper">
-                                        <button class="active-modal__next-btn btn">
+                                        <button class="active-modal__next-btn btn" data-modal="active-success" data-reset="active-submodal">
                                             Создать
                                         </button>
                                     </div>
@@ -748,7 +748,7 @@
 
             <!-- Make Active Modal ( Second ) -->
 
-            <div class="modal-window active-modal modal-window_active-2 hidden">
+            <div class="modal-window active-modal modal-window_active-2 hidden" data-modal="pull-ip-modal">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper active-modal__wrapper">
@@ -763,9 +763,9 @@
 
                         <section class="modal-window__content active-modal__content active-modal__content_activies">
 
-                            <div class="active-modal__form">
+                            <div class="active-modal__form" data-group="pull-ip-submodal">
 
-                                <section class="active-modal__step-section">
+                                <section class="active-modal__step-section" data-group="pull-ip-submodal-1">
 
                                     <div class="active-modal__inputs-wrapper">
 
@@ -805,7 +805,7 @@
                                     </div>
 
                                     <div class="active-modal__btn-wrapper">
-                                        <button class="active-modal__next-btn btn">
+                                        <button class="active-modal__next-btn btn" data-modal="pull-ip-success" data-reset="pull-ip-submodal">
                                             Создать
                                         </button>
                                     </div>
@@ -825,7 +825,7 @@
 
             <!-- Make Active Modal ( Third ) -->
 
-            <div class="modal-window active-modal modal-window_active-3 hidden">
+            <div class="modal-window active-modal modal-window_active-3 hidden" data-modal="change-active-modal">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper active-modal__wrapper">
@@ -840,9 +840,9 @@
 
                         <section class="modal-window__content active-modal__content active-modal__content_activies active-modal__content_table">
 
-                            <div class="active-modal__form">
+                            <div class="active-modal__form" data-group="change-active-submodal">
 
-                                <section class="active-modal__step-section">
+                                <section class="active-modal__step-section" data-submodal="change-active-submodal-1">
 
                                     <div class="active-modal__inputs-wrapper">
 
@@ -970,7 +970,7 @@
                                                                         <p class="input__select-value">5</p>
                                                                     </div>
                                                                     
-                                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                                 </div>
                                                             </section>
 
@@ -1123,7 +1123,7 @@
                                                                         <p class="input__select-value">5</p>
                                                                     </div>
                                                                     
-                                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                                 </div>
                                                             </section>
 
@@ -1169,7 +1169,7 @@
                                     </div>
 
                                     <div class="active-modal__btn-wrapper">
-                                        <button class="active-modal__next-btn btn">
+                                        <button class="active-modal__next-btn btn" data-modal="change-active-success" data-reset="change-active-submodal">
                                             Изменить
                                         </button>
                                     </div>
@@ -1189,7 +1189,7 @@
 
             <!-- Modal Window ( Success 3 ) -->
 
-            <div class="modal-window modal-window_success-3 hidden">
+            <div class="modal-window modal-window_success-3 hidden" data-modal="active-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -1221,7 +1221,7 @@
 
             <!-- Modal Window ( Success 4 ) -->
 
-            <div class="modal-window modal-window_success-4 hidden">
+            <div class="modal-window modal-window_success-4 hidden" data-modal="pull-ip-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -1253,7 +1253,7 @@
 
             <!-- Modal Window ( Success 5 ) -->
 
-            <div class="modal-window modal-window_success-5 hidden">
+            <div class="modal-window modal-window_success-5 hidden" data-modal="change-active-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">

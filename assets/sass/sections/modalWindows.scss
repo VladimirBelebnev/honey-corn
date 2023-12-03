@@ -54,6 +54,8 @@
 
     &__cell {
         padding: 0.31rem 0.63rem;
+        text-align: center;
+        vertical-align: middle;
 
         &_title {
             font-weight: $semibold;
@@ -121,6 +123,13 @@
 
     &__checkbox-quadro {
         margin-bottom: 1.25rem;
+    }
+
+    &__btn {
+
+        &_active {
+            opacity: 0.5;
+        }
     }
 }
 
@@ -190,6 +199,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 
     &__container {
         height: 100%;
@@ -596,7 +606,8 @@
         justify-content: flex-end;
     }
 
-    &__next-btn {
+    &__next-btn,
+    &__install-btn {
         font-size: 1.125rem;
         font-weight: $normal;
         line-height: 2.25rem;
@@ -710,6 +721,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__step-section{
+        transition: .5s;
+    }
 }
 
 .delete-modal {
@@ -764,14 +779,14 @@
         border-radius: 50%;
         color: $gray4;
 
-        &_passed {
-            background: none;
-            border: 2px solid $primaryColor;
-        }
-
         &_current {
             color: $black;
             background: $primaryColor;
+        }
+
+        &_passed {
+            background: none;
+            border: 2px solid $primaryColor;
         }
     }
 }

@@ -215,7 +215,7 @@
                                         <p class="input__select-value">Выберите актив</p>
                                     </div>
                                     
-                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                 </div>
                             </section>
 
@@ -273,7 +273,7 @@
                                     Фильтры и исключения
                                 </h2>
 
-                                <button class="filter__open-content-btn filter__btn filter__btn_active icon-drop-down-arrow"></button>
+                                <button class="filter__open-content-btn filter__btn filter__open-content-btn_active icon-drop-down-arrow"></button>
 
                             </header>
 
@@ -595,27 +595,10 @@
                                                 192.168.10.45 - 192.168.13.109
                                             </td>
                                             <td class="table__cell">
-                                                <i class="table__status status status_red"></i>
+                                                <button class="table__status status status_red" data-modal="baits-status"></button>
                                             </td>
                                             <td class="table__cell">
-                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear"></button>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                17-09-2023, 12:31:00
-                                            </td>
-                                            <td class="table__cell">
-                                                Загрузка файла
-                                            </td>
-                                            <td class="table__cell">
-                                                192.168.10.45 - 192.168.13.109
-                                            </td>
-                                            <td class="table__cell">
-                                                <i class="table__status status status_orange"></i>
-                                            </td>
-                                            <td class="table__cell">
-                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear"></button>
+                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear" data-modal="baits-global-settings"></button>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -629,27 +612,10 @@
                                                 192.168.10.45 - 192.168.13.109
                                             </td>
                                             <td class="table__cell">
-                                                <i class="table__status status status"></i>
+                                                <button class="table__status status status_orange" data-modal="baits-status"></button>
                                             </td>
                                             <td class="table__cell">
-                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear"></button>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell">
-                                                17-09-2023, 12:31:00
-                                            </td>
-                                            <td class="table__cell">
-                                                Загрузка файла
-                                            </td>
-                                            <td class="table__cell">
-                                                192.168.10.45 - 192.168.13.109
-                                            </td>
-                                            <td class="table__cell">
-                                                <i class="table__status status status_red"></i>
-                                            </td>
-                                            <td class="table__cell">
-                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear"></button>
+                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear" data-modal="baits-global-settings"></button>
                                             </td>
                                         </tr>
                                         <tr class="table__row">
@@ -663,10 +629,44 @@
                                                 192.168.10.45 - 192.168.13.109
                                             </td>
                                             <td class="table__cell">
-                                                <i class="table__status status status_red"></i>
+                                                <button class="table__status status status" data-modal="baits-status"></button>
                                             </td>
                                             <td class="table__cell">
-                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear"></button>
+                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear" data-modal="baits-global-settings"></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                17-09-2023, 12:31:00
+                                            </td>
+                                            <td class="table__cell">
+                                                Загрузка файла
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.10.45 - 192.168.13.109
+                                            </td>
+                                            <td class="table__cell">
+                                                <button class="table__status status status_red" data-modal="baits-status"></button>
+                                            </td>
+                                            <td class="table__cell">
+                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear" data-modal="baits-global-settings"></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell">
+                                                17-09-2023, 12:31:00
+                                            </td>
+                                            <td class="table__cell">
+                                                Загрузка файла
+                                            </td>
+                                            <td class="table__cell">
+                                                192.168.10.45 - 192.168.13.109
+                                            </td>
+                                            <td class="table__cell">
+                                                <i class="table__status status status_red" data-modal="baits-status"></i>
+                                            </td>
+                                            <td class="table__cell">
+                                                <button class="table__option-btn table__cell_option-2 icon-ic-gear" data-modal="baits-global-settings"></button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -690,7 +690,7 @@
                                                         <p class="input__select-value">5</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -752,7 +752,7 @@
 
             <!-- Modal Window ( Bait Status ) -->
 
-            <div class="modal-window modal-window-3 modal-window_bait-status hidden">
+            <div class="modal-window modal-window-3 modal-window_bait-status hidden" data-modal="baits-status">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-3__wrapper">
@@ -774,7 +774,7 @@
                                             <p class="input__select-value input_mini-title-gray">Выбрать приманку из пула</p>
                                         </div>
                                         
-                                        <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                        <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                     </div>
                                 </section>
                         
@@ -789,7 +789,7 @@
 
                             <div class="modal-window-3__buttons-wrapper modal-window-3__buttons-wrapper_reverse">
 
-                                <button class="modal-window__copy-btn icon-ic-copy"></button>
+                                <button class="modal-window__copy-btn copy-btn icon-ic-copy"></button>
 
                             </div>
 
@@ -804,7 +804,7 @@
 
             <!-- Modal Window ( Bait Settings ) -->
 
-            <div class="modal-window install-modal modal-window_bait-settings hidden">
+            <div class="modal-window install-modal modal-window_bait-settings hidden" data-modal="baits-settings">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper install-modal__wrapper">
@@ -819,11 +819,11 @@
 
                         <section class="modal-window__content install-modal__content">
 
-                            <section class="install-modal__form">
+                            <section class="install-modal__form" data-group="baits-settings-submodal">
 
-                                <!-- Install Modal Step 3 -->
+                                <!-- Install Modal Step 1 -->
 
-                                <section class="install-modal__step-section install-modal__step-section_1">
+                                <section class="install-modal__step-section install-modal__step-section_1" data-submodal="baits-settings-submodal-1">
 
                                     <h3 class="install-modal__title title-mini">
                                         Конфигурация приманки
@@ -842,7 +842,7 @@
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -885,7 +885,7 @@
                                                         <p class="input__select-value">Имя настройки</p>
                                                     </div>
                                                     
-                                                    <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                 </div>
                                             </section>
 
@@ -934,7 +934,7 @@
                                     </div>
 
                                     <div class="install-modal__btn-wrapper">
-                                        <button class="install-modal__next-btn btn">
+                                        <button class="install-modal__next-btn btn" data-modal="main" data-reset="baits-settings-submodal">
                                             Сохранить
                                         </button>
                                     </div>
@@ -954,7 +954,7 @@
 
             <!-- Modal Window ( Delete ) -->
 
-            <div class="modal-window delete-modal modal-window_delete hidden">
+            <div class="modal-window delete-modal modal-window_delete hidden" data-modal="baits-delete">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper delete-modal__wrapper">
@@ -969,11 +969,11 @@
 
                         <section class="modal-window__content delete-modal__content">
 
-                            <section class="delete-modal__form">
+                            <section class="delete-modal__form" data-group="baits-delete-submodal">
 
-                                <!-- Install Modal Step 3 -->
+                                <!-- Install Modal Step 1 -->
 
-                                <section class="delete-modal__step-section delete-modal__step-section_1">
+                                <section class="delete-modal__step-section delete-modal__step-section_1" data-submodal="baits-delete-submodal-1">
 
                                     <div class="delete-modal__inputs-wrapper">
 
@@ -988,7 +988,7 @@
                                                                 <p class="input__select-value input_mini-title-gray">Выбрать приманку из пула</p>
                                                             </div>
                                                             
-                                                            <i class="input__item input__btn_drop-down icon-drop-down-arrow"></i>
+                                                            <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                                         </div>
                                                     </section>
                                             
@@ -1015,7 +1015,7 @@
                                     </div>
 
                                     <div class="delete-modal__btn-wrapper">
-                                        <button class="delete-modal__next-btn btn">
+                                        <button class="delete-modal__next-btn btn" data-modal="main" data-reset="baits-delete-submodal">
                                             Удалить
                                         </button>
                                     </div>
@@ -1035,7 +1035,7 @@
 
             <!-- Modal Window ( Edit ) -->
 
-            <div class="modal-window modal-window-5 modal-window_edit hidden">
+            <div class="modal-window modal-window-5 modal-window_edit hidden" data-modal="baits-global-settings">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper modal-window-5__wrapper">
@@ -1051,11 +1051,11 @@
                         <section class="modal-window__content modal-window-5__content">
 
                             <div class="modal-window-5__buttons-wrapper">
-                                <button class="modal-window-5__btn btn">
+                                <button class="modal-window-5__btn btn" data-modal="baits-settings">
                                     Изменить настройки
                                 </button>
 
-                                <button class="modal-window-5__btn btn">
+                                <button class="modal-window-5__btn btn" data-modal="baits-delete">
                                     Запуск мастера удаления
                                 </button>
                             </div>

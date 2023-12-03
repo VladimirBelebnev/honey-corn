@@ -37,6 +37,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
+
+    &__calendare {
+        max-width: 39.625rem;
+        width: 39.625rem;
+        left: 100%;
+        transform: translate(-100%, 0);
+    }
 }
 
 .statistic {
@@ -75,13 +82,139 @@
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 15rem;
         gap: 13.92rem;
     }
+
+    &__column-header-row {
+
+        &:first-child {
+            margin-bottom: 0.5rem;
+        }
+
+        &:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__column-settings {
+        @extend %icon-btn;
+        font-size: 1.5rem;
+    }
+
+    &__values-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__values-item {
+        display: flex;
+        align-items: center;
+        gap: 0.53rem;
+
+        &::before {
+            content: "";
+            width: 0.4375rem;
+            height: 0.4375rem;
+            background: $gray1;
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        &_blue::before {
+            background: $blue1;
+        }
+
+        &_green::before {
+            background: $green3;
+        }
+
+        &_yellow::before {
+            background: $primaryColor;
+        }
+
+        &_red::before {
+            background: $red1;
+        }
+    }
+
+    &__value {
+        display: inline-block;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    }
+
 }
 
 .information {
     width: 100%;
+
+    &__column {
+        position: relative;
+
+        &_grid-diagram {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8.375rem 4rem;
+            gap: 0.25rem;
+
+            .information__column-row {
+                display: flex;
+                gap: 0.25rem;
+            }
+
+            .information__grid-item {
+                width: 100%;
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 0.625rem;
+                border: 2px solid rgba(0, 0, 0, 1);
+                padding: 0.75rem;
+                position: relative;
+
+                &_red {
+                    border-color: $red1;
+                    background: $redGradient;
+                }
+        
+                &_yellow {
+                    border-color: $primaryColor;
+                    background: $yellowGradient;
+                }
+        
+                &_purple {
+                    border-color: $purple1;
+                    background: $purpleGradient;
+                }
+        
+                &_blue {
+                    border-color: $blue1;
+                    background: $blueGradient;
+                }
+        
+                &_green {
+                    border-color: $green3;
+                    background: $greenGradient;
+                }
+            }
+
+            .information__grid-name,
+            .information__grid-value {
+                font-size: 0.75rem;
+                font-weight: $semibold;
+                line-height: 1rem;
+                display: inline-block;
+            }
+
+            .information__grid-value {
+                position: absolute;
+                bottom: 0.75rem;
+                right: 0.75rem;
+            }
+        }
+    }
 
     // Блоки видов диаграм
 
@@ -119,10 +252,6 @@
                 left: calc(100% + 1.25rem - 1px);
                 top: 0;
             }
-        }
-
-        .stub {
-            height: 12.625rem;
         }
 
         .information__list > *:not(:last-child) {
@@ -172,10 +301,8 @@
     }
 
     &__settings {
-        display: inline-flex;
-        align-items: center;
+        @extend %icon-btn;
         font-size: 1.5rem;
-        color: $gray4;
     }
 
     &__content {
@@ -230,24 +357,13 @@
         color: $gray4;
     }
 
-    // &__grid-item {
-
-    //     &_red {
-    //     }
-
-    //     &_yellow {
-    //     }
-
-    //     &_purple {
-    //     }
-
-    //     &_blue {
-    //     }
-
-    //     &_green {
-    //     }
-    // }
-
-    // &__grid-text {
-    // }
+    &__graphic-1-value {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        font-weight: $medium;
+        line-height: 2.25rem;
+    }
 }
