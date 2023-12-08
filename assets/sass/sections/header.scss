@@ -8,11 +8,32 @@
     box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
     &__container {
-        justify-content: space-between;
+        flex-direction: column;
     }
 
-    &__section:last-child {
-        gap: 1.25rem;
+    &__row {
+        width: 100%;
+
+        &:first-child {
+            justify-content: space-between;
+        }
+
+        &:last-child {
+            display: none;
+            padding-top: 0.75rem;
+            border-top: 2px solid $gray5;
+        }
+    }
+
+    &__section {
+
+        &_mobile {
+            display: none;
+        }
+
+        &:nth-child(3) {
+            gap: 1.25rem;
+        }
     }
 
     &__btn {
@@ -24,4 +45,61 @@
         max-width: 16.25rem;
         width: 16.25rem;
     }
+
+    &__drop-down-btn {
+        @extend %icon-btn;
+        font-size: 2rem;
+    }
+
+    &__page-name {
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: $semibold;
+        line-height: 1rem;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1200px) {
+
+    .header {
+        padding: 0.75rem 0;
+
+        &__section {
+            display: none;
+
+            &_mobile {
+                display: block;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .header {
+
+        &__row {
+            &:first-child {
+                margin-bottom: 0.75rem;
+            }
+
+            &:last-child {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .header {
+
+        &__drop-down-btn {
+            font-size: 1.5rem;
+        }
+    }
+
 }

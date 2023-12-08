@@ -2,6 +2,10 @@
 
 // Поп-ап окна
 
+.modal-windows {
+    position: absolute;
+}
+
 .calendare {
     max-width: 20.375rem;
     width: 20.375rem;
@@ -372,10 +376,21 @@
     border-radius: 0.625rem;
     box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
+    &_mini {
+        max-width: 22rem;
+        width: 22rem;
+    }
+
+    &_all-width {
+        max-width: 100%;
+        width: 100%;
+    }
+
     &__value {
         font-size: 1.125rem;
         line-height: 2.25rem;
         padding: 0.5rem 1rem;
+        text-align: left;
     }
 }
 
@@ -790,3 +805,16 @@
         }
     }
 }
+
+// Media Queries
+
+// @media all and (max-width: 380px) {
+
+//     .modal-window {
+
+//         &__btn {
+//             font-size: 1rem;
+//         }
+//     }
+
+// }

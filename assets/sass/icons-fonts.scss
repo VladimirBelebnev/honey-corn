@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-ic-burger:before {
+    content: "\e926";
+  }
   .icon-ic-key:before {
     content: "\e924";
   }
@@ -138,8 +141,7 @@
   }
   .icon-ic-trap:before {
     content: "\e906";
-  }
-  
+  }  
   
   
   

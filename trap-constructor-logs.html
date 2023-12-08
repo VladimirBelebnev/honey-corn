@@ -187,50 +187,93 @@
             <header class="header flex">
                 <div class="container header__container flex">
 
-                    <section class="header__section flex">
+                    <div class="header__row flex">
 
-                        <div class="header__theme-checkbox theme-checkbox">
-                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+                        <section class="header__section header__section_mobile">
+                            <div class="logo logo_black">
+                                <a href="#" class="logo__link"></a>
+                            </div>
+                        </section>
 
-                            <div class="checkbox">
-                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
-                                <label for="theme-input" class="checkbox__label"></label>
+                        <section class="header__section flex">
+
+                            <div class="header__theme-checkbox theme-checkbox">
+                                <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                    <label for="theme-input" class="checkbox__label"></label>
+                                </div>
+
+                                <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
                             </div>
 
-                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
-                        </div>
+                        </section>
 
-                    </section>
+                        <section class="header__section flex">
 
-                    <section class="header__section flex">
-
-                        <div class="select-input-2">
-                            <section class="select-input-2__open-section">
-                                <div class="header__input input">
-                                    <p class="input__mini-title">
-                                        Выбор актива
-                                    </p>
-                            
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Выберите актив</p>
+                            <div class="select-input-2">
+                                <section class="select-input-2__open-section">
+                                    <div class="header__input input">
+                                        <p class="input__mini-title">
+                                            Выбор актива
+                                        </p>
+                                
+                                        <div class="input__select-block">
+                                            <p class="input__select-value">Выберите актив</p>
+                                        </div>
+                                        
+                                        <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                     </div>
-                                    
-                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
-                                </div>
-                            </section>
+                                </section>
 
-                            <section class="select-input-2__hidden-section hidden">
+                                <section class="select-input-2__hidden-section hidden hidden">
+                                    <div class="select-drop-down select-drop-down_all-width">
+                                        <ul class="select-drop-down__list">
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
 
-                            </section>
-                        </div>
+                            <button class="header__btn header__btn_document icon-ic-file"></button>
+                            
+                            <button class="header__btn header__btn_settings icon-ic-gear"></button>
 
-                        <button class="header__btn header__btn_document icon-ic-file"></button>
-                        
-                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+                            <button class="header__btn header__btn_logout icon-ic-door"></button>
 
-                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+                        </section>
 
-                    </section>
+                        <section class="header__section header__section_mobile">
+                            <button class="header__drop-down-btn icon-ic-burger"></button>
+                        </section>
+
+                    </div>
+
+                    <div class="header__row flex">
+                        <h3 class="header__page-name">
+                            Логи конструкторов ловушек
+                        </h3>
+                    </div>
                     
                 </div>
             </header>
@@ -293,8 +336,8 @@
                                                 <header class="calendare__header">
                                                     <button class="calendare__prev-btn icon-ic-left"></button>
 
-                                                    <h4 class="calendare__current-month">
-                                                        Октябрь 2023
+                                                    <h4 class="calendare__current-month" data-date="2023.12">
+                                                        Декабрь 2023
                                                     </h4>
 
                                                     <button class="calendare__next-btn icon-ic-right"></button>
@@ -328,144 +371,6 @@
                                                     </thead>
 
                                                     <tbody class="calendare__table-body">
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_out-month">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active-start">
-                                                                20
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell calendare__cell_active">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell calendare__cell_active-end">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="calendare__table-row">
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                            <td class="calendare__cell">
-                                                                20
-                                                            </td>
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -531,7 +436,30 @@
                                     </section>
 
                                     <section class="select-input-2__hidden-section hidden">
-
+                                        <div class="select-drop-down select-drop-down_mini">
+                                            <ul class="select-drop-down__list">
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </section>
                                 </div>
 
@@ -543,7 +471,30 @@
                                     </section>
 
                                     <section class="select-input-2__hidden-section hidden">
-
+                                        <div class="select-drop-down select-drop-down_mini">
+                                            <ul class="select-drop-down__list">
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </section>
                                 </div>
 
@@ -555,7 +506,30 @@
                                     </section>
 
                                     <section class="select-input-2__hidden-section hidden">
-
+                                        <div class="select-drop-down select-drop-down_mini">
+                                            <ul class="select-drop-down__list">
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </section>
                                 </div>
 
@@ -567,7 +541,30 @@
                                     </section>
 
                                     <section class="select-input-2__hidden-section hidden">
-
+                                        <div class="select-drop-down select-drop-down_mini">
+                                            <ul class="select-drop-down__list">
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </section>
                                 </div>
 
@@ -579,7 +576,30 @@
                                     </section>
 
                                     <section class="select-input-2__hidden-section hidden">
-
+                                        <div class="select-drop-down select-drop-down_mini">
+                                            <ul class="select-drop-down__list">
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                                <li class="select-drop-down__list-item">
+                                                    <button class="select-drop-down__value">
+                                                        Name
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </section>
                                 </div>
 
@@ -790,6 +810,268 @@
 
                             </footer>
 
+                            <section class="table-block__mobile-content">
+
+                                <div class="table-item">
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Дата
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            20-09-2023, 09:27:36
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сенсор
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            DESKTOP-0SDT0P8-NetAg
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            IP источника атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            192.168.10.45
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Атакуемый порт
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            80
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Служба / Протокол
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            TCP
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Тип атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Эксплуатация
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Вид ловушки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Агент - Контроль сети Windows
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сигнатура
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+                                        </p>
+                                    </section>
+
+                                    <button class="table-item__info-btn icon-ic-three_dots" data-modal="exception-1"></button>
+
+                                </div>
+
+                                <div class="table-item">
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Дата
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            20-09-2023, 09:27:36
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сенсор
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            DESKTOP-0SDT0P8-NetAg
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            IP источника атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            192.168.10.45
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Атакуемый порт
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            80
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Служба / Протокол
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            TCP
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Тип атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Эксплуатация
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Вид ловушки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Агент - Контроль сети Windows
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сигнатура
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+                                        </p>
+                                    </section>
+
+                                    <button class="table-item__info-btn icon-ic-three_dots" data-modal="exception-1"></button>
+
+                                </div>
+
+                                <div class="table-item">
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Дата
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            20-09-2023, 09:27:36
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сенсор
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            DESKTOP-0SDT0P8-NetAg
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            IP источника атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            192.168.10.45
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Атакуемый порт
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            80
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Служба / Протокол
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            TCP
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Тип атаки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Эксплуатация
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Вид ловушки
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            Агент - Контроль сети Windows
+                                        </p>
+                                    </section>
+
+                                    <section class="table-item__info-section">
+                                        <h5 class="table-item__info-title">
+                                            Сигнатура
+                                        </h5>
+
+                                        <p class="table-item__text">
+                                            ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent
+                                        </p>
+                                    </section>
+
+                                    <button class="table-item__info-btn icon-ic-three_dots" data-modal="exception-1"></button>
+
+                                </div>
+
+                            </section>
+
                         </section>
 
                         <!-- Table Block End -->
@@ -862,7 +1144,7 @@
 
                             <div class="modal-window__iscnput input">
                                 <input type="text" placeholder="Название исключения" class="input__input">
-                                <i class="input__item icon-ic-backspace"></i>
+                                <button class="input__btn icon-ic-backspace clear-btn"></button>
                             </div>
 
                             <button class="modal-window__btn btn">

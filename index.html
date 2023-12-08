@@ -187,50 +187,93 @@
             <header class="header flex">
                 <div class="container header__container flex">
 
-                    <section class="header__section flex">
+                    <div class="header__row flex">
 
-                        <div class="header__theme-checkbox theme-checkbox">
-                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+                        <section class="header__section header__section_mobile">
+                            <div class="logo logo_black">
+                                <a href="#" class="logo__link"></a>
+                            </div>
+                        </section>
 
-                            <div class="checkbox">
-                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
-                                <label for="theme-input" class="checkbox__label"></label>
+                        <section class="header__section flex">
+
+                            <div class="header__theme-checkbox theme-checkbox">
+                                <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                    <label for="theme-input" class="checkbox__label"></label>
+                                </div>
+
+                                <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
                             </div>
 
-                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
-                        </div>
+                        </section>
 
-                    </section>
+                        <section class="header__section flex">
 
-                    <section class="header__section flex">
-
-                        <div class="select-input-2">
-                            <section class="select-input-2__open-section">
-                                <div class="header__input input">
-                                    <p class="input__mini-title">
-                                        Выбор актива
-                                    </p>
-                            
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Выберите актив</p>
+                            <div class="select-input-2">
+                                <section class="select-input-2__open-section">
+                                    <div class="header__input input">
+                                        <p class="input__mini-title">
+                                            Выбор актива
+                                        </p>
+                                
+                                        <div class="input__select-block">
+                                            <p class="input__select-value">Выберите актив</p>
+                                        </div>
+                                        
+                                        <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                     </div>
-                                    
-                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
-                                </div>
-                            </section>
+                                </section>
 
-                            <section class="select-input-2__hidden-section hidden">
+                                <section class="select-input-2__hidden-section hidden hidden">
+                                    <div class="select-drop-down select-drop-down_all-width">
+                                        <ul class="select-drop-down__list">
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
 
-                            </section>
-                        </div>
+                            <button class="header__btn header__btn_document icon-ic-file"></button>
+                            
+                            <button class="header__btn header__btn_settings icon-ic-gear"></button>
 
-                        <button class="header__btn header__btn_document icon-ic-file"></button>
-                        
-                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+                            <button class="header__btn header__btn_logout icon-ic-door"></button>
 
-                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+                        </section>
 
-                    </section>
+                        <section class="header__section header__section_mobile">
+                            <button class="header__drop-down-btn icon-ic-burger"></button>
+                        </section>
+
+                    </div>
+
+                    <div class="header__row flex">
+                        <h3 class="header__page-name">
+                            Логи базовых ловушек
+                        </h3>
+                    </div>
                     
                 </div>
             </header>
@@ -254,6 +297,8 @@
                                         График атак за период с <strong class="statistic__strong">01.09.2023, 00:00:00</strong> по 
                                         <strong class="statistic__strong">07.09.2023, 00:00:00</strong>
                                     </h3>
+
+                                    <i class="statistic__status statistic__status_mobile status"></i>
                                 </section>
                                 
 
@@ -276,7 +321,7 @@
                                         </section>
             
                                         <section class="select-input-2__hidden-section home__calendare hidden">
-                                            <div class="calendare calendare_double">
+                                            <div class="calendare calendare_double" data-is-diapason="true">
                                                 <div class="calendare__section">
                                                     <header class="calendare__header">
                                                         <button class="calendare__prev-btn icon-ic-left"></button>
@@ -785,7 +830,7 @@
                                 <section class="information__content">
                                     <section class="information__row">
                                         <section class="information__column">
-                                            <ul class="information__list">
+                                            <ul class="information__list information__list_emails">
                                                 <li class="information__list-item">
                                                     <p class="information__value">
                                                         sysadmin@yourcompany.domen
@@ -809,6 +854,54 @@
                                                 <li class="information__list-item">
                                                     <p class="information__value">
                                                         dob@dob.doc
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            
+                                            <ul class="information__list information__list_mobile">
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name">
+                                                        sysadmin@yourcompany.domen
+                                                    </h4>
+            
+                                                    <p class="information__value">
+                                                        2441
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name">
+                                                        sysadmin@yourcompany.domen
+                                                    </h4>
+            
+                                                    <p class="information__value">
+                                                        2441
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name">
+                                                        sysadmin@yourcompany.domen
+                                                    </h4>
+            
+                                                    <p class="information__value">
+                                                        2441
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name">
+                                                        sysadmin@yourcompany.domen
+                                                    </h4>
+            
+                                                    <p class="information__value">
+                                                        2441
+                                                    </p>
+                                                </li>
+                                                <li class="information__list-item">
+                                                    <h4 class="information__name">
+                                                        sysadmin@yourcompany.domen
+                                                    </h4>
+            
+                                                    <p class="information__value">
+                                                        2441
                                                     </p>
                                                 </li>
                                             </ul>

@@ -42,6 +42,10 @@ const passwordToggleButtons = document.querySelectorAll(".password-toggle-btn");
 
 const copyButtons = document.querySelectorAll(".copy-btn");
 
+// Clear Value Buttons Variables
+
+const clearButtons = document.querySelectorAll(".clear-btn");
+
 // Calendare Variables
 
 const calendareNextBtn = document.querySelector(".calendare__next-btn");
@@ -49,11 +53,25 @@ const calendarePrevBtn = document.querySelector(".calendare__prev-btn");
 const currentDate = document.querySelector(".calendare__current-month");
 const saveDiapasonBtn = document.querySelector(".select-diapason__save-btn");
 const selectDiapasonButtons = document.querySelectorAll(".select-diapason__btn");
+let cellsSingle;
 
 let currentMonth = currentDate?.getAttribute("data-date").split(".")[1];
 let currentYear = currentDate?.getAttribute("data-date").split(".")[0];
 
 let currentDiapason = 7;
+let isDiapason;
+
+// Diapason Variables
+
+const checkboxes = document.querySelectorAll(".checkbox-quadro__input");
+
+// Table Variables
+
+const tableDropDownButtons = document.querySelectorAll(".table__drop-down-btn");
+
+// Files Select Variables
+
+const fileInputs = document.querySelectorAll(".files__input");
 
 // Modal Windows Methods
 
@@ -81,6 +99,22 @@ function modalClose(modalWindows) {
     closeAllModals(modalWindows);
 }
 
+// Diapason Methods
+
+function toggleDiapason(el) {
+    const diapason = `${el.getAttribute("data-min-diapason")} - ${el.getAttribute("data-max-diapason")}`;
+    const isDiapason = document.querySelector("#" + el.getAttribute("data-question")).checked;
+    const fieldType = el.getAttribute("data-field-type");
+    const baseValue = el.getAttribute("data-base-value");
+    const resultValue = isDiapason ? diapason : baseValue;
+
+    if (fieldType == "placeholder") {
+        el.placeholder = resultValue;
+    }   else {
+        el.value = resultValue;
+    }
+}
+
 // Calendare Methods
 
 function getDay(date) {
@@ -100,6 +134,8 @@ function generateMonth(tbody, year, month) {
     let tableBody = "";
     let previousMonthDate = new Date(year, trueMonth - 1);
     let lastDayPrevMonth = 0;
+    let tableParent = table.closest(".calendare");
+    isDiapason = !!(tableParent.getAttribute("data-is-diapason"));
 
     table.innerHTML = "";
 
@@ -146,9 +182,23 @@ function generateMonth(tbody, year, month) {
         let itemDate = new Date(itemDateArray[0], itemDateArray[1] - 1, itemDateArray[2]);
         let currentDate = new Date();
 
-        item.setAttribute("data-date", `${Math.round((((itemDate - currentDate) / 1000) / 3600) / 24) + currentDate.getDate() + 1}`);
+        item.setAttribute("data-order", `${Math.round((((itemDate - currentDate) / 1000) / 3600) / 24) + currentDate.getDate() + 1}`);
     });
-    interpretateDiapason(currentDiapason);
+
+    if (isDiapason) {
+        interpretateDiapason(currentDiapason);
+
+        let start = new Date();
+        let end = new Date();
+
+        end.setDate((new Date()).getDate() - currentDiapason);
+
+        const currentDateInput = table.closest(".select-input-2").querySelector(".input__select-value");
+
+        currentDateInput.textContent = `${end.getFullYear()}.${end.getMonth()}.${end.getDate()} - ${start.getFullYear()}.${start.getMonth()}.${start.getDate()}`;
+    }
+
+    cellsSingle = document.querySelectorAll(".calendare__cell:not(.calendare__cell_title)");
 }
 
 function toggleDate(direction, dateElem) {
@@ -233,7 +283,7 @@ function translateMonth(month) {
 
 function setDiapasonCalendare(start, end, cells) {
     Array.from(cells).forEach(cell => {
-        const value = +(cell.getAttribute("data-date"));
+        const value = +(cell.getAttribute("data-order"));
 
         if (value > start && value < end) {
             cell.classList.add("calendare__cell_active");
@@ -296,6 +346,17 @@ if (currentDate) {
             currentBtn.classList.add("select-diapason__btn_active");
         });
     });
+
+    if (!isDiapason) {
+        cellsSingle.forEach(item => {
+                item.addEventListener("click", (event) => {
+                let currentCell = event.currentTarget;
+
+                cellsSingle.forEach(item => item.classList.remove("calendare__cell_active"));
+                currentCell.classList.add("calendare__cell_active");
+            });
+        })
+    }
 
 }
 
@@ -427,12 +488,25 @@ passwordToggleButtons.forEach(item => {
     });
 });
 
+// Copy Events
+
 copyButtons.forEach(item => {
     item?.addEventListener("click", (event) => {
         const currentBtn = event.currentTarget;
         const input = currentBtn.closest(".input, .modal-window__content, .license-info__input-wrapper").querySelector(".input__input");
 
         navigator.clipboard.writeText(input.value);
+    });
+});
+
+// Clear Events
+
+clearButtons.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        const currentBtn = event.currentTarget;
+        const input = currentBtn.closest(".input, .modal-window__content, .license-info__input-wrapper").querySelector(".input__input");
+
+        input.value = "";
     });
 });
 
@@ -446,6 +520,59 @@ resetFiltersBtn?.addEventListener("click", (event) => {
 
     filterInputs.forEach(item => item.value = "");
     filterCheckboxes.forEach(item => item.checked = false);
+});
+
+// Table Events
+
+tableDropDownButtons.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        const currentBtn = event.currentTarget;
+        const nextRow = currentBtn.closest(".table__row").nextElementSibling;
+        const cell = currentBtn.parentElement;
+
+        nextRow.classList.toggle("hidden");
+        
+        if (nextRow.classList.contains("hidden")) {
+            currentBtn.textContent = "Посмотреть";
+            cell.classList.remove("table__cell_drop-down-active");
+        }   else {
+            currentBtn.textContent = "Свернуть";
+            cell.classList.add("table__cell_drop-down-active");
+        }
+    });
+});
+
+// Diapason Events
+
+checkboxes.forEach(item => {
+    item?.addEventListener("input", (event) => {
+        const input = document.querySelector(`.input__input[data-question=${event.currentTarget.id}]`);
+
+        toggleDiapason(input);
+    });
+});
+
+// Diapason Events
+
+fileInputs.forEach(item => {
+    item?.addEventListener("change", (event) => {
+        const currentInput = event.currentTarget;
+        const fileNames = Array.from(currentInput.files).map(item => item.name);
+        const filesWrapper = currentInput.closest(".files").querySelector(".files__dragn-drop-files");
+        const fileMessage = currentInput.closest(".files").querySelector(".files__file_message");
+
+        if (fileMessage) {
+            fileMessage.remove();
+        }
+
+        fileNames.forEach(item => {
+            filesWrapper.innerHTML += `
+            <div class="files__file">
+                <p class="files__file-text">${item}</p>
+            </div>
+            `;
+        });
+    });
 });
 
 // Chart Scripts
@@ -521,7 +648,6 @@ if (ctx1) {
                 bar: {
                     borderwidth: 5,
                 },
-                maintainAspectRatio: false,
             },
             scales: {
                 x: {
@@ -571,7 +697,6 @@ if (ctx1) {
                 bar: {
                     borderwidth: 5,
                 },
-                maintainAspectRatio: false,
             },
             scales: {
                 x: {

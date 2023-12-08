@@ -80,3 +80,21 @@ svg, img, video {
     max-width: 100%;
     height: auto;
 }
+
+// Media Queries
+
+@media all and (max-width: 1200px) {
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .wrapper__main {
+        gap: 0.75rem;
+    }
+
+}

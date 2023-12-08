@@ -220,7 +220,30 @@
                             </section>
 
                             <section class="select-input-2__hidden-section hidden">
-
+                                <div class="select-drop-down select-drop-down_all-width">
+                                    <ul class="select-drop-down__list">
+                                        <li class="select-drop-down__list-item">
+                                            <button class="select-drop-down__value">
+                                                Name
+                                            </button>
+                                        </li>
+                                        <li class="select-drop-down__list-item">
+                                            <button class="select-drop-down__value">
+                                                Name
+                                            </button>
+                                        </li>
+                                        <li class="select-drop-down__list-item">
+                                            <button class="select-drop-down__value">
+                                                Name
+                                            </button>
+                                        </li>
+                                        <li class="select-drop-down__list-item">
+                                            <button class="select-drop-down__value">
+                                                Name
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </section>
                         </div>
 
@@ -352,7 +375,9 @@
 
                                 <div class="license-install__files files">
 
-                                    <a type="file" class="files__dragn-drop">
+                                    <input type="file" id="file-input" hidden class="files__input">
+
+                                    <label for="file-input" class="files__dragn-drop">
                                         <i class="files__file-icon icon-ic-upload"></i>
 
                                         <p class="files__subtitle">
@@ -360,17 +385,17 @@
                                             или<br>
                                             <mark class="files__subtitle_link link">Выберите в проводнике</mark>
                                         </p>
-                                    </a>
+                                    </label>
 
                                     <section class="files__dragn-drop-files">
-                                        <div class="files__file">
-                                            <p class="files__file-text">baits.csv</p>
+                                        <div class="files__file files__file_message">
+                                            <p class="files__file-text">Нет выбранных файлов</p>
                                         </div>
                                     </section>
 
-                                    <a type="file" class="files__btn btn">
+                                    <label for="file-input" class="files__btn btn">
                                         Загрузить
-                                    </a>
+                                    </label>
                                     
                                 </div>
 

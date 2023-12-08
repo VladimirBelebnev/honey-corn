@@ -54,6 +54,7 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 1.75rem;
+        gap: 2rem;
     }
 
     &__header-section:last-child {
@@ -107,7 +108,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        column-gap: 1rem;
+        flex-wrap: wrap;
     }
 
     &__values-item {
@@ -145,6 +147,18 @@
         display: inline-block;
         font-size: 0.75rem;
         line-height: 1.25rem;
+    }
+
+    &__graphic {
+        max-height: 15rem !important;
+        width: 100% !important;
+    }
+
+    &__status {
+
+        &_mobile {
+            display: none;
+        }
     }
 
 }
@@ -309,6 +323,13 @@
         padding: 1.5rem;
     }
 
+    &__list {
+
+        &_mobile {
+            display: none;
+        }
+    }
+
     &__list-item {
         display: flex;
         justify-content: space-between;
@@ -365,5 +386,208 @@
         font-size: 2rem;
         font-weight: $medium;
         line-height: 2.25rem;
+    }
+}
+
+// Media Queries
+
+@media all and (max-width: 1880px) {
+
+    .statistic {
+
+        &__content {
+            width: 100%;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .home {
+
+        &__container {
+            grid-template-areas: "column1 column1 column1"
+                                "column2 column2 column2"
+                                "column3 column3 column3"
+                                "column4 column4 column4"
+                                "column5 column5 column5";
+        }
+
+        &__last-informations-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .information {
+
+        &_round-diagram {
+        
+            .information__row {
+                grid-template-columns: 1fr 1fr;
+
+                .information__column:last-child {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &_grid-diagram {
+
+            .information__row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        &_column-diagram {
+
+            .information__row {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 12rem;
+
+                canvas {
+                    height: 12rem !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 850px) {
+
+    .statistic {
+
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+
+        &__status {
+            display: none;
+
+            &_mobile {
+                display: inline-block;
+            }
+        }
+
+        &__header-section {
+            width: 100%;
+
+            &:first-child {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        .select-input-2 {
+            width: 100%;
+        }
+
+        &__input {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__graphic {
+            max-height: 10rem !important;
+        }
+    }
+
+    .information {
+
+        &_round-diagram,
+        &_grid-diagram,
+        &_column-diagram {
+        
+            .information__row {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+
+                .information__column:first-child {
+                    position: relative;
+        
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .information__column:last-child {
+                    display: none;
+                }
+            }
+        }
+
+        &_round-diagram {
+        
+            .information__row {
+                gap: 1rem;
+
+                .information__column:last-child {
+                    display: flex;
+                }
+            }
+        }
+
+        &__list {
+
+            &_emails {
+                display: none;
+            }
+
+            &_mobile {
+                display: block;
+            }
+        }
+
+        &__graphic-1 {
+            width: 8.5625rem !important;
+            height: 8.625rem !important;
+        }
+    }
+
+}
+
+@media all and (max-width: 600px) {
+
+    .home {
+
+        &__container{
+            gap: 0.75rem;
+        }
+    }
+
+    .statistic {
+        padding: 0.75rem;
+
+        &__header {
+            margin-bottom: 1.25rem;
+        }
+
+        &__graphic {
+            max-height: 5.36025rem !important;
+        }
+
+        &__column-settings {
+            display: none;
+        }
+    }
+
+    .information {
+
+        &__content,
+        &__header {
+            padding: 0.75rem;
+        }
+
+        &__name,
+        &__value {
+            font-size: 0.875rem;
+        }
     }
 }

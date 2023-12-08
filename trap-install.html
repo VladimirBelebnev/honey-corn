@@ -187,50 +187,93 @@
             <header class="header flex">
                 <div class="container header__container flex">
 
-                    <section class="header__section flex">
+                    <div class="header__row flex">
 
-                        <div class="header__theme-checkbox theme-checkbox">
-                            <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+                        <section class="header__section header__section_mobile">
+                            <div class="logo logo_black">
+                                <a href="#" class="logo__link"></a>
+                            </div>
+                        </section>
 
-                            <div class="checkbox">
-                                <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
-                                <label for="theme-input" class="checkbox__label"></label>
+                        <section class="header__section flex">
+
+                            <div class="header__theme-checkbox theme-checkbox">
+                                <i class="theme-checkbox__night-icon icon-ic-moon"></i>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="theme-input" class="checkbox__input" hidden="hidden">
+                                    <label for="theme-input" class="checkbox__label"></label>
+                                </div>
+
+                                <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
                             </div>
 
-                            <i class="theme-checkbox__sun-icon icon-ic-sun"></i>
-                        </div>
+                        </section>
 
-                    </section>
+                        <section class="header__section flex">
 
-                    <section class="header__section flex">
-
-                        <div class="select-input-2">
-                            <section class="select-input-2__open-section">
-                                <div class="header__input input">
-                                    <p class="input__mini-title">
-                                        Выбор актива
-                                    </p>
-                            
-                                    <div class="input__select-block">
-                                        <p class="input__select-value">Выберите актив</p>
+                            <div class="select-input-2">
+                                <section class="select-input-2__open-section">
+                                    <div class="header__input input">
+                                        <p class="input__mini-title">
+                                            Выбор актива
+                                        </p>
+                                
+                                        <div class="input__select-block">
+                                            <p class="input__select-value">Выберите актив</p>
+                                        </div>
+                                        
+                                        <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
                                     </div>
-                                    
-                                    <i class="input__item input__item_drop-down icon-drop-down-arrow"></i>
-                                </div>
-                            </section>
+                                </section>
 
-                            <section class="select-input-2__hidden-section hidden">
+                                <section class="select-input-2__hidden-section hidden hidden">
+                                    <div class="select-drop-down select-drop-down_all-width">
+                                        <ul class="select-drop-down__list">
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                            <li class="select-drop-down__list-item">
+                                                <button class="select-drop-down__value">
+                                                    Name
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
 
-                            </section>
-                        </div>
+                            <button class="header__btn header__btn_document icon-ic-file"></button>
+                            
+                            <button class="header__btn header__btn_settings icon-ic-gear"></button>
 
-                        <button class="header__btn header__btn_document icon-ic-file"></button>
-                        
-                        <button class="header__btn header__btn_settings icon-ic-gear"></button>
+                            <button class="header__btn header__btn_logout icon-ic-door"></button>
 
-                        <button class="header__btn header__btn_logout icon-ic-door"></button>
+                        </section>
 
-                    </section>
+                        <section class="header__section header__section_mobile">
+                            <button class="header__drop-down-btn icon-ic-burger"></button>
+                        </section>
+
+                    </div>
+
+                    <div class="header__row flex">
+                        <h3 class="header__page-name">
+                            Логи конструкторов ловушек
+                        </h3>
+                    </div>
                     
                 </div>
             </header>
@@ -565,7 +608,7 @@
                                     
                                             <input type="text" value="000.000.000.000" class="input__input">
                                     
-                                            <i class="input__item icon-ic-backspace"></i>
+                                            <button class="input__btn icon-ic-backspace clear-btn"></button>
                                         </div>
 
                                         <div class="input">
@@ -575,7 +618,7 @@
                                     
                                             <input type="text" value="Drupal" class="input__input">
                                     
-                                            <i class="input__item icon-ic-backspace"></i>
+                                            <button class="input__btn icon-ic-backspace clear-btn"></button>
                                         </div>
 
                                         <div class="install-modal__block select-input-2">
@@ -590,7 +633,30 @@
                                             </section>
 
                                             <section class="select-input-2__hidden-section hidden">
-
+                                                <div class="select-drop-down select-drop-down_all-width">
+                                                    <ul class="select-drop-down__list">
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </section>
                                         </div>
 
@@ -652,7 +718,30 @@
                                             </section>
 
                                             <section class="select-input-2__hidden-section hidden">
-
+                                                <div class="select-drop-down select-drop-down_all-width">
+                                                    <ul class="select-drop-down__list">
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </section>
                                         </div>
 
@@ -672,7 +761,30 @@
                                             </section>
 
                                             <section class="select-input-2__hidden-section hidden">
-
+                                                <div class="select-drop-down select-drop-down_all-width">
+                                                    <ul class="select-drop-down__list">
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                        <li class="select-drop-down__list-item">
+                                                            <button class="select-drop-down__value">
+                                                                Name
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </section>
                                         </div>
 
@@ -680,7 +792,7 @@
                                             <div class="input">
                                                 <input type="text" placeholder="Настройка 3" class="input__input">
                                         
-                                                <i class="input__item icon-ic-backspace"></i>
+                                                <button class="input__btn icon-ic-backspace clear-btn"></button>
                                             </div>
 
                                             <div class="pop-up install-modal__pop-up">
