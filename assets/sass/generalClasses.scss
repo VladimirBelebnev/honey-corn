@@ -238,7 +238,12 @@
             transform: rotate(180deg);
         }
 
-        &_drop-down-active {
+        &_drop-down-calendare {
+            font-size: 1.5rem;
+            transform: rotate(0);
+        }
+
+        &_drop-down-active:not(.input__item_drop-down-calendare) {
             transform: rotate(0);
         }
 

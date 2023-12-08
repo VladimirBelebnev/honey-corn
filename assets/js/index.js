@@ -22,6 +22,10 @@ const endModalButtons = document.querySelectorAll("[data-reset]");
 
 const dropDownButtons = document.querySelectorAll(".select-drop-down__value");
 
+// Pop-up Variables
+
+const popUpButtons = document.querySelectorAll(".pop-up-open-btn");
+
 // Drop-downs Methods
 
 function toggleElement(currentEl, el, cl) {
@@ -195,7 +199,7 @@ function generateMonth(tbody, year, month) {
 
         const currentDateInput = table.closest(".select-input-2").querySelector(".input__select-value");
 
-        currentDateInput.textContent = `${end.getFullYear()}.${end.getMonth()}.${end.getDate()} - ${start.getFullYear()}.${start.getMonth()}.${start.getDate()}`;
+        currentDateInput.textContent = `${end.getFullYear()}.${end.getMonth()}.${end.getDate() < 10 ? "0" + end.getDate() : end.getDate()} - ${start.getFullYear()}.${start.getMonth()}.${start.getDate() < 10 ? "0" + start.getDate() : start.getDate()}`;
     }
 
     cellsSingle = document.querySelectorAll(".calendare__cell:not(.calendare__cell_title)");
@@ -572,6 +576,21 @@ fileInputs.forEach(item => {
             </div>
             `;
         });
+    });
+});
+
+// Pop-Up Events
+
+popUpButtons.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        const popUp = event.currentTarget.closest(".pop-up-wrapper").querySelector(".pop-up");
+
+        if (popUp.getAttribute("data-hidden-delay")) {
+            popUp.classList.remove("hidden");
+            setTimeout(() => popUp.classList.add("hidden"), +popUp.getAttribute("data-hidden-delay"));
+        }   else {
+            popUp.classList.toggle("hidden");
+        }
     });
 });
 
