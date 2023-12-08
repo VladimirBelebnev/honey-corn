@@ -249,7 +249,7 @@
     &_grid-diagram {
         .information__row {
             display: grid;
-            grid-template-columns: 1fr 32.685rem;
+            grid-template-columns: 1fr 30.685rem;
             align-items: center;
             gap: 2.5rem;
         }
@@ -449,6 +449,11 @@
                 }
             }
         }
+
+        &__graphic-1 {
+            width: 8.5625rem !important;
+            height: 8.625rem !important;
+        }
     }
 
 }
@@ -543,11 +548,6 @@
             &_mobile {
                 display: block;
             }
-        }
-
-        &__graphic-1 {
-            width: 8.5625rem !important;
-            height: 8.625rem !important;
         }
     }
 

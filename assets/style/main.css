@@ -379,6 +379,9 @@ svg, img, video {
   .wrapper__main {
     gap: 0.75rem;
   }
+  .container {
+    gap: 0.75rem !important;
+  }
 }
 .container {
   width: 100%;
@@ -588,6 +591,8 @@ svg, img, video {
   width: inherit;
   resize: inherit;
   min-height: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .input__input::-webkit-input-placeholder {
   color: #9AA2AD;
@@ -603,6 +608,9 @@ svg, img, video {
 }
 .input__input::placeholder {
   color: #9AA2AD;
+}
+.input__input:focus {
+  border-color: #F9CF3D;
 }
 .input__btn, .input__item {
   position: absolute;
@@ -1639,6 +1647,10 @@ svg, img, video {
     font-weight: 400;
     line-height: 1.5rem;
   }
+  .container:not(.trap-install__container) .table-block__input, .container:not(.trap-install__container) .table-block__num-input {
+    min-height: 2.5rem;
+    height: 2.5rem;
+  }
 }
 @media all and (max-width: 600px) {
   .title-mini {
@@ -1719,6 +1731,7 @@ svg, img, video {
   padding: 0.31rem 0.63rem;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
 }
 .calendare__cell_title {
   font-weight: 600;
@@ -2884,8 +2897,8 @@ svg, img, video {
 .information_grid-diagram .information__row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2.5rem 32.685rem;
-  grid-template-columns: 1fr 32.685rem;
+  -ms-grid-columns: 1fr 2.5rem 30.685rem;
+  grid-template-columns: 1fr 30.685rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3061,6 +3074,10 @@ svg, img, video {
   .information_column-diagram .information__row canvas {
     height: 12rem !important;
   }
+  .information__graphic-1 {
+    width: 8.5625rem !important;
+    height: 8.625rem !important;
+  }
   .home__container > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -3161,10 +3178,6 @@ svg, img, video {
   }
   .information__list_mobile {
     display: block;
-  }
-  .information__graphic-1 {
-    width: 8.5625rem !important;
-    height: 8.625rem !important;
   }
 }
 @media all and (max-width: 600px) {

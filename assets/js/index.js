@@ -203,6 +203,17 @@ function generateMonth(tbody, year, month) {
     }
 
     cellsSingle = document.querySelectorAll(".calendare__cell:not(.calendare__cell_title)");
+
+    if (!isDiapason) {
+        cellsSingle.forEach(item => {
+                item.addEventListener("click", (event) => {
+                let currentCell = event.currentTarget;
+
+                cellsSingle.forEach(item => item.classList.remove("calendare__cell_active"));
+                currentCell.classList.add("calendare__cell_active");
+            });
+        })
+    }
 }
 
 function toggleDate(direction, dateElem) {
@@ -350,17 +361,6 @@ if (currentDate) {
             currentBtn.classList.add("select-diapason__btn_active");
         });
     });
-
-    if (!isDiapason) {
-        cellsSingle.forEach(item => {
-                item.addEventListener("click", (event) => {
-                let currentCell = event.currentTarget;
-
-                cellsSingle.forEach(item => item.classList.remove("calendare__cell_active"));
-                currentCell.classList.add("calendare__cell_active");
-            });
-        })
-    }
 
 }
 

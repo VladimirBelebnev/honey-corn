@@ -214,9 +214,14 @@
         width: inherit;
         resize: inherit;
         min-height: inherit;
+        transition: .5s;
 
         &::placeholder {
             color: $gray4;
+        }
+
+        &:focus {
+            border-color: $primaryColor;
         }
     }
 
@@ -1289,6 +1294,12 @@
                     line-height: 1.5rem;
                 }
             }
+
+            &__input,
+            &__num-input {
+                min-height: 2.5rem;
+                height: 2.5rem;
+            }
         }
 
     }
@@ -1333,6 +1344,7 @@
             font-size: 0.875rem; 
             line-height: 1.5rem;
         }
+        
     }
 
 }
