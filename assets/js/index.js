@@ -391,6 +391,8 @@ documentationDropDownButtons.forEach(item => {
     });
 });
 
+// Select Input 2 Events
+
 selectInputButtons.forEach(item => {
     item?.addEventListener("click", (event) => {
         const currentElement = event.currentTarget;
@@ -475,7 +477,9 @@ dropDownButtons.forEach(item => {
         const currentBtn = event.currentTarget;
         const inputValue = currentBtn.closest(".select-input-2").querySelector(".input__select-value");
 
-        inputValue.textContent = currentBtn.textContent;
+        if (inputValue) {
+            inputValue.textContent = currentBtn.textContent;
+        }
     });
 });
 
@@ -572,11 +576,13 @@ checkboxes.forEach(item => {
     item?.addEventListener("input", (event) => {
         const input = document.querySelector(`.input__input[data-question=${event.currentTarget.id}]`);
 
-        toggleDiapason(input);
+        if (input) {
+            toggleDiapason(input);
+        }
     });
 });
 
-// Diapason Events
+// File Events
 
 fileInputs.forEach(item => {
     item?.addEventListener("change", (event) => {
