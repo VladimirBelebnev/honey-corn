@@ -2,6 +2,10 @@
 
 const navbarListButtons = document.querySelectorAll(".drop-down__open-section.drop-down__open-section_list");
 
+// Documentation Drop-Downs Variables
+
+const documentationDropDownButtons = document.querySelectorAll(".documentation__navigation-link_drop-down");
+
 // Select Input Variables
 
 const selectInputButtons = document.querySelectorAll(".select-input-2__open-section");
@@ -9,7 +13,7 @@ const selectInputButtons = document.querySelectorAll(".select-input-2__open-sect
 // Modal Windows Variables
 
 const modalWindows = document.querySelectorAll(".modal-window");
-const modalWindowsButtons = document.querySelectorAll("button");
+const modalWindowsButtons = document.querySelectorAll("button, a");
 const modalWindowsCloseButtons = document.querySelectorAll(".modal-window__skip-btn");
 
 // Submodal Variables
@@ -92,6 +96,7 @@ function modalOpen(currentBtn, modalWindows, attr) {
             if (item.getAttribute(attr)) {
                 if (currentBtn.getAttribute(attr) == item.getAttribute(attr)) {
                     item.classList.remove("hidden");
+                    event.preventDefault();
                 }
             }
         });
@@ -375,12 +380,26 @@ navbarListButtons.forEach(item => {
     });
 });
 
+// Documentation Events
+
+documentationDropDownButtons.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        const currentElement = event.currentTarget;
+        const nextElement = currentElement.nextElementSibling;
+
+        toggleElement(currentElement, nextElement, "documentation__navigation-link_active");
+    });
+});
+
 selectInputButtons.forEach(item => {
     item?.addEventListener("click", (event) => {
         const currentElement = event.currentTarget;
         const nextElement = event.currentTarget.nextElementSibling;
+        const parentElement = currentElement.parentElement;
 
-        toggleElement(currentElement, nextElement, "active");
+        if (!(parentElement.classList.contains("disabled"))) {
+            toggleElement(currentElement, nextElement, "active");
+        }
     });
 });
 
@@ -391,8 +410,6 @@ modalWindowsButtons.forEach(item => {
     item?.addEventListener("click", (event) => {
         const currentBtn = event.currentTarget;
         modalOpen(currentBtn, modalWindows, "data-modal");
-
-        event.preventDefault();
     });
 });
 
@@ -409,8 +426,6 @@ modalWindows.forEach(item => {
         if (event.target.classList.contains("modal-window__container")) {
             closeAllModals(modalWindows);
         }
-
-        event.preventDefault();
     });
 });
 
@@ -521,9 +536,14 @@ resetFiltersBtn?.addEventListener("click", (event) => {
     const filterBlock = currentBtn.closest(".filter");
     const filterInputs = filterBlock.querySelectorAll(".input__input");
     const filterCheckboxes = filterBlock.querySelectorAll(".checkbox-quadro__input");
+    const filterDiapasons = document.querySelectorAll(`.input__input[data-question]`);
+    const filterCells = cellsSingle;
 
     filterInputs.forEach(item => item.value = "");
     filterCheckboxes.forEach(item => item.checked = false);
+
+    filterDiapasons.forEach(item => toggleDiapason(item));
+    filterCells.forEach(item => item.classList.remove("calendare__cell_active"));
 });
 
 // Table Events

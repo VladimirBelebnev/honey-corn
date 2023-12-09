@@ -1069,6 +1069,7 @@
 .status {
     display: inline-block;
     min-width: 1.5rem;
+    width: 1.5rem;
     height: 1.5rem;
     background: $green1;
     box-shadow: 0 0 10px 2px $green2;
@@ -1284,7 +1285,7 @@
             }
 
             &__header-right-section {
-                flex-direction: column;
+                flex-direction: column-reverse;
                 gap: 0.75rem;
                 width: 100%;
 
@@ -1299,6 +1300,12 @@
             &__num-input {
                 min-height: 2.5rem;
                 height: 2.5rem;
+            }
+
+            &__title {
+                font-size: 1.125rem;
+                font-weight: $semibold;
+                line-height: 1.625rem;
             }
         }
 
@@ -1342,6 +1349,11 @@
 
         &__select-value {
             font-size: 0.875rem; 
+            line-height: 1.5rem;
+        }
+
+        &__input {
+            font-size: 0.875rem;
             line-height: 1.5rem;
         }
         

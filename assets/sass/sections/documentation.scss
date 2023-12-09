@@ -41,6 +41,27 @@
         grid-area: navigation;
     }
 
+    &__navigation > &__navigation-list {
+        gap: 0;
+
+        & > *:not(:last-child) {
+            border-bottom: 1px solid $gray1;
+        }
+
+        & > *:first-child {
+            padding-bottom: 0.5rem;
+        }
+
+        & > *:not(:first-child, :last-child) {
+            padding: 0.5rem 0;
+        }
+
+        & > *:last-child {
+            padding-top: 0.5rem;
+        }
+
+    }
+
     &__navigation-list {
         display: flex;
         flex-direction: column;
@@ -61,8 +82,7 @@
 
         &_drop-down {
             width: 100%;
-            display: inline-flex;
-            flex-direction: row-reverse;
+            display: flex;
             justify-content: space-between;
             position: relative;
             width: 100%;
@@ -70,9 +90,12 @@
             &::before {
                 font-size: 1rem;
                 color: $gray2;
+                transform: translate(0, -50%);
                 transform: rotate(-180deg);
-                position: relative;
-                top: -1.9rem;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                line-height: 0;
                 transition: transform ease .5s;
             }
         }
@@ -81,7 +104,6 @@
 
             &::before {
                 transform: rotate(0);
-                top: 0.3rem;
             }
         }
     }
