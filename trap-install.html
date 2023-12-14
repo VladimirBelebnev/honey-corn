@@ -32,7 +32,7 @@
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
+                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-journal">
                     <span class="drop-down__name icon-drop-down-arrow">
                         Журналы событий
                     </span>
@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="drop-down__link-item">
-                            <a href="attack-logs.html" class="drop-down__link drop-down__link_current">
+                            <a href="attack-logs.html" class="drop-down__link">
                                 Логи фишинговых атак
                             </a>
                         </li>
@@ -65,7 +65,7 @@
             </section>
 
             <section class="drop-down navbar__link">
-                <button class="drop-down__open-section drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
+                <button class="drop-down__open-section drop-down__open-section_current drop-down__open-section_active drop-down__open-section_list icon-ic-mine">
                     <span class="drop-down__name icon-drop-down-arrow">
                         Установка ловушек и приманок
                     </span>
@@ -74,7 +74,7 @@
                 <section class="drop-down__hidden-section">
                     <ul class="drop-down__link-list">
                         <li class="drop-down__link-item">
-                            <a href="trap-install.html" class="drop-down__link">
+                            <a href="trap-install.html" class="drop-down__link drop-down__link_current">
                                 Установка ловушек
                             </a>
                         </li>
@@ -163,11 +163,6 @@
                         <li class="drop-down__link-item">
                             <a href="integration.html" class="drop-down__link">
                                 Интеграция с Active Directory
-                            </a>
-                        </li>
-                        <li class="drop-down__link-item">
-                            <a href="bait-distrubutions-logs.html" class="drop-down__link">
-                                Журналы распространения приманок
                             </a>
                         </li>
                         <li class="drop-down__link-item">
@@ -364,10 +359,42 @@
                                             </td>
                                             <td class="table__cell">
                                                 <div class="table__cell-wrapper table__cell-wrapper_action">
-                                                    <button class="table__action-btn table__action-btn_start icon-ic-right"></button>
-                                                    <button class="table__action-btn table__action-btn_change icon-ic-pen" data-modal="notes-modal"></button>
-                                                    <button class="table__action-btn table__action-btn_document icon-ic-code" data-modal="command-modal"></button>
-                                                    <button class="table__action-btn table__action-btn_settings icon-ic-gear"></button>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_start icon-ic-right pop-up-open-btn"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Запуск ловушек
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_change icon-ic-pen pop-up-open-btn" data-modal="notes-modal"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Записи
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_document icon-ic-code pop-up-open-btn" data-modal="command-modal"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Команда установки
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_settings icon-ic-gear pop-up-open-btn"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Настройки ловушки
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </td>
                                             <td class="table__cell table__cell_status">
@@ -383,10 +410,42 @@
                                             </td>
                                             <td class="table__cell">
                                                 <div class="table__cell-wrapper table__cell-wrapper_action">
-                                                    <button class="table__action-btn table__action-btn_start icon-ic-right"></button>
-                                                    <button class="table__action-btn table__action-btn_change icon-ic-pen" data-modal="notes-modal"></button>
-                                                    <button class="table__action-btn table__action-btn_document icon-ic-code" data-modal="command-modal"></button>
-                                                    <button class="table__action-btn table__action-btn_settings icon-ic-gear"></button>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_start icon-ic-right pop-up-open-btn"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Запуск ловушек
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_change icon-ic-pen pop-up-open-btn" data-modal="notes-modal"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Записи
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_document icon-ic-code pop-up-open-btn" data-modal="command-modal"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Команда установки
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__pop-up-wrapper pop-up-wrapper">
+                                                        <button class="table__action-btn table__action-btn_settings icon-ic-gear pop-up-open-btn"></button>
+        
+                                                        <div class="pop-up hidden" data-pop-up-method="hover">
+                                                            <p class="pop-up__text">
+                                                                Настройки ловушки
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </td>
                                             <td class="table__cell table__cell_status">

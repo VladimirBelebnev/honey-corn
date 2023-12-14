@@ -322,6 +322,7 @@ body {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   gap: 1.75rem;
+  overflow: hidden;
 }
 .wrapper__main_trap-install {
   gap: 0;
@@ -818,13 +819,10 @@ svg, img, video {
 }
 
 .link {
+  display: inline-block;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #195DC2;
-}
-.link:hover {
-  color: #5498FF;
-  opacity: 1;
 }
 
 .gray-btn {

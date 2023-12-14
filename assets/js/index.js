@@ -405,6 +405,21 @@ selectInputButtons.forEach(item => {
     });
 });
 
+document.addEventListener("click", (event) => {
+    const currentEl = event.target;
+    const selectInputs = document.querySelectorAll(".select-input-2");
+
+    if (!(currentEl.closest(".select-input-2"))) {
+        selectInputs.forEach(item => {
+            const openSection = item.children[0];
+            const hiddenSection = item.children[1];
+
+            hiddenSection.classList.add("hidden");
+            openSection.classList.remove("active");
+        });
+    }
+});
+
 
 // Modal Windows Events
 
@@ -619,6 +634,48 @@ popUpButtons.forEach(item => {
         }
     });
 });
+
+popUpButtons.forEach(item => {
+    item?.addEventListener("mouseover", (event) => {
+        const popUp = event.currentTarget.closest(".pop-up-wrapper").querySelector(".pop-up");
+
+        if (popUp.getAttribute("data-pop-up-method") == "hover") {
+            popUp.classList.remove("hidden");
+        }
+    });
+});
+
+popUpButtons.forEach(item => {
+    item?.addEventListener("mouseout", (event) => {
+        const popUp = event.currentTarget.closest(".pop-up-wrapper").querySelector(".pop-up");
+
+        if (popUp.getAttribute("data-pop-up-method") == "hover") {
+            popUp.classList.add("hidden");
+        }
+    });
+});
+
+document.addEventListener("click", (event) => {
+    const currentEl = event.target;
+    const classes = ["pop-up", "pop-up__text", "pop-up-open-btn"];
+    const popUps = document.querySelectorAll(".pop-up");
+    
+    let isPopUp = false;
+
+    classes.forEach(item => {
+        if (currentEl.classList.contains(item)) {
+            isPopUp = true;
+        }
+    });
+
+    if (!isPopUp) {
+        popUps.forEach(item => item.classList.add("hidden"));
+    }
+});
+
+// Archive JS
+
+
 
 // Chart Scripts
 
