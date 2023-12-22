@@ -1294,6 +1294,9 @@ svg, img, video {
 .files__dragn-drop:hover {
   opacity: 0.5;
 }
+.files__dragn-drop_active {
+  opacity: 0.5;
+}
 .files__file-icon {
   font-size: 2rem;
   color: #9AA2AD;

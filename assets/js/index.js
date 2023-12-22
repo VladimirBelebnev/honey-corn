@@ -186,6 +186,7 @@ function generateMonth(tbody, year, month) {
     }
 
     table.innerHTML = tableBody;
+    
     Array.from(table.querySelectorAll(".calendare__cell")).forEach(item => {
         let itemDateArray = item.getAttribute("data-date").split(".");
         let itemDate = new Date(itemDateArray[0], itemDateArray[1] - 1, itemDateArray[2]);
@@ -599,25 +600,137 @@ checkboxes.forEach(item => {
 
 // File Events
 
-fileInputs.forEach(item => {
-    item?.addEventListener("change", (event) => {
-        const currentInput = event.currentTarget;
-        const fileNames = Array.from(currentInput.files).map(item => item.name);
-        const filesWrapper = currentInput.closest(".files").querySelector(".files__dragn-drop-files");
-        const fileMessage = currentInput.closest(".files").querySelector(".files__file_message");
+const fileButtons = document.querySelectorAll(".modal-window-9__btn");
+const fileButtons2 = document.querySelectorAll(".files__btn");
+const fileLabels = document.querySelectorAll(".files__dragn-drop");
+const archive = new JSZip();
 
-        if (fileMessage) {
-            fileMessage.remove();
+let files = [];
+let lastFileCount = 0;
+
+async function fileGenerate(files) {
+    if (files.length == 0) {
+        return;
+    }   else if (files.length == 1) {
+        fileButtons.forEach(item => item.download = URL.createObjectURL(files[0]));
+    }   else if (files.length > 1) {
+        [...files].forEach(async (item) => {
+            const fileBlob = await fetch(URL.createObjectURL(item)).then(res => res.blob());
+            archive.file(item.name, fileBlob);
+        });
+    }
+}
+
+async function fileExport(zip) {
+    zip.generateAsync({type:"blob"})
+    .then(content => {
+        saveAs(content, 'files.zip');
+    });
+}
+
+function checkMessage(event) {
+    const fileMessage = event.currentTarget.closest(".files").querySelector(".files__file_message");
+
+    if (fileMessage) {
+        fileMessage.remove();
+    }
+}
+
+function filesOutput(wrapper, files) {
+    wrapper.innerHTML = "";
+    files.forEach(file => {
+        wrapper.innerHTML += `
+        <div class="files__file">
+            <p class="files__file-text">${file.name}</p>
+        </div>
+        `;
+    });
+}
+
+function dragnDropEventsClean(event) {
+    event.stopPropagation();
+    event.preventDefault();
+}
+
+function filesUpload(event) {
+    const currentInput = event.currentTarget;
+    const currentFiles = Array.from(currentInput.files);
+    const filesWrapper = currentInput.closest(".files").querySelector(".files__dragn-drop-files");
+
+    currentFiles.forEach(file => {
+        files.push(file);
+    });
+
+    checkMessage(event);
+    filesOutput(filesWrapper, files);
+}
+
+function filesLabelUpload(event) {
+    const currentFiles = Array.from(event.dataTransfer.files);
+    const filesWrapper = event.currentTarget.closest(".files").querySelector(".files__dragn-drop-files");
+
+    currentFiles.forEach(file => {
+        files.push(file);
+    });
+
+    dragnDropEventsClean(event);
+    checkMessage(event);
+    filesOutput(filesWrapper, files);
+}
+
+fileButtons.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        if (lastFileCount > 1) {
+            fileExport(archive);
         }
 
-        fileNames.forEach(item => {
-            filesWrapper.innerHTML += `
-            <div class="files__file">
-                <p class="files__file-text">${item}</p>
-            </div>
-            `;
-        });
+        console.log(files.length, item.download);
+
+        lastFileCount = 0;
     });
+});
+
+fileButtons2.forEach(item => {
+    item?.addEventListener("click", (event) => {
+        const filesWrapper = event.currentTarget.closest(".files").querySelector(".files__dragn-drop-files");
+
+        fileGenerate(files);
+
+        lastFileCount = files.length;
+
+        files = [];
+
+        filesWrapper.innerHTML = `
+        <div class="files__file">
+            <p class="files__file-text">Нет выбранных файлов</p>
+        </div>
+        `;
+
+        event.preventDefault();
+    });
+});
+
+fileInputs.forEach(item => {
+    item?.addEventListener("change", (event) => filesUpload(event));
+});
+
+fileLabels.forEach(item => {
+    item?.addEventListener("dragover", (event) => {
+        dragnDropEventsClean(event);
+        event.currentTarget.classList.add("files__dragn-drop_active");
+    });
+
+    item?.addEventListener("dragout", (event) => {
+        dragnDropEventsClean(event);
+        event.currentTarget.classList.remove("files__dragn-drop_active");
+    });
+
+    item?.addEventListener("dragleave", (event) => {
+        dragnDropEventsClean(event);
+        event.currentTarget.classList.remove("files__dragn-drop_active");
+    });
+
+    item?.addEventListener("drop", (event) => filesLabelUpload(event));
 });
 
 // Pop-Up Events
@@ -672,10 +785,6 @@ document.addEventListener("click", (event) => {
         popUps.forEach(item => item.classList.add("hidden"));
     }
 });
-
-// Archive JS
-
-
 
 // Chart Scripts
 

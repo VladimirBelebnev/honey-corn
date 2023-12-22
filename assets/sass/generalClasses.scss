@@ -911,6 +911,10 @@
         &:hover {
             opacity: 0.5;
         }
+
+        &_active {
+            opacity: 0.5;
+        }
     }
 
     &__file-icon {
