@@ -192,6 +192,7 @@
     }
 
     &__mini-title {
+        max-width: calc(100% - 0.5rem);
         position: absolute;
         top: 0;
         left: 1rem;
@@ -203,6 +204,9 @@
         transform: translate(0, -50%);
         padding: 0.1rem;
         color: $gray4;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__input {
@@ -451,6 +455,24 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.scroll-button {
+    @extend %icon-btn;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 10;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0 0 0.75rem $gray6;
+
+    &:hover {
+        opacity: 1;
+        background: $primaryColor;
+    }
 }
 
 // Классы таблиц
@@ -878,6 +900,24 @@
         text-align: left;
         display: inline-block;
     }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__action-btn {
+        font-size: 0.875rem;
+        font-weight: $normal;
+        line-height: 1.5rem;
+        padding: 0.5rem 1.75rem;
+
+        &_outline {
+            background: none;
+            border: 2px solid $primaryColor;
+        }
+    }
 }
 
 
@@ -917,6 +957,12 @@
         }
     }
 
+    &__buttons-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     &__file-icon {
         font-size: 2rem;
         color: $gray4;
@@ -928,6 +974,10 @@
         text-align: center;
         font-size: 1.125rem;
         line-height: 2.25rem;
+
+        &_mobile {
+            display: none;
+        }
 
         &_link {
             background: none;
@@ -955,7 +1005,8 @@
         line-height: 2.25rem;
     }
 
-    &__btn {
+    &__btn,
+    &__close-btn {
         max-width: 100%;
         width: 100%;
         font-size: 1.125rem;
@@ -968,10 +1019,15 @@
             opacity: 0.5;
         }
     }
+
+    &__close-btn {
+        display: none;
+        background: none;
+        border: 2px solid $primaryColor;
+    }
 }
 
 // Классы фильтров и поиска
-
 
 .search {
     width: 100%;
@@ -1357,6 +1413,51 @@
             line-height: 1.5rem;
         }
         
+    }
+
+}
+
+// Files Media Queries
+
+// Media Querie 600px
+
+@media all and (max-width: 600px) {
+
+    .files {
+
+        &__btn,
+        &__close-btn {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        &__dragn-drop {
+            min-height: 4.75rem;
+        }
+
+        &__dragn-drop > * {
+            display: none;
+        }
+
+        &__subtitle {
+
+            &_mobile {
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 500px) {
+
+    .files {
+
+        &__close-btn {
+            display: inline-flex;
+        }
     }
 
 }

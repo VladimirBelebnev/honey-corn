@@ -22,7 +22,7 @@
 
     &__content {
         max-width: 47.5rem;
-        width: 47.5rem;
+        width: 100%;
         padding: 1rem 1rem 1.5rem 1rem;
         background: $white;
         border-radius: 0.625rem;
@@ -32,4 +32,18 @@
     &__content-header {
         margin-bottom: 1.5rem;
     }
+}
+
+// Media Queries
+
+@media all and (max-width: 600px) {
+
+    .update {
+
+        &__content-title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+    }
+
 }

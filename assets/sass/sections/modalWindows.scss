@@ -298,6 +298,24 @@
         max-width: 17.75rem;
         width: 17.75rem;
     }
+
+    &__buttons-wrapper {
+        width: 100%;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 0.5rem 1.75rem;
+
+        &_outline {
+            background: none;
+            border: 2px solid $primaryColor;
+        }
+    }
 }
 
 .modal-window-2 {
@@ -634,11 +652,18 @@
     }
 
     &__next-btn,
-    &__install-btn {
+    &__install-btn,
+    &__mobile-skip-btn {
         font-size: 1.125rem;
         font-weight: $normal;
         line-height: 2.25rem;
         padding: 0.5rem 1.75rem; 
+    }
+
+    &__mobile-skip-btn {
+        display: none;
+        background: none;
+        border: 2px solid $primaryColor;
     }
 
     &__input {
@@ -820,13 +845,168 @@
 
 // Media Queries
 
-// @media all and (max-width: 380px) {
+// Media Querie 600px
 
-//     .modal-window {
+@media all and (max-width: 600px) {
 
-//         &__btn {
-//             font-size: 1rem;
-//         }
-//     }
+    .install-modal {
 
-// }
+        &__buttons-wrapper {
+            flex-direction: column;
+        }
+
+        &__inputs-wrapper {
+            width: 100% !important;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    
+        &__step-section{
+            width: 100%;
+        }
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 500px) {
+
+    .install-modal {
+
+        &__progress {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .input {
+
+            &__select-value,
+            &__input {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+            }
+        }
+
+        &__mobile-skip-btn {
+            display: inline-flex;
+        }
+
+        &__btn-wrapper,
+        &__buttons-wrapper {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        &__buttons-wrapper {
+            width: 100%;
+            margin-top: 0;
+        }
+        
+        &__success-message {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        &__inputs-row {
+            flex-direction: column;
+        }
+
+        .btn {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .modal-window {
+
+        &__header {
+            display: none;
+        }
+
+        &__content {
+            min-height: 18rem;
+            max-height: calc(100vh - 10vh);
+            padding: 0.75rem;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        &_success-2 {
+
+            .modal-window__content {
+                min-height: 11.5rem;
+            }
+        }
+
+        &__success-message {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            text-align: center;
+            margin-top: 0;
+            font-weight: $bold;
+        }
+
+        &__btn {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        &__buttons-wrapper {
+
+            &_mobile {
+                display: flex;
+            }
+        }
+    }
+
+    .modal-window-4 {
+
+        &__content {
+            min-height: 18.75rem;
+        }
+    }
+
+    .modal-window-9 {
+
+        &__content {
+            min-height: auto;
+        }
+    }
+
+}
+
+// Progress Item Media Queries
+
+@media all and (max-width: 500px) {
+
+    .progress {
+        gap: 1.96rem;
+
+        &__item {
+            width: 1.9565rem;
+            height: 1.9565rem;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        & > *:not(:last-child) {
+    
+            &::after {
+                width: 1.30438rem;
+                height: 0.16306rem;
+                left: calc(100% + 0.3rem);
+            }
+        }
+    }
+
+}

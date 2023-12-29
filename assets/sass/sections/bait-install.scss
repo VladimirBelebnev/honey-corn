@@ -13,3 +13,67 @@
         padding: 0.5rem 1.75rem;
     }
 }
+
+// Media Queries
+
+// Media Querie 1450px
+
+@media all and (max-width: 1450px) {
+
+    .bait-install {
+
+        .table-block {
+
+            &__left-section {
+                display: none;
+            }
+        }
+    }
+
+}
+
+// Media Querie 900px
+
+@media all and (max-width: 900px) {
+
+    .bait-install {
+
+        .table-block {
+            display: flex;
+            flex-direction: column;
+
+            &__footer {
+                order: 2;
+                margin: 0.75rem 0 0 0;
+            }
+
+            &__btn {
+
+                &_export {
+                    border: 2px solid $primaryColor;
+                    background: none !important;
+                }
+            }
+        }
+    }
+
+}
+
+// Media Querie 1450px
+
+@media all and (max-width: 1450px) {
+
+    .bait-install {
+
+        &__header {
+            margin-bottom: 0.75rem;
+        }
+
+        &__btn {
+            width: 100%;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+    }
+
+}

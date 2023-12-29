@@ -44,6 +44,7 @@
 }
 
 .license-install {
+
     &__wrapper {
         padding: 1rem;
         background: $white;
@@ -54,4 +55,70 @@
     &__header {
         margin-bottom: 1.5rem;
     }
+}
+
+// Media Queries
+
+// Media Queries 1200px
+
+@media all and (max-width: 1200px) {
+
+    .license-managment {
+    
+        &__container {
+            grid-template-columns: 1fr;
+            grid-template-areas: "second"
+                                "first";
+        }
+    }
+
+    .license-info {
+        grid-area: first;
+    }
+
+    .license-install {
+        grid-area: second;
+    }
+
+}
+
+// Media Queries 600px
+
+@media all and (max-width: 1200px) {
+
+    .license-install {
+        
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+        
+    }
+
+    .license-info {
+        
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+
+        &__header {
+            margin-bottom: 1rem;
+        }
+
+        &__input-section-title {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+        }
+
+        .input {
+            
+            &__input {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+            }
+        }
+    }
+
 }

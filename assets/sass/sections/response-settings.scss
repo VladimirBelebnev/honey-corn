@@ -88,4 +88,132 @@
             margin-bottom: 0;
         }
     }
+
+    .input {
+
+        &__input {
+            padding: 0.5rem 1rem;
+        }
+
+        &__select-block {
+            padding-right: 3rem;
+        }
+    }
+}
+
+// Media Queries
+
+// Media Querie 1300px
+
+@media all and (max-width: 1300px) {
+    
+    .action{
+
+        &__input-row-segment {
+            flex-direction: column;
+        }
+    }
+
+}
+
+// Media Querie 900px
+
+@media all and (max-width: 900px) {
+
+    .response-settings {
+
+        .table-block {
+            display: flex;
+            flex-direction: column;
+
+            &__footer {
+                order: 2;
+                margin: 0.75rem 0 0 0 !important;
+            }
+
+            &__btn {
+
+                &_export {
+                    border: 2px solid $primaryColor;
+                    background: none !important;
+                }
+            }
+        }
+    }
+
+    .action {
+
+        &__content {
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 500px) {
+
+    .action-type {
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+
+        .input {
+
+            &__select-value {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+            }
+        }
+    }
+
+    .action {
+
+        &__content {
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        &__pop-up {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+
+        .input {
+            width: 100%;
+
+            &__select-value,
+            &__input {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+            }
+
+            // &__select-value {
+            //     white-space: nowrap;
+            //     overflow: hidden;
+            //     text-overflow: ellipsis;
+            // }
+        }
+    }
+
+    .response-settings {
+
+        .table-block {
+
+            &__title {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+            }
+        }
+    }
+
 }

@@ -8,6 +8,8 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
     }
 
     &__btn {
@@ -23,5 +25,7 @@
         align-items: center;
         gap: 1.63rem;
         margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
     }
 }

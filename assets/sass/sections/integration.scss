@@ -10,7 +10,7 @@
 
     &__content {
         max-width: 63.75rem;
-        width: 63.75rem;
+        width: 100%;
         background: $white;
         border-radius: 0.625rem;
         padding: 1rem;
@@ -45,4 +45,66 @@
             border: 2px solid $primaryColor;
         }
     }
+}
+
+// Media Queries
+
+// Media Queries 800px
+
+@media all and (max-width: 800px) {
+
+    .integration {
+
+        &__inputs-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+    
+        &__buttons-wrapper {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input {
+
+            &_empty {
+                display: none;
+            }
+        }
+    }
+
+}
+
+// Media Queries 600px
+
+@media all and (max-width: 600px) {
+
+    .integration {
+
+        &__header {
+            margin-bottom: 0.75rem;
+        }
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+
+        &__btn {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        .input {
+
+            &__input {
+                font-size: 1.125rem;
+                line-height: 2.25rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+
 }

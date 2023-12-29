@@ -9,3 +9,30 @@
         gap: 1.5rem;
     }
 }
+
+// Media Queries
+
+@media all and (max-width: 900px) {
+
+    .bait-distrubutions-logs {
+
+        .table-block {
+            display: flex;
+            flex-direction: column;
+
+            &__footer {
+                order: 2;
+                margin: 0.75rem 0 0 0;
+            }
+
+            &__btn {
+
+                &_export {
+                    border: 2px solid $primaryColor;
+                    background: none !important;
+                }
+            }
+        }
+    }
+
+}
