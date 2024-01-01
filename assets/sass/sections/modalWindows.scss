@@ -315,6 +315,10 @@
             background: none;
             border: 2px solid $primaryColor;
         }
+
+        &_mobile {
+            display: none;
+        }
     }
 }
 
@@ -780,6 +784,22 @@
 }
 
 .delete-modal {
+
+    &__inputs-group-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    &__mobile-title {
+        font-size: 1.125rem;
+        line-height: 2.25rem;
+        display: none;
+    }
+
+    &__form {
+        width: 100%;
+    }
     
     &__wrapper {
         max-width: 31.5625rem;
@@ -793,10 +813,11 @@
 
     &__inputs-wrapper, .input {
         max-width: 28.5625rem !important;
-        width: 28.5625rem !important;
+        width: 100% !important;
     }
 
     &__inputs-wrapper {
+        width: 100%;
         gap: 1rem;
     }
 }
@@ -849,7 +870,9 @@
 
 @media all and (max-width: 600px) {
 
-    .install-modal {
+    .install-modal,
+    .active-modal,
+    .delete-modal {
 
         &__buttons-wrapper {
             flex-direction: column;
@@ -866,6 +889,10 @@
         &__step-section{
             width: 100%;
         }
+
+        &__drop-down {
+            width: 100%;
+        }
     }
 
 }
@@ -874,7 +901,9 @@
 
 @media all and (max-width: 500px) {
 
-    .install-modal {
+    .install-modal,
+    .active-modal,
+    .delete-modal {
 
         &__progress {
             margin-bottom: 0;
@@ -925,6 +954,10 @@
             font-size: 0.875rem;
             line-height: 1.5rem;
         }
+
+        &__mobile-title {
+            display: inline-block;
+        }
     }
 
     .modal-window {
@@ -934,19 +967,19 @@
         }
 
         &__content {
-            min-height: 18rem;
+            min-height: auto;
             max-height: calc(100vh - 10vh);
             padding: 0.75rem;
             gap: 1rem;
             justify-content: center;
         }
 
-        &_success-2 {
+        // &_success-2 {
 
-            .modal-window__content {
-                min-height: 11.5rem;
-            }
-        }
+        //     .modal-window__content {
+        //         min-height: 11.5rem;
+        //     }
+        // }
 
         &__success-message {
             font-size: 1.125rem;
@@ -969,17 +1002,104 @@
         }
     }
 
-    .modal-window-4 {
+    // .modal-window-4 {
+
+    //     &__content {
+    //         min-height: 18.75rem;
+    //     }
+    // }
+
+    .modal-window-3,
+    .modal-window-5 {
+
+        .modal-window__header {
+            display: flex;
+        }
+
+        .modal-window__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
 
         &__content {
-            min-height: 18.75rem;
+            padding: 1.5rem;
+        }
+
+        &__download-btn {
+            width: 100%;
+        }
+    }
+
+    .modal-window-5 {
+
+        &__btn {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+
+            &:first-child {
+                background: none;
+                border: 2px solid $primaryColor;
+            }
         }
     }
 
     .modal-window-9 {
 
-        &__content {
-            min-height: auto;
+        &__btn {
+
+            &_mobile {
+                display: inline-flex;
+            }
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    .modal-window-7 {
+
+        &__btn-wrapper,
+        &__buttons-wrapper {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .modal-window-6 {
+
+        &__btn-wrapper,
+        &__buttons-wrapper {
+            width: 100%;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        &__success-message {
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            font-weight: $normal;
+        }
+    }
+
+    .modal-window-8 {
+
+        &__success-message {
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            font-weight: $normal;
         }
     }
 

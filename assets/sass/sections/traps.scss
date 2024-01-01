@@ -7,4 +7,32 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    .table {
+
+        &__cell {
+            word-break: normal;
+        }
+    }
+}
+
+// Media Queries
+
+// Media Querie 900px
+
+@media all and (max-width: 900px) {
+
+    .traps {
+
+        .table-block {
+            display: flex;
+            flex-direction: column;
+
+            &__footer {
+                order: 2;
+                margin: 0.75rem 0 0 0;
+            }
+        }
+    }
+
 }

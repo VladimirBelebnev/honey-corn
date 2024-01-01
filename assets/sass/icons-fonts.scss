@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-ic-success:before {
+    content: "\e900";
+  }
   .icon-ic-burger:before {
     content: "\e926";
   }
@@ -122,7 +125,7 @@
     content: "\e90d";
   }
   .icon-ic-active:before {
-    content: "\e900";
+    content: "\e903";
   }
   .icon-ic-dashboard:before {
     content: "\e901";
@@ -131,17 +134,18 @@
     content: "\e902";
   }
   .icon-ic-journal:before {
-    content: "\e903";
-  }
-  .icon-ic-mine:before {
     content: "\e904";
   }
-  .icon-ic-monitoring:before {
+  .icon-ic-mine:before {
     content: "\e905";
   }
-  .icon-ic-trap:before {
+  .icon-ic-monitoring:before {
     content: "\e906";
-  }  
+  }
+  .icon-ic-trap:before {
+    content: "\e927";
+  }
+  
   
   
   

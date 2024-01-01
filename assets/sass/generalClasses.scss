@@ -853,6 +853,14 @@
         }
     }
 
+    &__status-icon-2 {
+        @extend %icon-btn;
+
+        &::before {
+            color: $primaryColor;
+        }
+    }
+
     &__checkbox-quadro {
         display: flex;
         align-items: center;
@@ -873,11 +881,23 @@
     &__info-section {
         display: flex;
         flex-direction: column;
+
+        &_row {
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+        }
     }
 
     &__info-title {
         font-size: 0.875rem;
         font-weight: $semibold;
+    }
+
+    &__status {
+        min-width: 1.25rem !important;
+        width: 1.25rem !important;
+        height: 1.25rem !important;
     }
 
     &__text {
@@ -893,6 +913,13 @@
         top: 0.75rem;
         right: 0.75rem;
         @extend %icon-btn;
+
+        &_ready {
+            
+            &::before {
+                color: $primaryColor;
+            }
+        }
     }
 
     &__drop-down-btn,
@@ -907,6 +934,12 @@
         gap: 0.5rem;
     }
 
+    &__buttons-2 {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
     &__action-btn {
         font-size: 0.875rem;
         font-weight: $normal;
@@ -916,6 +949,14 @@
         &_outline {
             background: none;
             border: 2px solid $primaryColor;
+        }
+    }
+
+    &__action-btn-2 {
+        @extend %icon-btn;
+
+        &::before {
+            font-size: 2rem;
         }
     }
 }
@@ -1227,7 +1268,7 @@
 
 @media all and (max-width: 900px) {
 
-    .container:not(.trap-install__container) {
+    // .container:not(.trap-install__container) {
 
         .table-block {
             background: none;
@@ -1257,6 +1298,11 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
+
+                &_outline {
+                    background: none;
+                    border: 2px solid $primaryColor;
+                }
             }
 
             &__footer {
@@ -1300,13 +1346,13 @@
             }
         }
 
-    }
+    // }
 
 }
 
 @media all and (max-width: 680px) {
 
-    .container:not(.trap-install__container) {
+    // .container:not(.trap-install__container) {
 
         .table-block {
 
@@ -1315,13 +1361,13 @@
             }
         }
 
-    }
+    // }
 
 }
 
 @media all and (max-width: 600px) {
 
-    .container:not(.trap-install__container) {
+    // .container:not(.trap-install__container) {
 
         .table-block {
 
@@ -1359,13 +1405,13 @@
             }
 
             &__title {
-                font-size: 1.125rem;
-                font-weight: $semibold;
-                line-height: 1.625rem;
+                font-size: 1.125rem !important;
+                font-weight: $semibold !important;
+                line-height: 1.625rem !important;
             }
         }
 
-    }
+    // }
 
 }
 

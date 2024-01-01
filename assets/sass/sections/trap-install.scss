@@ -12,3 +12,80 @@
         margin-bottom: 1rem;
     }
 }
+
+// Media Queries
+
+// Media Querie 900px
+
+@media all and (max-width: 900px) {
+
+    .main {
+
+        &_trap-install {
+            background: none;
+        }
+    }
+
+    .trap-install {
+
+        .table-block {
+            display: flex;
+            flex-direction: column;
+
+            &__header {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 1rem;
+
+                &-right-section {
+                    width: 100%;
+                }
+            }
+
+            &__footer {
+                order: 2;
+                margin: 0.75rem 0 0 0;
+            }
+
+            &__btn {
+
+                &_export {
+                    border: 2px solid $primaryColor;
+                    background: none !important;
+                }
+            }
+
+            &__install-btn {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 500px) {
+
+    .trap-install {
+
+        &__header {
+            margin-bottom: 0.75rem;
+        }
+
+        &__btn {
+            width: 100%;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        .table-block {
+
+            &__install-btn {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+}

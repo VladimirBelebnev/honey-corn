@@ -353,7 +353,7 @@
 
                                     <header class="user-info__section-header">
                                         <h3 class="user-info__title title-mini">
-                                            Информация о текущем пользователе
+                                            Изменить пароль
                                         </h3>
                                     </header>
 
@@ -559,7 +559,7 @@
             
             <!-- Modal Window ( Success 7 ) -->
 
-            <div class="modal-window modal-window_success-7 hidden" data-modal="add-user-success">
+            <div class="modal-window modal-window-6 modal-window_success-7 hidden" data-modal="add-user-success">
                 <div class="container modal-window__container">
 
                     <div class="modal-window__wrapper">
@@ -576,9 +576,15 @@
 
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
-                            <p class="modal-window__success-message">
+                            <p class="modal-window__success-message modal-window-6__success-message">
                                 Пользователь добавлен
                             </p>
+
+                            <div class="modal-window__buttons-wrapper modal-window__buttons-wrapper_mobile">
+                                <button class="modal-window__btn btn" data-modal="main">
+                                    Закрыть окно
+                                </button>
+                            </div>
 
                         </section>
 
@@ -608,9 +614,15 @@
 
                             <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
 
-                            <p class="modal-window__success-message">
+                            <p class="modal-window__success-message modal-window-8__success-message">
                                 Данные пользователя сохранены
                             </p>
+
+                            <div class="modal-window__buttons-wrapper modal-window__buttons-wrapper_mobile">
+                                <button class="modal-window__btn btn" data-modal="main">
+                                    Закрыть окно
+                                </button>
+                            </div>
 
                         </section>
 
@@ -643,6 +655,12 @@
                             <p class="modal-window__success-message modal-window-6__success-message">
                                 Пользователь krm@honeycorn.local удалён
                             </p>
+
+                            <div class="modal-window__buttons-wrapper modal-window__buttons-wrapper_mobile">
+                                <button class="modal-window__btn btn" data-modal="main">
+                                    Закрыть окно
+                                </button>
+                            </div>
 
                         </section>
 
@@ -825,6 +843,10 @@
                                     Добавить
                                 </button>
 
+                                <button class="install-modal__mobile-skip-btn btn" data-modal="main">
+                                    Закрыть мастер
+                                </button>
+
                             </div>
 
                         </section>
@@ -963,6 +985,10 @@
 
                                 <button class="modal-window-7__btn btn" data-modal="edit-user-success">
                                     Сохранить
+                                </button>
+
+                                <button class="install-modal__mobile-skip-btn btn" data-modal="main">
+                                    Закрыть мастер
                                 </button>
 
                             </div>

@@ -141,3 +141,82 @@
         font-size: 2rem;
     }
 }
+
+// Media Queries
+
+// Media Querie 1000px
+
+@media all and (max-width: 1000px) {
+
+    .user-info {
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+        }
+
+        &__section-header {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .user-managment {
+
+        &__container {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 0.75rem;
+        }
+    }
+
+}
+
+// Media Querie 500px
+
+@media all and (max-width: 1000px) {
+
+    .user-info {
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+        }
+
+        &__btn {
+            width: 100%;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        &__wrapper {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .users {
+
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+
+    .user {
+
+        &__email {
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+        }
+    }
+
+}
