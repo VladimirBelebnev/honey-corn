@@ -783,6 +783,13 @@
     }
 }
 
+.active-modal {
+
+    &__skip-btn {
+        display: none;
+    }
+}
+
 .delete-modal {
 
     &__inputs-group-header {
@@ -905,6 +912,10 @@
     .active-modal,
     .delete-modal {
 
+        &__content {
+            min-height: auto !important;
+        }
+
         &__progress {
             margin-bottom: 0;
         }
@@ -957,6 +968,10 @@
 
         &__mobile-title {
             display: inline-block;
+        }
+
+        &__skip-btn {
+            display: inline-flex;
         }
     }
 
