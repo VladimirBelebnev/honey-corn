@@ -1,6 +1,11 @@
 // Navbar Drop-Downs Variables
 
 const navbarListButtons = document.querySelectorAll(".drop-down__open-section.drop-down__open-section_list");
+const navbarOpenBtn = document.querySelector(".header__drop-down-btn");
+const navbarSkipBtn = document.querySelector(".navbar__skip-btn");
+const navbar = document.querySelector(".navbar");
+
+const resolve = document.documentElement.offsetWidth;
 
 // Documentation Drop-Downs Variables
 
@@ -497,6 +502,18 @@ dropDownButtons.forEach(item => {
             inputValue.textContent = currentBtn.textContent;
         }
     });
+});
+
+if (resolve <= 1200) {
+    navbar.classList.add("hidden");
+}
+
+navbarOpenBtn.addEventListener("click", (event) => {
+    navbar.classList.remove("hidden");
+});
+
+navbarSkipBtn.addEventListener("click", (event) => {
+    navbar.classList.add("hidden");
 });
 
 // Filter Drop-Down Events
