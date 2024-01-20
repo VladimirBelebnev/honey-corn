@@ -1129,6 +1129,11 @@
         }
     }
 
+    &__save-btn {
+        background: $primaryColor;
+        border-color: $primaryColor;
+    }
+
     &__content {
         margin-top: 1.25rem;
         display: flex;

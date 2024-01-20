@@ -335,6 +335,7 @@ body {
 .main {
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
 .main_trap-install {
   padding-top: 1.75rem;
@@ -1522,6 +1523,10 @@ svg, img, video {
 .filter__btn:not(.filter__data-btn, .filter__delete-btn, .filter__open-content-btn)::before_active {
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+.filter__save-btn {
+  background: #F9CF3D;
+  border-color: #F9CF3D;
 }
 .filter__content {
   margin-top: 1.25rem;
@@ -2961,6 +2966,48 @@ svg, img, video {
     width: 1.30438rem;
     height: 0.16306rem;
     left: calc(100% + 0.3rem);
+  }
+}
+@media all and (max-width: 768px) {
+  .home__calendare {
+    max-width: 100% !important;
+    width: 100% !important;
+    left: 0 !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
+  }
+  .calendare_double {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .calendare_double .calendare__section:first-child {
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calendare_double .calendare__section:last-child {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .calendare {
+    padding: 0.5rem;
+  }
+  .calendare__cell {
+    font-size: 0.75rem;
   }
 }
 .header {

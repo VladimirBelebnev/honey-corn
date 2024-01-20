@@ -328,6 +328,10 @@ function interpretateDiapason(length) {
     setDiapasonCalendare(date.getDate() - length, date.getDate(), cells);
 }
 
+function closeAllDropDowns(elements) {
+    elements.forEach(item => item.classList.add("none"));
+}
+
 // Calendare Events
 
 if (currentDate) {
@@ -401,9 +405,20 @@ documentationDropDownButtons.forEach(item => {
 
 selectInputButtons.forEach(item => {
     item?.addEventListener("click", (event) => {
+        const selectInputs = document.querySelectorAll(".select-input-2");
         const currentElement = event.currentTarget;
         const nextElement = event.currentTarget.nextElementSibling;
         const parentElement = currentElement.parentElement;
+
+        selectInputs.forEach(item => {
+            if (item != parentElement) {
+                const openSection = item.children[0];
+                const hiddenSection = item.children[1];
+
+                hiddenSection.classList.add("hidden");
+                openSection.classList.remove("active");
+            }
+        });
 
         if (!(parentElement.classList.contains("disabled"))) {
             toggleElement(currentElement, nextElement, "active");
