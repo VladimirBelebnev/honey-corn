@@ -63,6 +63,10 @@
     border-radius: 0.625rem;
     box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 
+    &_baits {
+        display: none;
+    }
+
     &__header {
         margin-bottom: 1rem;
     }
@@ -144,6 +148,11 @@
         .table-block {
             display: flex;
             flex-direction: column;
+
+            &__header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
             &__footer {
                 order: 2;
@@ -228,6 +237,13 @@
             &__header {
                 display: none;
             }
+        }
+    }
+
+    .mobile-add-block {
+
+        &_baits {
+            display: block;
         }
     }
 

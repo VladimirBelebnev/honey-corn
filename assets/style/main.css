@@ -2853,6 +2853,11 @@ svg, img, video {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+  .install-modal__table-block_baits,
+  .active-modal__table-block_baits,
+  .delete-modal__table-block_baits {
+    display: none !important;
+  }
   .modal-window__header {
     display: none;
   }
@@ -2996,10 +3001,16 @@ svg, img, video {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #D1D8E2;
   }
   .calendare_double .calendare__section:last-child {
+    padding-top: 1.5rem;
     border-left: none;
     padding-left: 0;
+  }
+  .select-diapason__header {
+    text-align: center;
   }
 }
 @media all and (max-width: 500px) {
@@ -3882,6 +3893,9 @@ svg, img, video {
   -webkit-box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
           box-shadow: 0px 4px 30px 0px rgba(26, 54, 108, 0.05);
 }
+.mobile-add-block_baits {
+  display: none;
+}
 .mobile-add-block__header {
   margin-bottom: 1rem;
 }
@@ -3967,6 +3981,15 @@ svg, img, video {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .active-modal .table-block__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .active-modal .table-block__footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -4020,6 +4043,9 @@ svg, img, video {
   }
   .activies .table-block__header {
     display: none;
+  }
+  .mobile-add-block_baits {
+    display: block;
   }
 }
 .traps__container {
