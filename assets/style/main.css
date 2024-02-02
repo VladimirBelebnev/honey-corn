@@ -3898,6 +3898,15 @@ svg, img, video {
 }
 .mobile-add-block__header {
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .mobile-add-block__title {
   margin-bottom: 0.5rem;
@@ -3906,7 +3915,8 @@ svg, img, video {
   line-height: 2.25rem;
 }
 .mobile-add-block__btn {
-  width: 100%;
+  width: auto;
+  height: auto;
   padding: 0.5rem 1.75rem;
 }
 .mobile-add-block__items {
@@ -4014,6 +4024,19 @@ svg, img, video {
   .active-modal .table-block__footer .input__select-value, .active-modal .table-block__footer .input__input {
     font-size: 0.875rem !important;
     line-height: 1.5rem !important;
+  }
+  .mobile-add-block__header {
+    margin-bottom: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mobile-add-block__btn {
+    width: 100%;
   }
 }
 @media all and (max-width: 500px) {
