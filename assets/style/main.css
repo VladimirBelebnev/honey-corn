@@ -1465,8 +1465,19 @@ svg, img, video {
       flex-wrap: wrap;
   gap: 0.62rem;
 }
-.search__input {
+.search .input {
   max-width: 28.75rem;
+}
+.search .input__btn {
+  right: auto;
+  left: 1rem;
+}
+.search .input__btn_backspace {
+  right: 1rem;
+  left: auto;
+}
+.search .input__input {
+  padding-left: 3.5rem;
 }
 
 .filter {
@@ -2140,6 +2151,39 @@ svg, img, video {
 }
 .modal-window__btn_mobile {
   display: none;
+}
+.modal-window_delete-success .modal-window__wrapper, .modal-window_load .modal-window__wrapper {
+  width: 100%;
+  max-width: 31.5625rem;
+}
+.modal-window_delete-success .modal-window__header, .modal-window_load .modal-window__header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.modal-window__status-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-window__status-icon::before {
+  content: "";
+  width: 3.5rem;
+  height: 3.5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.modal-window__status-icon_load::before {
+  background-image: url("../images/ic-load-2.png");
+  -webkit-animation: load 1s linear infinite;
+          animation: load 1s linear infinite;
 }
 
 .modal-window-2__wrapper {

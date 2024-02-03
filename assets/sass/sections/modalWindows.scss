@@ -319,6 +319,39 @@
             display: none;
         }
     }
+
+    &_delete-success,
+    &_load {
+
+        .modal-window__wrapper {
+            width: 100%;
+            max-width: 31.5625rem;
+        }
+
+        .modal-window__header {
+            display: flex !important;
+        }
+    }
+
+    &__status-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 3.5rem;
+            height: 3.5rem;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        &_load::before {
+            background-image: url("../images/ic-load-2.png");
+            animation: load 1s linear infinite;
+        }
+    }
 }
 
 .modal-window-2 {

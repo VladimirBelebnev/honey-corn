@@ -322,6 +322,7 @@
                             <div class="search__input input">
                                 <input type="text" placeholder="Введите фразу для поиска..." class="input__input">
                                 <button class="input__btn icon-ic-search"></button>
+                                <button class="clear-btn input__btn input__btn_backspace icon-ic-backspace"></button>
                             </div>
 
                         </section>
@@ -1217,7 +1218,7 @@
                                     </div>
 
                                     <div class="delete-modal__btn-wrapper">
-                                        <button class="delete-modal__next-btn btn" data-modal="main" data-reset="trap-delete-submodal">
+                                        <button class="delete-modal__next-btn btn" data-modal="load" data-reset="trap-delete-submodal">
                                             Сохранить
                                         </button>
 
@@ -1274,6 +1275,70 @@
             </div>
 
             <!-- Modal Window ( Edit ) End -->
+
+            <!-- Modal Window ( Delete Success ) -->
+
+            <div class="modal-window modal-window_delete-success hidden" data-modal="delete-success-1">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Мастер удаления
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content">
+
+                            <img src="assets/images/success-img.svg" alt="" class="modal-window__success-img">
+
+                            <p class="modal-window__success-message">
+                                Ловушка <\Имя ловушки> удалена
+                            </p>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window ( Delete Success ) End -->
+
+            <!-- Modal Window ( Load ) -->
+
+            <div class="modal-window modal-window_load hidden" data-modal="load">
+                <div class="container modal-window__container">
+
+                    <div class="modal-window__wrapper">
+
+                        <header class="modal-window__header">
+                            <h3 class="modal-window__title title-mini">
+                                Мастер удаления
+                            </h3>
+
+                            <button class="modal-window__skip-btn icon-ic-x"></button>
+                        </header>
+
+                        <section class="modal-window__content">
+
+                            <i class="modal-window__status-icon modal-window__status-icon_load"></i>
+
+                            <p class="modal-window__success-message">
+                                Удаление ловушки <\Имя ловушки>
+                            </p>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal Window ( Load ) End -->
 
         </section>
 

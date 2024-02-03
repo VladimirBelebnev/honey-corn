@@ -1082,8 +1082,22 @@
     flex-wrap: wrap;
     gap: 0.62rem;
 
-    &__input {
+    .input {
         max-width: 28.75rem;
+
+        &__btn {
+            right: auto;
+            left: 1rem;
+
+            &_backspace {
+                right: 1rem;
+                left: auto;
+            }
+        }
+
+        &__input {
+            padding-left: 3.5rem;
+        }
     }
 }
 
