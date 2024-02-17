@@ -352,6 +352,68 @@
             animation: load 1s linear infinite;
         }
     }
+
+    &_active-4 {
+
+        .modal-window__content {
+            min-height: 13rem;
+        }
+
+        .active-modal__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input,
+        .active-modal__inputs-wrapper,
+        .active-modal__step-section {
+            max-width: 50.5625rem !important;
+            width: 100%;
+        }
+
+        .active-modal__inputs-wrapper {
+            max-width: 100% !important;
+            width: 100%;
+            justify-items: center;
+        }
+    }
+
+    &_active-5,
+    &_active-6,
+    &_active-7,
+    &_active-8 {
+        
+        .active-modal__form,
+        .active-modal__btn-wrapper {
+            width: 100%;
+            max-width: 50.5625rem;
+        }
+
+        .active-modal__btn-wrapper {
+            justify-content: space-between;
+        }
+    }
+
+    &__error-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__error-text {
+        display: inline-block;
+        font-weight: $semibold;
+        font-size: 1.25rem;
+    }
+
+    &_active-9 {
+
+        .active-modal__btn-wrapper {
+            justify-content: space-between;
+        }
+    }
 }
 
 .modal-window-2 {
@@ -698,6 +760,15 @@
 
     &__mobile-skip-btn {
         display: none;
+        background: none;
+        border: 2px solid $primaryColor;
+    }
+
+    &__outline-btn {
+        padding: 0.5rem 1.75rem;
+        font-size: 1.125rem;
+        font-weight: $normal;
+        line-height: 2.25rem;
         background: none;
         border: 2px solid $primaryColor;
     }
