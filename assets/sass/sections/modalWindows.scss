@@ -85,6 +85,24 @@
     }
 }
 
+.dark-mode .calendare {
+    background: $gray8;
+    color: $gray15;
+    box-shadow: 0 4px 30px 0 $gray13;
+
+    .btn {
+        color: $gray14;
+    }
+
+    &__cell {
+        color: $gray15;
+
+        &_out-month {
+            color: $gray10;
+        }
+    }
+}
+
 .select-diapason {
 
     &__header {
@@ -169,6 +187,14 @@
     }
 }
 
+.dark-mode .pop-up {
+    background: $gray8;
+
+    &::before {
+        background: $gray8;
+    }
+}
+
 .pop-up-2 {
     max-width: 25.25rem;
     width: 25.25rem;
@@ -196,6 +222,10 @@
     &__btn {
         padding: 0.5rem 1.75rem;
     }
+}
+
+.dark-mode .pop-up-2 {
+    background: $gray8;
 }
 
 .modal-window {
@@ -416,6 +446,20 @@
     }
 }
 
+.dark-mode .modal-window {
+
+    &__header {
+        border-bottom-color: $gray9;
+    }
+
+    &__btn {
+
+        &_outline {
+            color: $gray11;
+        }
+    }
+}
+
 .modal-window-2 {
 
     &__wrapper {
@@ -522,6 +566,10 @@
     }
 }
 
+.dark-mode .select-drop-down {
+    background: $gray8;
+}
+
 .modal-window-5,
 .modal-window-9 {
 
@@ -586,6 +634,13 @@
     &__skip-btn {
         background: none;
         border: 2px solid $primaryColor;
+    }
+}
+
+.dark-mode .modal-window-6 {
+
+    &__skip-btn {
+        color: $gray11;
     }
 }
 
@@ -932,6 +987,16 @@
     }
 }
 
+.dark-mode .active-modal,
+.dark-mode .delete-modal,
+.dark-mode .install-modal {
+
+    &__skip-btn,
+    &__mobile-skip-btn {
+        color: $gray11;
+    }
+}
+
 .progress {
     display: flex;
     justify-content: center;
@@ -970,6 +1035,31 @@
         &_passed {
             background: none;
             border: 2px solid $primaryColor;
+        }
+    }
+}
+
+.dark-mode .progress {
+
+    & > *:not(:last-child) {
+
+        &::after {
+            background: $gray17;
+        }
+    }
+
+    &__item {
+        background: $gray17;
+        color: $gray10;
+
+        &_current {
+            color: $black;
+            background: $primaryColor;
+        }
+
+        &_passed {
+            color: $gray10 !important;
+            background: none;
         }
     }
 }

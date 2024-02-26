@@ -833,6 +833,11 @@ const ctx4 = document.querySelector(".information__graphic-2");
 const ctx5 = document.querySelector(".components-use__graphic-1");
 const ctx6 = document.querySelector(".components-use__graphic-2");
 
+if (document.body.classList.contains("dark-mode")) {
+    Chart.defaults.borderColor = 'rgba(93, 111, 136, 1)';
+    Chart.defaults.color = 'rgba(93, 111, 136, 1)';
+}
+
 if (ctx1) {
 
     const chart1 = new Chart(ctx1, {
@@ -976,6 +981,7 @@ if (ctx1) {
                 data: [3, 3, 5, 6, 1],
                 borderRadius: 5,
                 cutout: 45,
+                borderWidth: document.body.classList.contains("dark-mode") ? 0 : 2,
                 backgroundColor: [
                     "rgba(255, 97, 87, 0.3)",
                     "rgba(249, 207, 61, 0.3)",
@@ -1145,3 +1151,22 @@ if (ctx5) {
     });
 
 }
+
+// Theme Toggle
+
+const themeCheckbox = document.querySelector("#theme-input");
+
+if (localStorage.getItem("theme") == "dark") {
+    document.body.classList.add("dark-mode");
+    themeCheckbox.checked = true;
+}
+
+themeCheckbox.addEventListener("change", (event) => {
+    if (event.currentTarget.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+    }   else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+    }
+});

@@ -47,6 +47,17 @@
     }
 }
 
+.dark-mode .integration {
+
+    &__btn {
+
+        &_analyse,
+        &_reload {
+            color: $gray15;
+        }
+    }
+}
+
 // Media Queries
 
 // Media Queries 800px

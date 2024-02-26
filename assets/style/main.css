@@ -332,6 +332,10 @@ body {
   gap: 0;
 }
 
+.dark-mode .wrapper__main {
+  background: rgb(33, 38, 55);
+}
+
 .main {
   width: 100%;
   min-height: 100vh;
@@ -500,6 +504,10 @@ svg, img, video {
   color: #F9CF3D;
 }
 
+.dark-mode .theme-checkbox__night-icon {
+  color: rgb(84, 95, 123);
+}
+
 .checkbox__input {
   display: none;
 }
@@ -535,6 +543,13 @@ svg, img, video {
 }
 .checkbox__input:checked + .checkbox__label::before {
   margin-left: calc(50% + 1px);
+}
+
+.dark-mode .checkbox__label {
+  background: rgb(84, 95, 123);
+}
+.dark-mode .checkbox__label::before {
+  background: rgb(38, 45, 63);
 }
 
 .input {
@@ -620,7 +635,7 @@ svg, img, video {
   color: #9AA2AD;
 }
 .input__input:focus {
-  border-color: #F9CF3D;
+  border-color: #F9CF3D !important;
 }
 .input__btn, .input__item {
   position: absolute;
@@ -681,6 +696,34 @@ svg, img, video {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #9AA2AD;
+}
+
+.dark-mode .input__mini-title {
+  color: rgb(93, 111, 136);
+  background: rgb(38, 45, 63);
+}
+.dark-mode .input__input, .dark-mode .input__select-block {
+  border: 2px solid rgb(84, 95, 123);
+  background: rgb(33, 38, 55);
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__input::-webkit-input-placeholder, .dark-mode .input__select-block::-webkit-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__input::-moz-placeholder, .dark-mode .input__select-block::-moz-placeholder {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__input:-ms-input-placeholder, .dark-mode .input__select-block:-ms-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__input::-ms-input-placeholder, .dark-mode .input__select-block::-ms-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__input::placeholder, .dark-mode .input__select-block::placeholder {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .input__btn::before, .dark-mode .input__item::before {
+  color: rgb(93, 111, 136);
 }
 
 .select-input-2 {
@@ -792,6 +835,10 @@ svg, img, video {
   color: #9AA2AD;
 }
 
+.dark-mode .navbar__skip-btn, .dark-mode .license-info__copy-btn, .dark-mode .user__btn, .dark-mode .user-info__input-title::before, .dark-mode .mobile-add-block__item-btn, .dark-mode .information__settings, .dark-mode .statistic__column-settings, .dark-mode .header__drop-down-btn, .dark-mode .header__btn, .dark-mode .modal-window__copy-btn, .dark-mode .modal-window__skip-btn, .dark-mode .calendare__prev-btn, .dark-mode .calendare__next-btn, .dark-mode .table-item__action-btn-2, .dark-mode .table-item__info-btn, .dark-mode .table__status-icon-2, .dark-mode .scroll-button {
+  color: rgb(93, 111, 136);
+}
+
 .btn {
   min-width: 4.72rem;
   background: #F9CF3D;
@@ -809,6 +856,10 @@ svg, img, video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dark-mode .btn {
+  color: rgb(67, 74, 97);
 }
 
 .round-button {
@@ -837,6 +888,15 @@ svg, img, video {
   font-size: 1.5rem;
   line-height: 0;
   color: #9AA2AD;
+}
+
+.dark-mode .round-button {
+  background: rgb(33, 38, 55);
+  border-color: rgb(84, 95, 123);
+  color: rgb(80, 94, 115);
+}
+.dark-mode .round-button::before {
+  color: rgb(93, 111, 136);
 }
 
 .link {
@@ -1016,6 +1076,16 @@ svg, img, video {
   -ms-grid-columns: 1fr 0.75rem 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
+}
+
+.dark-mode .table-block {
+  background: rgb(38, 45, 63);
+}
+.dark-mode .table-block__btn {
+  color: rgb(67, 74, 97);
+}
+.dark-mode .table-block__import-btn, .dark-mode .table-block__export-btn, .dark-mode .table-block__btn_export-ioc {
+  color: rgb(175, 191, 205);
 }
 
 .table {
@@ -1244,6 +1314,38 @@ svg, img, video {
           align-items: center;
 }
 
+.dark-mode .table_attack-logs .table__content > *:nth-child(3n) .table__cell, .dark-mode .table_trap-installations-logs .table__content > *:nth-child(3n) .table__cell, .dark-mode .table_bait-distrubutions-logs .table__content > *:nth-child(3n) .table__cell {
+  background: rgb(51, 61, 86);
+}
+.dark-mode .table__header .table__cell {
+  background: rgb(51, 61, 86);
+}
+.dark-mode .table__content > *:nth-child(2n) .table__cell {
+  background: rgb(33, 38, 55);
+}
+.dark-mode .table__cell_drop-down-active {
+  background: rgb(51, 61, 86) !important;
+}
+.dark-mode .table__cell_drop-down-active::before {
+  background: rgb(51, 61, 86);
+}
+.dark-mode .table__cell_letter-message {
+  background: rgb(51, 61, 86) !important;
+}
+.dark-mode .table__action-btn::before, .dark-mode .table__option-btn::before {
+  color: rgb(93, 111, 136);
+}
+
+.dark-mode .table-block__content {
+  border-bottom-color: rgb(33, 38, 55);
+}
+.dark-mode .table-block__btn_outline, .dark-mode .table-block__btn_export {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .table-block__change-page-btn::before {
+  color: rgb(93, 111, 136);
+}
+
 .table-item {
   width: 100%;
   background: white;
@@ -1338,6 +1440,13 @@ svg, img, video {
 }
 .table-item__action-btn-2::before {
   font-size: 2rem;
+}
+
+.dark-mode .table-item {
+  background: rgb(38, 45, 63);
+}
+.dark-mode .table-item__action-btn_outline {
+  color: rgb(175, 191, 205);
 }
 
 @-webkit-keyframes load {
@@ -1459,6 +1568,13 @@ svg, img, video {
   display: none;
   background: none;
   border: 2px solid #F9CF3D;
+}
+
+.dark-mode .files__dragn-drop {
+  border: 1px dashed rgb(93, 111, 136);
+}
+.dark-mode .files__file {
+  border: 1px solid rgb(93, 111, 136);
 }
 
 .search {
@@ -1594,6 +1710,13 @@ svg, img, video {
   margin-bottom: 0;
 }
 
+.dark-mode .filter__delete-btn::before {
+  color: rgb(93, 111, 136);
+}
+.dark-mode .filter__open-content-btn::before {
+  color: rgb(93, 111, 136);
+}
+
 .status {
   display: inline-block;
   min-width: 1.5rem;
@@ -1626,6 +1749,10 @@ svg, img, video {
   border-radius: inherit;
   width: 70%;
   background: #F9CF3D;
+}
+
+.dark-mode .progress-bar {
+  background: rgb(33, 38, 55);
 }
 
 @media all and (max-width: 600px) {
@@ -1671,7 +1798,7 @@ svg, img, video {
 }
 @media all and (max-width: 900px) {
   .table-block {
-    background: none;
+    background: none !important;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1743,6 +1870,9 @@ svg, img, video {
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: #9AA2AD;
+  }
+  .dark-mode .table-block__import-btn, .dark-mode .table-block__export-btn, .dark-mode .table-block__btn_export-ioc {
+    color: rgb(67, 74, 97);
   }
 }
 @media all and (max-width: 680px) {
@@ -1917,6 +2047,22 @@ svg, img, video {
   background: linear-gradient(180deg, rgba(249, 207, 61, 0.33) -22.91%, rgba(249, 207, 61, 0) 100%);
 }
 
+.dark-mode .calendare {
+  background: rgb(38, 45, 63);
+  color: rgb(175, 191, 205);
+  -webkit-box-shadow: 0 4px 30px 0 rgba(26, 54, 108, 0.05);
+          box-shadow: 0 4px 30px 0 rgba(26, 54, 108, 0.05);
+}
+.dark-mode .calendare .btn {
+  color: rgb(67, 74, 97);
+}
+.dark-mode .calendare__cell {
+  color: rgb(175, 191, 205);
+}
+.dark-mode .calendare__cell_out-month {
+  color: rgb(93, 111, 136);
+}
+
 .select-diapason__header {
   margin-bottom: 1.75rem;
 }
@@ -2001,6 +2147,13 @@ svg, img, video {
           transform: translate(0, -50%);
 }
 
+.dark-mode .pop-up {
+  background: rgb(38, 45, 63);
+}
+.dark-mode .pop-up::before {
+  background: rgb(38, 45, 63);
+}
+
 .pop-up-2 {
   max-width: 25.25rem;
   width: 25.25rem;
@@ -2029,6 +2182,10 @@ svg, img, video {
 }
 .pop-up-2__btn {
   padding: 0.5rem 1.75rem;
+}
+
+.dark-mode .pop-up-2 {
+  background: rgb(38, 45, 63);
 }
 
 .modal-window {
@@ -2262,6 +2419,13 @@ svg, img, video {
           justify-content: space-between;
 }
 
+.dark-mode .modal-window__header {
+  border-bottom-color: rgb(33, 38, 55);
+}
+.dark-mode .modal-window__btn_outline {
+  color: rgb(175, 191, 205);
+}
+
 .modal-window-2__wrapper {
   padding: 1.5rem;
   border-radius: 1.5rem;
@@ -2355,6 +2519,10 @@ svg, img, video {
   text-align: left;
 }
 
+.dark-mode .select-drop-down {
+  background: rgb(38, 45, 63);
+}
+
 .modal-window-5__wrapper,
 .modal-window-9__wrapper {
   max-width: 25.25rem;
@@ -2415,6 +2583,10 @@ svg, img, video {
 .modal-window-6__skip-btn {
   background: none;
   border: 2px solid #F9CF3D;
+}
+
+.dark-mode .modal-window-6__skip-btn {
+  color: rgb(175, 191, 205);
 }
 
 .modal-window-7__wrapper,
@@ -2827,6 +2999,14 @@ svg, img, video {
   gap: 1rem;
 }
 
+.dark-mode .active-modal__skip-btn, .dark-mode .active-modal__mobile-skip-btn,
+.dark-mode .delete-modal__skip-btn,
+.dark-mode .delete-modal__mobile-skip-btn,
+.dark-mode .install-modal__skip-btn,
+.dark-mode .install-modal__mobile-skip-btn {
+  color: rgb(175, 191, 205);
+}
+
 .progress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2867,6 +3047,22 @@ svg, img, video {
 .progress__item_passed {
   background: none;
   border: 2px solid #F9CF3D;
+}
+
+.dark-mode .progress > *:not(:last-child)::after {
+  background: rgb(51, 61, 86);
+}
+.dark-mode .progress__item {
+  background: rgb(51, 61, 86);
+  color: rgb(93, 111, 136);
+}
+.dark-mode .progress__item_current {
+  color: #434A61;
+  background: #F9CF3D;
+}
+.dark-mode .progress__item_passed {
+  color: rgb(93, 111, 136) !important;
+  background: none;
 }
 
 @media all and (max-width: 600px) {
@@ -3201,6 +3397,13 @@ svg, img, video {
   line-height: 1rem;
 }
 
+.dark-mode .header {
+  background: rgb(38, 45, 63);
+}
+.dark-mode .header__row:last-child {
+  border-top-color: rgb(51, 61, 86);
+}
+
 @media all and (max-width: 1200px) {
   .header {
     padding: 0.75rem 0;
@@ -3404,6 +3607,10 @@ svg, img, video {
 }
 .statistic__status_mobile {
   display: none;
+}
+
+.dark-mode .statistic__btn::before {
+  color: rgb(93, 111, 136);
 }
 
 .information {
@@ -3624,6 +3831,23 @@ svg, img, video {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.25rem;
+}
+
+.dark-mode .block,
+.dark-mode .block-2,
+.dark-mode .container > * {
+  background: rgb(38, 45, 63);
+  color: rgb(175, 191, 205);
+}
+
+.dark-mode .information__header {
+  border-bottom: 2px solid rgb(33, 38, 55);
+}
+.dark-mode .information_column-diagram .information__column:first-child::before {
+  background: rgb(84, 95, 123);
+}
+.dark-mode .information_grid-diagram .information__column:first-child::before {
+  background: rgb(84, 95, 123);
 }
 
 @media all and (max-width: 1880px) {
@@ -3852,6 +4076,7 @@ svg, img, video {
 .trap-install__content {
   max-width: 63.75rem;
   width: 100%;
+  border-radius: 0.625rem;
 }
 .trap-install .table-block__header {
   margin-bottom: 1rem;
@@ -3860,6 +4085,9 @@ svg, img, video {
 @media all and (max-width: 900px) {
   .main_trap-install {
     background: none;
+  }
+  .trap-install__content {
+    background: none !important;
   }
   .trap-install .table-block {
     display: -webkit-box;
@@ -3919,6 +4147,10 @@ svg, img, video {
   font-weight: 400;
   line-height: 2.25rem;
   padding: 0.5rem 1.75rem;
+}
+
+.dark-mode .bait-install__header {
+  background: none;
 }
 
 @media all and (max-width: 1450px) {
@@ -4074,6 +4306,10 @@ svg, img, video {
 .mobile-add-block__item-title {
   line-height: 1.625rem;
 }
+.dark-mode .mobile-add-block {
+  background: rgb(33, 38, 55);
+}
+
 @media all and (max-width: 900px) {
   .activies__create {
     -webkit-box-orient: vertical;
@@ -4345,6 +4581,10 @@ svg, img, video {
   color: #9AA2AD;
 }
 
+.dark-mode .data-status__sections > *:not(:last-child) {
+  border-bottom: 2px solid rgb(51, 61, 86);
+}
+
 .components-use {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4393,6 +4633,13 @@ svg, img, video {
 }
 .components-use__graphic-1, .components-use__graphic-2 {
   width: 100% !important;
+}
+
+.dark-mode .components-use > *:not(:last-child) {
+  border-bottom: 2px solid rgb(51, 61, 86);
+}
+.dark-mode .components-use__section-seconds {
+  color: rgb(80, 94, 115);
 }
 
 .components-status {
@@ -4459,6 +4706,10 @@ svg, img, video {
   border: 2px solid #F9CF3D;
 }
 
+.dark-mode .component {
+  background: rgb(33, 38, 55);
+}
+
 .events__search {
   background: none;
   padding: 0;
@@ -4475,6 +4726,26 @@ svg, img, video {
 }
 .events__broker-title {
   margin-bottom: 0.75rem;
+}
+
+.events__input .input__input::-webkit-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+
+.events__input .input__input::-moz-placeholder {
+  color: rgb(175, 191, 205);
+}
+
+.events__input .input__input:-ms-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+
+.events__input .input__input::-ms-input-placeholder {
+  color: rgb(175, 191, 205);
+}
+
+.events__input .input__input::placeholder {
+  color: rgb(175, 191, 205);
 }
 
 @media all and (max-width: 1500px) {
@@ -4728,6 +4999,18 @@ svg, img, video {
   font-size: 2rem;
 }
 
+.dark-mode .user__role {
+  color: rgb(93, 111, 136);
+}
+
+.dark-mode .users__wrapper > *:not(:last-child, :first-child) {
+  border-bottom: 2px solid rgb(84, 95, 123);
+}
+.dark-mode .users__user:first-child {
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgb(84, 95, 123);
+}
+
 @media all and (max-width: 1000px) {
   .user-info__wrapper {
     -ms-grid-columns: 1fr;
@@ -4827,6 +5110,10 @@ svg, img, video {
 .integration__btn_analyse, .integration__btn_reload {
   background: none;
   border: 2px solid #F9CF3D;
+}
+
+.dark-mode .integration__btn_analyse, .dark-mode .integration__btn_reload {
+  color: rgb(175, 191, 205);
 }
 
 @media all and (max-width: 800px) {
@@ -4958,6 +5245,10 @@ svg, img, video {
 }
 .action .input__select-block {
   padding-right: 3rem;
+}
+
+.dark-mode .action__btn {
+  color: rgb(175, 191, 205);
 }
 
 @media all and (max-width: 1300px) {
@@ -5122,6 +5413,13 @@ svg, img, video {
   margin-bottom: 1.5rem;
 }
 
+.dark-mode .license-install {
+  background: none;
+}
+.dark-mode .license-install__wrapper {
+  background: rgb(38, 45, 63);
+}
+
 @media all and (max-width: 1200px) {
   .license-managment__container {
     -ms-grid-columns: 1fr;
@@ -5280,6 +5578,10 @@ svg, img, video {
   row-gap: 0.5rem;
 }
 
+.dark-mode .mail-setup__btn_reload {
+  color: rgb(175, 191, 205);
+}
+
 .update {
   width: 100%;
 }
@@ -5310,6 +5612,10 @@ svg, img, video {
 }
 .update__content-header {
   margin-bottom: 1.5rem;
+}
+
+.dark-mode .update__header {
+  background: none;
 }
 
 @media all and (max-width: 600px) {
@@ -5517,6 +5823,23 @@ svg, img, video {
 .documentation__prev-btn {
   background: none;
   border: 2px solid #F9CF3D;
+}
+
+.dark-mode .documentation__navigation-section {
+  background: none;
+}
+.dark-mode .documentation__navigation-wrapper, .dark-mode .documentation__content-wrapper {
+  background: rgb(38, 45, 63);
+}
+.dark-mode .documentation__content {
+  border-radius: 0.625rem;
+  background: none;
+}
+.dark-mode .documentation__buttons-wrapper {
+  background: none;
+}
+.dark-mode .documentation__prev-btn {
+  color: rgb(175, 191, 205);
 }
 
 @media all and (max-width: 1200px) {

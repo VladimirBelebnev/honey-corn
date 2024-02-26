@@ -59,6 +59,14 @@
     }
 }
 
+.dark-mode .header {
+    background: $gray8;
+
+    &__row:last-child {
+        border-top-color: $gray17;
+    }
+}
+
 // Media Queries
 
 @media all and (max-width: 1200px) {

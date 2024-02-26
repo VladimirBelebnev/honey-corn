@@ -163,6 +163,16 @@
 
 }
 
+.dark-mode .statistic {
+
+    &__btn {
+
+        &::before {
+            color: $gray10;
+        }
+    }
+}
+
 .information {
     width: 100%;
 
@@ -386,6 +396,39 @@
         font-size: 2rem;
         font-weight: $medium;
         line-height: 2.25rem;
+    }
+}
+
+.dark-mode .block,
+.dark-mode .block-2,
+.dark-mode .container > * {
+    background: $gray8;
+    color: $gray15;
+}
+
+.dark-mode .information {
+
+    &__header {
+        border-bottom: 2px solid $gray9;
+    }
+
+    &_column-diagram {
+        .information__column:first-child {
+
+            &::before {
+                background: $gray12;
+            }
+        }
+    }
+
+    &_grid-diagram {
+
+        .information__column:first-child {
+
+            &::before {
+                background: $gray12;
+            }
+        }
     }
 }
 

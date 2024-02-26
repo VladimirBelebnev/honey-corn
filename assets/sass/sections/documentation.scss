@@ -191,6 +191,31 @@
     }
 }
 
+.dark-mode .documentation {
+
+    &__navigation-section {
+        background: none;
+    }
+
+    &__navigation-wrapper,
+    &__content-wrapper {
+        background: $gray8;
+    }
+
+    &__content {
+        border-radius: 0.625rem;
+        background: none;
+    }
+
+    &__buttons-wrapper {
+        background: none;
+    }
+
+    &__prev-btn {
+        color: $gray15;
+    }
+}
+
 // Media Queries
 
 // Media Querie 1200px

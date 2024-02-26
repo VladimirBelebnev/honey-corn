@@ -142,6 +142,31 @@
     }
 }
 
+.dark-mode .user {
+
+    &__role {
+        color: $gray10;
+    }
+}
+
+.dark-mode .users {
+
+    &__wrapper {
+
+        & > *:not(:last-child, :first-child) {
+            border-bottom: 2px solid $gray12;
+        }
+    }
+
+    &__user {
+
+        &:first-child {
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid $gray12;
+        }
+    }
+}
+
 // Media Queries
 
 // Media Querie 1000px

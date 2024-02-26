@@ -6,6 +6,7 @@
     &__content {
         max-width: 63.75rem;
         width: 100%;
+        border-radius: 0.625rem;
     }
 
     .table-block__header {
@@ -27,6 +28,10 @@
     }
 
     .trap-install {
+
+        &__content {
+            background: none !important;
+        }
 
         .table-block {
             display: flex;

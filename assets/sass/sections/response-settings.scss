@@ -101,6 +101,13 @@
     }
 }
 
+.dark-mode .action {
+
+    &__btn {
+        color: $gray15;
+    }
+}
+
 // Media Queries
 
 // Media Querie 1300px

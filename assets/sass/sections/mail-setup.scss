@@ -29,3 +29,13 @@
         row-gap: 0.5rem;
     }
 }
+
+.dark-mode .mail-setup {
+
+    &__btn {
+
+        &_reload {
+            color: $gray15;
+        }
+    }
+}

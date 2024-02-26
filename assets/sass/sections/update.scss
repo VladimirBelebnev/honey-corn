@@ -34,6 +34,13 @@
     }
 }
 
+.dark-mode .update {
+
+    &__header {
+        background: none;
+    }
+}
+
 // Media Queries
 
 @media all and (max-width: 600px) {

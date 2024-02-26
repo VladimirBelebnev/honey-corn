@@ -57,6 +57,14 @@
     }
 }
 
+.dark-mode .license-install {
+    background: none;
+
+    &__wrapper {
+        background: $gray8;
+    }
+}
+
 // Media Queries
 
 // Media Queries 1200px
