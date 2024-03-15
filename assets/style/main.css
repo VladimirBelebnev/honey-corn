@@ -729,6 +729,25 @@ svg, img, video {
 .select-input-2 {
   position: relative;
 }
+.select-input-2_mobile li button {
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+}
+.select-input-2_mobile .select-drop-down {
+  max-width: 15rem;
+}
+.select-input-2_btn-wrap {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+.select-input-2_btn-wrap button {
+  top: 0 !important;
+  right: 0 !important;
+}
+.select-input-2_btn-wrap .select-input-2__hidden-section {
+  top: calc(100% + 2rem);
+}
 .select-input-2__open-section {
   width: 100%;
   cursor: pointer;
@@ -741,6 +760,12 @@ svg, img, video {
   z-index: 2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.select-input-2__hidden-section_right {
+  width: auto;
+  left: auto;
+  right: 0;
+  text-align: left;
 }
 .select-input-2__open-section.active .round-button {
   background: #F9CF3D;
